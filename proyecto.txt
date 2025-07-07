@@ -1,0 +1,9 @@
+que quiero que haga el proyecto:
+Mostrar los horarios y lugares de cursada para tercer anio FAMAF compu 1er cuatrimestre (ampliable a los otros anios y carreras)
+
+como va a hacerlo:
+el usuario selecciona su carrera, su anio, y se despliegan las materias con las aulas de cursada, puede ser que el usuario tambien pueda elegir la materia, en cuyo caso va a mostrarse el aula y una ventana con la ubicacion de google maps (posibilidad)
+
+Que elementos de la programacion vamos a usar:
+Es un proyecto sencillo (1 sola pagina con informacion desplegable de manera dinamica): HTML(contenido) + CSS(estilos) + JS (dinamismo) (Boostrap si no complica las cosas y puede aportar algo), con poco texto.
+

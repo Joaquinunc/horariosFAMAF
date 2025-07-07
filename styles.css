@@ -1,0 +1,10 @@
+body{
+    background: url(../imagenes//The\ martian\ wallpaper\ 5.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+.intro{
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
