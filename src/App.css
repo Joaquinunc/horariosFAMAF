@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+
+.elements{
+  display:flex;
+  flex-direction:column;
+  margin:50px;
+  padding:100px;
+  border-radius: 10px;
+  border-color: black;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
