@@ -1,16 +1,56 @@
 .App {
-  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+  margin-left: 450px;
+  margin-right: 450px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: white;
 }
 
+.Title{
+  text-align: center;
+  color: rgb(7, 115, 115);
+}
 
+.subT{
+  display:flex;
+  flex-direction: row;
+  margin-left: 5px;
+  color:#262626;
+}
 .elements{
   display:flex;
   flex-direction:column;
-  margin:50px;
-  padding:100px;
-  border-radius: 10px;
-  border-color: black;
+  flex-wrap:wrap;
+  border: 3px black;
+  padding-left:10px;
+  padding-right:10px;
 }
+
+.campos{
+  display:flex;
+  flex-direction:column;
+  margin-bottom: 20px;
+}
+.etiqueta{
+  display:inline-block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #454444;
+}
+
+
+.button{
+  background-color: rgb(7, 115, 115);
+  color:white;
+  font-size: large;
+  cursor:pointer;
+  padding: 10px;
+  border-radius: 3px;
+  border-color: rgb(14, 153, 234);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
