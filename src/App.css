@@ -43,6 +43,7 @@
 
 
 .button{
+  transition:400ms;
   background-color: rgb(7, 115, 115);
   color:white;
   font-size: large;
@@ -61,6 +62,7 @@
 }
 
 .button:hover{
+  transition:400ms;
   background-color: rgb(10, 153, 153);
   border-color: rgb(10, 153, 153);
 }

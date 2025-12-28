@@ -7,6 +7,26 @@ function OptMap({items}){
   ));
 }
 
+function FieldRet({label, atribute, setter, elems}){
+  return(
+     <div className='campos'>
+                <label className='etiqueta'>{label}</label>
+                <select className='selector' value={atribute} onChange={(e) => setter(e.target.value)}>
+                  <option value="" disabled hidden required></option>
+                  <OptMap items={elems}/>
+                </select>
+      </div>
+  );
+}
+
+function Minitest(){
+  return(
+    <div className='lel'>
+      <h1>button testing</h1>
+    </div>
+  );
+}
+
 function App() {
   const [carrera, setCarrera] = useState('');
   const [Anio, setAnio] = useState('');
@@ -35,54 +55,15 @@ function App() {
       </div>
       <form className='elements'>          
           {!ingreso &&(
-            <div className='campos'>
-              <label className='etiqueta'>Selecciona una carrera:</label>
-              <select className='selector' value={carrera} onChange={(e) => setCarrera(e.target.value)}>
-                <option value="" disabled hidden required></option>
-                <OptMap items={Carreras}/>
-              </select>
-            </div>
-          )}
-          
-          {!ingreso &&(
-            <div className='campos'>
-              <label className='etiqueta'>Selecciona un año de cursada:</label>
-              <select  className='selector' value={Anio} onChange={(e) => setAnio(e.target.value)}>
-                <option value="" disabled hidden required></option>
-                <OptMap items={Anios}/>
-              </select>
-            </div>
-          )}
-
-          {!ingreso &&(
-            <div className='campos'>
-              <label className='etiqueta'>Selecciona un cuatrimestre:</label>
-              <select  className='selector' value={Cuatrimestre} onChange={(e) => setCuatrimestre(e.target.value)}>
-                <option value="" disabled hidden></option>
-                <OptMap items={Cuatrimestres}/>
-              </select>
-            </div>
-          )}
-
-          {!ingreso &&(
-            <div className='campos'>
-              <label className='etiqueta'>Selecciona una materia:</label>
-              <select  className='selector' value={materia} onChange={(e) => setMateria(e.target.value)}>
-                <option value="" disabled hidden></option>
-                <OptMap items={Materias}/>
-              </select>
-            </div>
-          )}
-          
-          <div className='campos'>
-            <label className='etiqueta'>Selecciona una comision:</label>
-            <select  className='selector' value={comision} onChange={(e) => setComision(e.target.value)}>
-              <option value="" disabled hidden></option>
-              <OptMap items={Comisiones}/>
-            </select>
-          </div>  
-          <button className='button'>Consultar horarios de la materia</button>
-  
+            <article> 
+              <FieldRet label="Seleccione una Carrera:" atribute={carrera} setter={setCarrera} elems={Carreras}/>
+              <FieldRet label="Seleccione un anio de cursada:" atribute={Anio} setter={setAnio} elems={Anios}/>
+              <FieldRet label="Seleccione un cuatrimestre:" atribute={Cuatrimestre} setter={setCuatrimestre} elems={Cuatrimestres}/>
+              <FieldRet label="Seleccione una materia:" atribute={materia} setter={setMateria} elems={Materias}/>
+            </article>  
+          )}         
+          <FieldRet label="Seleccione una comision:" atribute={comision} setter={setComision} elems={Comisiones}/>
+          <button className='button' onClick={Minitest}>Consultar horarios de la materia</button>
       </form>  
     </div>
   );
