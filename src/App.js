@@ -36,8 +36,8 @@ function App() {
       <form className='elements'>          
           {!ingreso &&(
             <div className='campos'>
-              <label className='etiqueta'>Selecciona una Carrera:</label>
-              <select value={carrera} onChange={(e) => setCarrera(e.target.value)}>
+              <label className='etiqueta'>Selecciona una carrera:</label>
+              <select className='selector' value={carrera} onChange={(e) => setCarrera(e.target.value)}>
                 <option value="" disabled hidden required></option>
                 <OptMap items={Carreras}/>
               </select>
@@ -47,7 +47,7 @@ function App() {
           {!ingreso &&(
             <div className='campos'>
               <label className='etiqueta'>Selecciona un año de cursada:</label>
-              <select value={Anio} onChange={(e) => setAnio(e.target.value)}>
+              <select  className='selector' value={Anio} onChange={(e) => setAnio(e.target.value)}>
                 <option value="" disabled hidden required></option>
                 <OptMap items={Anios}/>
               </select>
@@ -57,7 +57,7 @@ function App() {
           {!ingreso &&(
             <div className='campos'>
               <label className='etiqueta'>Selecciona un cuatrimestre:</label>
-              <select value={Cuatrimestre} onChange={(e) => setCuatrimestre(e.target.value)}>
+              <select  className='selector' value={Cuatrimestre} onChange={(e) => setCuatrimestre(e.target.value)}>
                 <option value="" disabled hidden></option>
                 <OptMap items={Cuatrimestres}/>
               </select>
@@ -66,8 +66,8 @@ function App() {
 
           {!ingreso &&(
             <div className='campos'>
-              <label className='etiqueta'>Selecciona una Materia:</label>
-              <select value={materia} onChange={(e) => setMateria(e.target.value)}>
+              <label className='etiqueta'>Selecciona una materia:</label>
+              <select  className='selector' value={materia} onChange={(e) => setMateria(e.target.value)}>
                 <option value="" disabled hidden></option>
                 <OptMap items={Materias}/>
               </select>
@@ -76,12 +76,12 @@ function App() {
           
           <div className='campos'>
             <label className='etiqueta'>Selecciona una comision:</label>
-            <select value={comision} onChange={(e) => setComision(e.target.value)}>
+            <select  className='selector' value={comision} onChange={(e) => setComision(e.target.value)}>
               <option value="" disabled hidden></option>
               <OptMap items={Comisiones}/>
             </select>
           </div>  
-          <button className='button'>Enviar</button>
+          <button className='button'>Consultar horarios de la materia</button>
   
       </form>  
     </div>
