@@ -1,3 +1,100 @@
 {
-
+    "Ingreso": {
+      "nombre": "Cursillo de Nivelacion",
+      "anio": "Ingreso",
+      "cuatrimestre": 0,
+      "horarios_2026": [
+         {
+          "comision": "M1",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "9hs",
+          "hora_fin": "13hs",
+          "aula": "Sede unica FAMAF"
+        },
+           {
+          "comision": "M3",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "9hs",
+          "hora_fin": "13hs",
+          "aula": "Sede unica FAMAF"
+        },
+           {
+          "comision": "M4",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "9hs",
+          "hora_fin": "13hs",
+          "aula": "Sede unica FAMAF"
+        },
+         {
+          "comision": "M5",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "9hs",
+          "hora_fin": "13hs",
+          "aula": "Sede unica FAMAF"
+        },
+          {
+          "comision": "M6",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "9hs",
+          "hora_fin": "13hs",
+          "aula": "Sede unica FAMAF"
+        },
+          {
+          "comision": "M8",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "9hs",
+          "hora_fin": "13hs",
+          "aula": "Sede unica FAMAF"
+        },
+          {
+          "comision": "M9",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "9hs",
+          "hora_fin": "13hs",
+          "aula": "Sede unica FAMAF"
+        },
+          {
+          "comision": "T1",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "14hs",
+          "hora_fin": "18hs",
+          "aula": "Sede unica FAMAF"
+        },
+          {
+          "comision": "T2",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "14hs",
+          "hora_fin": "18hs",
+          "aula": "Sede unica FAMAF"
+        },
+          {
+          "comision": "T3",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "14hs",
+          "hora_fin": "18hs",
+          "aula": "Sede unica FAMAF"
+        },
+          {
+          "comision": "T4",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "14hs",
+          "hora_fin": "18hs",
+          "aula": "Sede unica FAMAF"
+        },
+          {
+          "comision": "T5",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "14hs",
+          "hora_fin": "18hs",
+          "aula": "Sede unica FAMAF"
+        },
+          {
+          "comision": "T6",
+          "dias": "Lunes a viernes",
+          "hora_inicio": "14hs",
+          "hora_fin": "18hs",
+          "aula": "Sede unica FAMAF"
+        }        
+      ]
+    }
 }
