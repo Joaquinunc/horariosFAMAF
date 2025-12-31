@@ -2,8 +2,8 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-url = "https://www.famaf.unc.edu.ar/academica/grado/profesorado-en-matem%C3%A1tica/"
 
+# enlaces de cuyo codigo fuente obtendremos la unformacion mediante scraping
 urls = [
 "https://www.famaf.unc.edu.ar/academica/grado/licenciatura-en-ciencias-de-la-computaci%C3%B3n/",
 "https://www.famaf.unc.edu.ar/academica/grado/licenciatura-en-matem%C3%A1tica-aplicada",
@@ -15,70 +15,74 @@ urls = [
 "https://www.famaf.unc.edu.ar/academica/grado/profesorado-en-f%C3%ADsica/"
 ]
 
+# variable que guardara la informacion total de todas las carreras, con sus anios de cursada
+# sus cuatrimestres y sus materias
 
-respuesta = requests.get(url)
-
-
-if respuesta.status_code == 200:
-    soup = BeautifulSoup(respuesta.text, 'html.parser')
-    carrera = soup.find('h1', class_="title").get_text(strip=True)
-    anios = soup.find_all('div', class_="year")
-    
-    data_carrera = {
-        "Nombre_carrera": carrera,
-        "plan_estudios": []
+data_final={
+         "Info":[]
     }
-    for anio in anios:
-        h2 = anio.find('h2').get_text(strip=True)
+# iteramos entre todos los urls y vamos actualizando data_final
+for url in urls:
+    respuesta = requests.get(url)
+
+    if respuesta.status_code == 200:
+        soup = BeautifulSoup(respuesta.text, 'html.parser')
+        carrera = soup.find('h1', class_="title").get_text(strip=True)
+        anios = soup.find_all('div', class_="year")
         
-        if "Febrero" in h2:
-            continue
-       
-        if not h2 and  "title" in anio.find('h2').get("class",[]):
-            nombre_a_mostrar = "Optativas"
-        else:
-            nombre_a_mostrar = h2
-        data_anio = {
-            "Anio": nombre_a_mostrar,
-            "Cuatrimestres":  []
+        data_carrera = {
+            "Nombre_carrera": carrera,
+            "Plan_estudios": []
         }
-
-        print(f'  {nombre_a_mostrar}')
-
-        cuatrimestres = anio.find_all('div', class_='quarter')
-
-        for cuatri in cuatrimestres:
-
-            clases = cuatri.get('class', [])
-            nombre_cuatri = ""
-
-            if "primer-cuatrimestre" in clases:
-                nombre_cuatri = "Primer cuatrimestre"
-
-            elif "segundo-cuatrimestr" in clases:
-                nombre_cuatri = "Segundo cuatrimestre"
-
-            elif "anual" in clases:
-                nombre_cuatri= "Anual"
-
-            if nombre_cuatri:
-                print(f"    {nombre_cuatri}")
-            materias = cuatri.find_all('a', class_='load-page')
-
-            data_cuatri = {
-                "Orden": nombre_cuatri,
-                "Materias": []
-            }
-            data_anio["Cuatrimestres"].append(data_cuatri)
-
-            for materia in materias:
-                m = materia.get_text(strip=True)    
-                print(f'      {m}')
-                data_cuatri["Materias"].append(m)
-        data_carrera["plan_estudios"].append(data_anio)
+        for anio in anios:
+            h2 = anio.find('h2').get_text(strip=True)
             
-    with open('carrera.json', 'w', encoding='utf-8') as f:
-        json.dump(data_carrera, f, ensure_ascii=False, indent=4)
+            if "Febrero" in h2:
+                continue
+        
+            if not h2 and  "title" in anio.find('h2').get("class",[]):
+                nombre_a_mostrar = "Optativas"
+            else:
+                nombre_a_mostrar = h2
+            data_anio = {
+                "Año": nombre_a_mostrar,
+                "Cuatrimestres":  []
+            }
 
-else:
-    print(f'Hubo un error {respuesta.status_code}') 
+            cuatrimestres = anio.find_all('div', class_='quarter')
+
+            for cuatri in cuatrimestres:
+
+                clases = cuatri.get('class', [])
+                nombre_cuatri = ""
+
+                if "primer-cuatrimestre" in clases:
+                    nombre_cuatri = "Primer cuatrimestre"
+
+                elif "segundo-cuatrimestr" in clases:
+                    nombre_cuatri = "Segundo cuatrimestre"
+
+                elif "anual" in clases:
+                    nombre_cuatri= "Anual"
+
+                materias = cuatri.find_all('a', class_='load-page')
+
+                data_cuatri = {
+                    "Orden": nombre_cuatri,
+                    "Materias": []
+                }
+                data_anio["Cuatrimestres"].append(data_cuatri)
+
+                for materia in materias:
+                    m = materia.get_text(strip=True)    
+                    data_cuatri["Materias"].append(m)
+
+            data_carrera["Plan_estudios"].append(data_anio)
+
+    else:
+        print(f'Hubo un error {respuesta.status_code}') 
+
+    data_final['Info'].append(data_carrera)
+
+with open('src/data/carreras.json', 'w', encoding='utf-8') as f:
+            json.dump(data_final, f, ensure_ascii=False, indent=4)

@@ -1,30 +1,12 @@
 import './App.css';
-import info from './data/data.json';
-import { useState } from 'react';
 import {FieldRet, timeRet, location} from './components/functions';
+import gralHook from './components/constants'; 
 
 function App() {
-  const [carrera, setCarrera] = useState('');
-  const [Anio, setAnio] = useState('');
-  const [Cuatrimestre, setCuatrimestre] = useState('');
-  const [comision, setComision] = useState('');
-  const [materia, setMateria]= useState('');
-  const [ingreso, setIngreso] = useState(false);
-  const [result, setResult] = useState(false);
-  
-  const comisiones = info.Ingreso.horarios_2026.map(h => h.comision);
-  const toarrcom = [...new Set(comisiones)];
-  
-  const Carreras = ['Lic. en Matemática','Lic. en Astronomía','Lic. en Física',
-                    'Lic. en Cs. de la Computación','Lic. en Matemática Aplicada',
-                    'Lic. en Hidrometeorología','Prof. en Matemática',
-                    'Prof. en Física','Analista en Computación',
-                    'Tec. Un. en Matemática Aplicada','Tec. Un. en Astronomía'
-                  ];
-  const Anios = ['Primero','Segundo','Tercero','Cuarto','Quinto'];
-  const Cuatrimestres =['Primero','Segundo'];
-  const Materias = ['Algoritmos I','Algoritmos II', 'Matematica discreta I','Matematica discreta II'];
-  
+
+  const {carrera, setCarrera, Anio, setAnio, Cuatrimestre, setCuatrimestre, comision, 
+            setComision, materia, setMateria, ingreso, setIngreso, result, setResult, 
+            Carreras, Anios, Cuatrimestres, Materias, toarrcom} = gralHook();
   return (
     <div className='App'>
       <h1 className='Title'>Horarios FAMAF</h1>

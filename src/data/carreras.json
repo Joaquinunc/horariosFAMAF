@@ -1,0 +1,951 @@
+{
+    "Info": [
+        {
+            "Nombre_carrera": "Lic. en Ciencias de la Computación",
+            "Plan_estudios": [
+                {
+                    "Año": "1º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Introducción a los Algoritmos",
+                                "Análisis Matemático I (LC - LMA - LHM)",
+                                "Matemática Discreta I"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Algoritmos y Estructuras de Datos I",
+                                "Álgebra",
+                                "Análisis Matemático II (LC)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "2º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Organización del Computador",
+                                "Algoritmos y Estructuras de Datos II",
+                                "Análisis Numérico"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Probabilidad y Estadística",
+                                "Introducción a la Lógica y la Computación",
+                                "Sistemas Operativos"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "3º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Redes y Sistemas Distribuídos",
+                                "Paradigmas de Programación",
+                                "Matemática Discreta II"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Ingeniería del Software I",
+                                "Bases de Datos",
+                                "Arquitectura de Computadoras"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "4º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Lenguajes Formales y Computabilidad",
+                                "Modelos y Simulación"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Física",
+                                "Lógica"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "5º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Anual",
+                            "Materias": [
+                                "Trabajo Especial"
+                            ]
+                        },
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Lenguajes y Compiladores",
+                                "Ingeniería del Software II"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Optativas"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Nombre_carrera": "Licenciatura en Matemática Aplicada",
+            "Plan_estudios": [
+                {
+                    "Año": "1º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Algoritmos y Programación",
+                                "Cálculo I",
+                                "Matemática Discreta I"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Álgebra Lineal",
+                                "Cálculo II",
+                                "Física I"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "2º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Análisis Numérico I (LMA)",
+                                "Cálculo Vectorial",
+                                "Física II"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Análisis Numérico II (LMA)",
+                                "Probabilidad y Estadística",
+                                "Funciones Complejas"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "3º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Algoritmos y Estructura de Datos (LMA)",
+                                "Ecuaciones Diferenciales I (LMA)",
+                                "Modelos y Simulación (LMA)"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Ecuaciones Diferenciales II (LMA)",
+                                "Análisis Numérico III",
+                                "Matemática Financiera"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "4º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Investigación de Operaciones",
+                                "Ciencia de datos",
+                                "Matemática Discreta II (LMA)"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Sistemas de Control",
+                                "Optativa I (LMA)",
+                                "Optimización"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "5º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Anual",
+                            "Materias": [
+                                "Trabajo Especial (LMA)"
+                            ]
+                        },
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Modelos de Programación",
+                                "Optativa II (LMA)"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Gestión de proyectos",
+                                "Optativa III (LMA)"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Nombre_carrera": "Licenciatura en Matemática",
+            "Plan_estudios": [
+                {
+                    "Año": "1º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Álgebra I",
+                                "Análisis Matemático I",
+                                "Introducción a la Física"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Física General",
+                                "Álgebra II",
+                                "Análisis Matemático II"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "2º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Álgebra III",
+                                "Análisis Matemático III",
+                                "Análisis Numérico I"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Probabilidad",
+                                "Geometría Diferencial",
+                                "Análisis Numérico II"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "3º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Topología  General",
+                                "Funciones Reales"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Estructuras Algebraicas",
+                                "Funciones Analíticas"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "4º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Ecuaciones Diferenciales I",
+                                "Geometría Superior"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Análisis Funcional",
+                                "Ecuaciones Diferenciales II"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "5º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Anual",
+                            "Materias": [
+                                "Trabajo Especial"
+                            ]
+                        },
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Especialidad I",
+                                "Inferencia Estadística"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Optativa",
+                                "Especialidad II"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "Optativas",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "",
+                            "Materias": [
+                                "Optimización"
+                            ]
+                        },
+                        {
+                            "Orden": "",
+                            "Materias": [
+                                "Lógica"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Nombre_carrera": "Licenciatura en Astronomía",
+            "Plan_estudios": [
+                {
+                    "Año": "1º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Introducción a la Física",
+                                "Seminarios Astronómicos",
+                                "Análisis Matemático I",
+                                "Álgebra I"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Física General I",
+                                "Análisis Matemático II",
+                                "Álgebra II"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "2º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Física Experimental I",
+                                "Física General II",
+                                "Análisis Matemático III",
+                                "Astronomía General"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Métodos Matemáticos de la Física I",
+                                "Física General III",
+                                "Física Experimental II"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "3º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Óptica Astronómica",
+                                "Métodos Matemáticos de la Física II",
+                                "Electromagnetismo I",
+                                "Física Experimental III"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Mecánica",
+                                "Astronomía Esférica",
+                                "Electromagnetismo II"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "4º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Astrofísica General",
+                                "Seminario I",
+                                "Complementos de Física Moderna",
+                                "Astrometría General"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Astrometría",
+                                "Astrofísica  I",
+                                "Especialidad I",
+                                "Seminario II",
+                                "Mecánica Celeste I"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "5º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Anual",
+                            "Materias": [
+                                "Trabajo Especial"
+                            ]
+                        },
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Seminario III",
+                                "Especialidad II"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Especialidad III",
+                                "Seminario IV"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "Optativas",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "",
+                            "Materias": [
+                                "Probabilidad y Procesos Estocásticos."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Nombre_carrera": "Licenciatura en Física",
+            "Plan_estudios": [
+                {
+                    "Año": "1º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Introducción a la Física",
+                                "Álgebra I",
+                                "Análisis Matemático I"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Física General I",
+                                "Análisis Matemático II",
+                                "Álgebra II"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "2º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Métodos Numéricos",
+                                "Física General II",
+                                "Física Experimental I",
+                                "Análisis Matemático III"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Física General III",
+                                "Métodos Matemáticos de la Física I",
+                                "Física Experimental II"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "3º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Física General IV",
+                                "Física Experimental III",
+                                "Electromagnetismo I",
+                                "Métodos Matemáticos de la Física II"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Mecánica",
+                                "Electromagnetismo II",
+                                "Física Experimental IV"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "4º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Mecánica Cuántica I",
+                                "Termodinámica y Mecánica Estadística I",
+                                "Física Experimental V"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Termodinámica y Mecánica Estadística II",
+                                "Mecánica Cuántica II",
+                                "Especialidad I"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "5º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Anual",
+                            "Materias": [
+                                "Trabajo Especial"
+                            ]
+                        },
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Física del Estado Sólido",
+                                "Especialidad II"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Física Contemporánea"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Nombre_carrera": "Licenciatura en Hidrometeorología",
+            "Plan_estudios": [
+                {
+                    "Año": "1º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Introducción a la Atmósfera",
+                                "Química General",
+                                "Análisis Matemático I (LC - LMA - LHM)"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Algebra Lineal",
+                                "Análisis Matemático II",
+                                "Instrumental y Prácticas de Laboratorio I",
+                                "Física I"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "2º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Probabilidad y Estadística",
+                                "Física  II",
+                                "Hidrometeorología I",
+                                "Análisis Matemático III"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Física III",
+                                "Inglés",
+                                "Mecánica de Fluidos",
+                                "Métodos Numéricos"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "3º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Hidrología y Procesos Hidráulicos",
+                                "Termodinámica de la Atmósfera",
+                                "Informática"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Hidrometeorología II",
+                                "Instrumental y Prácticas de Laboratorio II",
+                                "Dinámica de la Atmósfera I",
+                                "Análisis de Series Temporales"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "4º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Sistemas de Alerta Hidrometereológicos",
+                                "Meteorología Sinóptica",
+                                "Introducción al Sensado Remoto",
+                                "Modelos Hidrológicos"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Química de la Atmósfera",
+                                "Climatología",
+                                "Modelado Numérico de Procesos Hidrometeorológicos",
+                                "Sensores Remotos y SIG"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "5º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Variabilidad y Cambio Climático",
+                                "Dinámica de la Atmósfera II"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Trabajo Especial"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "Optativas",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "",
+                            "Materias": [
+                                "Asignatura Optativa I"
+                            ]
+                        },
+                        {
+                            "Orden": "",
+                            "Materias": [
+                                "Asignatura Optativa II"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Nombre_carrera": "Profesorado en Matemática",
+            "Plan_estudios": [
+                {
+                    "Año": "1º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Álgebra I",
+                                "Análisis Matemático I"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Análisis Matemático II",
+                                "Álgebra II"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "2º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Complementos de Álgebra Lineal",
+                                "Análisis Matemático III",
+                                "Psicología del Aprendizaje"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Elementos de Física",
+                                "Pedagogía",
+                                "Geometría I"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "3º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Anual",
+                            "Materias": [
+                                "Didáctica Especial y Taller de Matemática"
+                            ]
+                        },
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Geometría II",
+                                "Computación"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Introducción a Probabilidad y Estadística",
+                                "Elementos de Funciones Complejas"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "4º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Anual",
+                            "Materias": [
+                                "Metodología y Práctica de la Enseñanza (PM)",
+                                "Seminario: Formador de Formadores"
+                            ]
+                        },
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Elementos de Topología",
+                                "Elementos de Funciones Reales"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "Optativas",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "",
+                            "Materias": [
+                                "Mecánica Clásica"
+                            ]
+                        },
+                        {
+                            "Orden": "",
+                            "Materias": [
+                                "Matemática Financiera"
+                            ]
+                        },
+                        {
+                            "Orden": "",
+                            "Materias": [
+                                "Introducción a la Lógica y la Computación"
+                            ]
+                        },
+                        {
+                            "Orden": "",
+                            "Materias": [
+                                "Historia de la Matemática"
+                            ]
+                        },
+                        {
+                            "Orden": "",
+                            "Materias": [
+                                "Geometría Diferencial"
+                            ]
+                        },
+                        {
+                            "Orden": "",
+                            "Materias": [
+                                "Abordaje STEAM y Modelización Matemática en Educación"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Nombre_carrera": "Profesorado en Física",
+            "Plan_estudios": [
+                {
+                    "Año": "1º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Análisis Matemático I",
+                                "Introducción a la Física",
+                                "Álgebra I"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Análisis Matemático II",
+                                "Álgebra II",
+                                "Física General I"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "2º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Física General II",
+                                "Complementos de Análisis Matemático",
+                                "Psicología del Aprendizaje"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Física General III",
+                                "Pedagogía"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "3º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Anual",
+                            "Materias": [
+                                "Didáctica Especial y Taller de Física"
+                            ]
+                        },
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Computación",
+                                "Física General IV"
+                            ]
+                        },
+                        {
+                            "Orden": "Segundo cuatrimestre",
+                            "Materias": [
+                                "Mecánica Clásica",
+                                "Introducción a Probabilidad y Estadística"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Año": "4º año",
+                    "Cuatrimestres": [
+                        {
+                            "Orden": "Anual",
+                            "Materias": [
+                                "Metodología y Práctica de la Enseñanza (PF)",
+                                "Seminario: Formador de Formadores"
+                            ]
+                        },
+                        {
+                            "Orden": "Primer cuatrimestre",
+                            "Materias": [
+                                "Física Moderna"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
