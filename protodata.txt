@@ -1,0 +1,21 @@
+{'materia': 'Introducción a la Física - Aula  (Com. 1) AULA D1', 'inicio_raw': '10/03/2025 09:00', 'fin_raw': '10/03/2025 13:00'}
+{'materia': 'Análisis Matemático I - Teórico - (Com 1\\, 2 y 3) AULA D4', 'inicio_raw': '10/03/2025 09:00', 'fin_raw': '10/03/2025 11:00'}
+{'materia': 'An Mat I (P) Com 1: AULA A5- Com 2: AULA A7 - Com 3: AULA A10', 'inicio_raw': '10/03/2025 11:00', 'fin_raw': '10/03/2025 13:00'}
+{'materia': 'Introducción a la Física -(Teóricos) (Com 2y3) AULA R5', 'inicio_raw': '10/03/2025 14:00', 'fin_raw': '10/03/2025 16:00'}
+{'materia': 'Análisis Matemático I - Teórico -(Com 4 y 5) AULA R8', 'inicio_raw': '10/03/2025 14:00', 'fin_raw': '10/03/2025 16:00'}
+{'materia': 'Introducción a la Física -(Prácticos) Com2: Aula R4 - Com3: Aula A11', 'inicio_raw': '10/03/2025 16:00', 'fin_raw': '10/03/2025 18:00'}
+{'materia': 'Análisis Matemático I - Práctico - (Com 4) AULA A5  y - (Com 5) lunes AULA R6 y miércoles AULA R1', 'inicio_raw': '10/03/2025 16:00', 'fin_raw': '10/03/2025 18:00'}
+{'materia': 'Álgebra I - Teórico - (Com 1 y 2) AULA: A2', 'inicio_raw': '11/03/2025 09:00', 'fin_raw': '11/03/2025 11:00'}
+{'materia': 'Álgebra I (P) Com.1: Aula A2 - Com.2: Aula A7', 'inicio_raw': '11/03/2025 11:00', 'fin_raw': '11/03/2025 13:00'}
+{'materia': 'Álgebra I - Teórico - (Com 3 y 4) AULA D1', 'inicio_raw': '11/03/2025 14:00', 'fin_raw': '11/03/2025 16:00'}
+{'materia': 'Álgebra I (P) Com3: Aula A4 -Com4: Aula A5', 'inicio_raw': '11/03/2025 16:00', 'fin_raw': '11/03/2025 18:00'}
+{'materia': 'Física General I - AULA  A5 - Comisión 1', 'inicio_raw': '11/08/2025 09:00', 'fin_raw': '11/08/2025 13:00'}
+{'materia': 'Física General I - AULA A5 - Comisión 2', 'inicio_raw': '11/08/2025 14:00', 'fin_raw': '11/08/2025 18:00'}
+{'materia': ' Álgebra II Teórico Com. 1-2: Aula A2', 'inicio_raw': '12/08/2025 09:00', 'fin_raw': '12/08/2025 11:00'}
+{'materia': 'Álgebra II Practico (Com. 1 Aula: A6 - Com. 2 Aula: A7)', 'inicio_raw': '12/08/2025 11:00', 'fin_raw': '12/08/2025 13:00'}
+{'materia': ' Álgebra II Teórico Com.3-4: Aula D5', 'inicio_raw': '12/08/2025 14:00', 'fin_raw': '12/08/2025 16:00'}
+{'materia': 'Álgebra II Practico (Com. 3 Aula: A6 - Com. 4 Aula: A9)', 'inicio_raw': '12/08/2025 16:00', 'fin_raw': '12/08/2025 18:00'}
+{'materia': 'Análisis Matemático II - Comisión 1 - 2: AULA R5', 'inicio_raw': '13/08/2025 09:00', 'fin_raw': '13/08/2025 11:00'}
+{'materia': 'Análisis Matemático II - Comisión 1 AULA R3 - Comisión 2 AULA R7', 'inicio_raw': '13/08/2025 11:00', 'fin_raw': '13/08/2025 13:00'}
+{'materia': 'Análisis Matemático II - Comisión 3: AULA R3', 'inicio_raw': '13/08/2025 14:00', 'fin_raw': '13/08/2025 18:00'}
+
