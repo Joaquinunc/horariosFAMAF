@@ -1,0 +1,243 @@
+{
+    "info2": {
+        "Álgebra I": {
+            "nombre": "Álgebra I",
+            "comisiones": [
+                {
+                    "nombre_c": "1",
+                    "dia": "Martes",
+                    "horario": "11:00 - 13:00",
+                    "ubicacion": "A2"
+                },
+                {
+                    "nombre_c": "1",
+                    "dia": "Martes",
+                    "horario": "09:00 - 11:00",
+                    "ubicacion": "A2"
+                },
+                {
+                    "nombre_c": "2",
+                    "dia": "Martes",
+                    "horario": "11:00 - 13:00",
+                    "ubicacion": "A7"
+                },
+                {
+                    "nombre_c": "2",
+                    "dia": "Martes",
+                    "horario": "09:00 - 11:00",
+                    "ubicacion": "A2"
+                },
+                {
+                    "nombre_c": "3",
+                    "dia": "Martes",
+                    "horario": "16:00 - 18:00",
+                    "ubicacion": "A4"
+                },
+                {
+                    "nombre_c": "3",
+                    "dia": "Martes",
+                    "horario": "14:00 - 16:00",
+                    "ubicacion": "D1"
+                },
+                {
+                    "nombre_c": "4",
+                    "dia": "Martes",
+                    "horario": "16:00 - 18:00",
+                    "ubicacion": "A5"
+                },
+                {
+                    "nombre_c": "4",
+                    "dia": "Martes",
+                    "horario": "14:00 - 16:00",
+                    "ubicacion": "D1"
+                }
+            ]
+        },
+        "Análisis Matemático I": {
+            "nombre": "Análisis Matemático I",
+            "comisiones": [
+                {
+                    "nombre_c": "1",
+                    "dia": "Lunes",
+                    "horario": "09:00 - 11:00",
+                    "ubicacion": "D4"
+                },
+                {
+                    "nombre_c": "2",
+                    "dia": "Lunes",
+                    "horario": "09:00 - 11:00",
+                    "ubicacion": "D4"
+                },
+                {
+                    "nombre_c": "3",
+                    "dia": "Lunes",
+                    "horario": "09:00 - 11:00",
+                    "ubicacion": "D4"
+                },
+                {
+                    "nombre_c": "4",
+                    "dia": "Lunes",
+                    "horario": "16:00 - 18:00",
+                    "ubicacion": "A5, R6, R1"
+                },
+                {
+                    "nombre_c": "4",
+                    "dia": "Lunes",
+                    "horario": "14:00 - 16:00",
+                    "ubicacion": "R8"
+                },
+                {
+                    "nombre_c": "5",
+                    "dia": "Lunes",
+                    "horario": "14:00 - 16:00",
+                    "ubicacion": "R8"
+                }
+            ]
+        },
+        "Introducción a la Física": {
+            "nombre": "Introducción a la Física",
+            "comisiones": [
+                {
+                    "nombre_c": "1",
+                    "dia": "Lunes",
+                    "horario": "09:00 - 13:00",
+                    "ubicacion": "D1"
+                },
+                {
+                    "nombre_c": "2",
+                    "dia": "Lunes",
+                    "horario": "14:00 - 16:00",
+                    "ubicacion": "y3"
+                },
+                {
+                    "nombre_c": "2",
+                    "dia": "Lunes",
+                    "horario": "16:00 - 18:00",
+                    "ubicacion": "R4"
+                },
+                {
+                    "nombre_c": "3",
+                    "dia": "Lunes",
+                    "horario": "16:00 - 18:00",
+                    "ubicacion": "A11"
+                }
+            ]
+        },
+        "Física General I": {
+            "nombre": "Física General I",
+            "comisiones": [
+                {
+                    "nombre_c": "1",
+                    "dia": "Lunes",
+                    "horario": "09:00 - 13:00",
+                    "ubicacion": "A5"
+                },
+                {
+                    "nombre_c": "2",
+                    "dia": "Lunes",
+                    "horario": "14:00 - 18:00",
+                    "ubicacion": "A5"
+                }
+            ]
+        },
+        "Álgebra II": {
+            "nombre": "Álgebra II",
+            "comisiones": [
+                {
+                    "nombre_c": "1",
+                    "dia": "Martes",
+                    "horario": "09:00 - 11:00",
+                    "ubicacion": "A2"
+                },
+                {
+                    "nombre_c": "1",
+                    "dia": "Martes",
+                    "horario": "11:00 - 13:00",
+                    "ubicacion": "A6, A7"
+                },
+                {
+                    "nombre_c": "2",
+                    "dia": "Martes",
+                    "horario": "09:00 - 11:00",
+                    "ubicacion": "A2"
+                },
+                {
+                    "nombre_c": "3",
+                    "dia": "Martes",
+                    "horario": "14:00 - 16:00",
+                    "ubicacion": "D5"
+                },
+                {
+                    "nombre_c": "3",
+                    "dia": "Martes",
+                    "horario": "16:00 - 18:00",
+                    "ubicacion": "A6, A9"
+                },
+                {
+                    "nombre_c": "4",
+                    "dia": "Martes",
+                    "horario": "14:00 - 16:00",
+                    "ubicacion": "D5"
+                }
+            ]
+        },
+        "Analisis Matematico I": {
+            "nombre": "Analisis Matematico I",
+            "comisiones": [
+                {
+                    "nombre_c": "1",
+                    "dia": "Lunes",
+                    "horario": "11:00 - 13:00",
+                    "ubicacion": "A5"
+                },
+                {
+                    "nombre_c": "2",
+                    "dia": "Lunes",
+                    "horario": "11:00 - 13:00",
+                    "ubicacion": "A7"
+                },
+                {
+                    "nombre_c": "3",
+                    "dia": "Lunes",
+                    "horario": "11:00 - 13:00",
+                    "ubicacion": "A10"
+                }
+            ]
+        },
+        "Análisis Matemático II": {
+            "nombre": "Análisis Matemático II",
+            "comisiones": [
+                {
+                    "nombre_c": "1",
+                    "dia": "Miércoles",
+                    "horario": "09:00 - 11:00",
+                    "ubicacion": "R5"
+                },
+                {
+                    "nombre_c": "1",
+                    "dia": "Miércoles",
+                    "horario": "11:00 - 13:00",
+                    "ubicacion": "R3"
+                },
+                {
+                    "nombre_c": "2",
+                    "dia": "Miércoles",
+                    "horario": "09:00 - 11:00",
+                    "ubicacion": "R5"
+                },
+                {
+                    "nombre_c": "2",
+                    "dia": "Miércoles",
+                    "horario": "11:00 - 13:00",
+                    "ubicacion": "R7"
+                },
+                {
+                    "nombre_c": "3",
+                    "dia": "Miércoles",
+                    "horario": "14:00 - 18:00",
+                    "ubicacion": "R3"
+                }
+            ]
+        }
+    }
+}

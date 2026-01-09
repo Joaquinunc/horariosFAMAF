@@ -9,7 +9,36 @@
                         {
                             "Orden": "Primer cuatrimestre",
                             "Materias": [
-                                "Introducción a los Algoritmos",
+                                {
+                                    "nombre_m":"Introducción a los Algoritmos",
+                                    "comisiones":[
+                                        {
+                                            "nombre_c":"1",
+                                            "clases": 
+                                            [
+                                                {
+                                                    "dia": "Lunes", 
+                                                    "zonas":[
+                                                        {
+                                                            "aula": "Aula R5", 
+                                                            "hora": "09:00 - 11:00"
+                                                        },
+                                                        {
+                                                            "aula": "Aula R6", 
+                                                            "hora": "11:00 - 13:00"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "dia": "Miércoles", 
+                                                    "aula": "Aula R7", 
+                                                    "hora": "09:00 - 13:00"
+                                                }
+                                            ]
+                                        }
+
+                                    ]
+                                },
                                 "Análisis Matemático I (LC - LMA - LHM)",
                                 "Matemática Discreta I"
                             ]

@@ -6,10 +6,39 @@
       "horarios_2026": [
          {
           "comision": "M1",
-          "dias": "Lunes a viernes",
-          "hora_inicio": "9hs",
-          "hora_fin": "13hs",
-          "aula": "Sede unica FAMAF"
+          "clases": 
+          [
+            {"dia": "Lunes",
+              "ubicacion":
+              [
+                {
+                  "aula":"C2",
+                  "hora_inicio":"9hs",
+                  "hora_fin":"11hs"
+                },
+                {
+                  "aula":"C3",
+                  "hora_inicio":"11hs",
+                  "hora_fin":"13hs"
+                } 
+              ]
+            },
+             {"dia": "Miercoles",
+              "ubicacion":
+              [
+                {
+                  "aula":"C2",
+                  "hora_inicio":"9hs",
+                  "hora_fin":"11hs"
+                },
+                {
+                  "aula":"C7",
+                  "hora_inicio":"11hs",
+                  "hora_fin":"13hs"
+                } 
+              ]
+            }
+          ]
         },
            {
           "comision": "M3",
