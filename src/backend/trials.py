@@ -13,13 +13,18 @@ materias_raras = [
                   "Agujeros Negros y Singularidades - AULA 21",
                   "Electromagnetismo I - AULA 31 - Práctico Aula 10 y 16",
                   "Física General IV (T) - AULA 27",
-                  "Fís Gral IV (P) Com.1 Aula 27/ Com.2 Aula 20"
+                  "Fís Gral IV (P) Com.1 Aula 27/ Com.2 Aula 20",
+                  "Física Experimental IV - Comisión 1 (LEF )",
+                  "Física Experimental IV - Comisión 2 (LEF )",
+                  "Física Experimental IV - Comisión 3 (LEF )",
+                  "Física Experimental IV - Teórico -Aula 16"
                   ]
 def comparser(input):
     datos = []
     for c in input:
-        nombre_c = re.search(r"com\.(\d+)", c, re.IGNORECASE)
-        aula = re.findall(r"aula \d+", c, re.IGNORECASE)
+        nombre_c = re.search(r"(?:comisión|com\.?)\s*(\d+)", c, re.IGNORECASE)
+        aula = re.findall(r"aula\s*\d+|LEF\s*\d*", c, re.IGNORECASE)
+        print(f"{nombre_c};{aula}")
         if nombre_c and aula:
             datos.append({
                 "comm": nombre_c.group(1),      # solo el número
@@ -28,9 +33,11 @@ def comparser(input):
     return datos
 
 for m in materias_raras:
-    nombre_m = re.split(" - ", m)[0]
+    nombre_m = re.split(r"| - ", m)[0]
+    
     # caso raro 1: Com.1 Aula x/ Com.2 Aula y
-    datacomm = re.findall(r"com.\d+ [A-Z]+ \d+", m, re.IGNORECASE)
+    datacomm = re.findall(r"(?:com\.?|comisión)\s*\d+[^/]*", m, re.IGNORECASE)
+    print(f"{datacomm}")
     comisiones = []
     if datacomm:
         comisiones = comparser(datacomm)

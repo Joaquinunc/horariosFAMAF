@@ -21,15 +21,15 @@ def expandir_comisiones(nombre_sucio):
 def procesar_materia_compleja(texto_sucio, hora_inicio, hora_fin, dia):
     resultados = []
     texto_limpio = texto_sucio.replace('\\,', ',').strip()
-    
-    # 1. Extraemos el nombre base y limpiamos tipos (Teórico/Práctico)
+    print(f"texto limpio:{texto_limpio} vs texto sucio: {texto_sucio}")
+    # Extraemos el nombre base y limpiamos tipos (Teórico/Práctico)
     nombre_base = re.split(r'[-–(]|Aula|Com', texto_limpio, flags=re.IGNORECASE)[0].strip()
     # Limpieza extra para unificar nombres
     nombre_base = re.sub(r'\s+(?:Practico|Práctico|Teórico|Teorico|P|T)$', '', nombre_base, flags=re.IGNORECASE)
-
-    # 2. Caso detallado: 'Com 1: AULA A5- Com 2: AULA A7'
+    print(f"{nombre_base}")
+    # Caso detallado: 'Com 1: AULA A5- Com 2: AULA A7'
     fragmentos_detallados = re.findall(r'(?:Com|Comisión|Com\.)\s*(\d+):?\s*(?:Aula)?\s*([A-Z]\d+)', texto_limpio, re.IGNORECASE)
-    
+    print(f"fragmentos: {fragmentos_detallados}")
     if fragmentos_detallados:
         for num_com, aula in fragmentos_detallados:
             resultados.append({
@@ -42,7 +42,8 @@ def procesar_materia_compleja(texto_sucio, hora_inicio, hora_fin, dia):
                 }
             })
     
-    # 3. Caso estándar o agrupado: 'Com 1, 2 y 3 - Aula D4'
+ 
+    # Caso estándar o agrupado: 'Com 1, 2 y 3 - Aula D4'
     if not resultados:
         aulas = re.findall(r'[A-Z]\d+', texto_limpio)
         ubicacion = ", ".join(aulas) if aulas else "A confirmar"

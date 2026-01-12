@@ -10,8 +10,9 @@ final_array = {
     "info2":[]
 }
 
-urls = ["https://calendar.google.com/calendar/ical/hrn217r8opp551cdb08i5mpljs@group.calendar.google.com/public/basic.ics",
-"https://calendar.google.com/calendar/ical/v0vq4m435094kh02d2vd8fomj4%40group.calendar.google.com/public/basic.ics"]
+urls = [
+    "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics"
+]
 
 # RESOLUCIÓN DE RUTA:
     # 1. Obtenemos la ubicación de este archivo (backend/layer_1/)
