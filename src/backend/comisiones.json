@@ -1,27 +1,4 @@
 {
-    "Procesamiento de imágenes satelitales meteorológicas con Python": [
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA 14"
-            ],
-            "Horario": "09:00-13:00",
-            "Tipo": "T/P",
-            "dia": "Lunes"
-        }
-    ],
-    "Física": [
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "SALA IPT",
-                "AULA 32"
-            ],
-            "Horario": "09:00-13:00",
-            "Tipo": "T/P",
-            "dia": "Martes"
-        }
-    ],
     "Agujeros Negros y Singularidades": [
         {
             "comm": "Unica",
@@ -33,148 +10,157 @@
             "dia": "Lunes"
         }
     ],
-    "Física Contemporánea": [
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA: 13"
-            ],
-            "Horario": "09:00-13:00",
-            "Tipo": "T/P",
-            "dia": "Martes"
-        }
-    ],
-    "Física del Estado Sólido": [
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA 16"
-            ],
-            "Horario": "09:00-13:00",
-            "Tipo": "T/P",
-            "dia": "Miércoles"
-        }
-    ],
-    "Termodinámica y Mecánica Estadística II": [
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA 13"
-            ],
-            "Horario": "09:00-13:00",
-            "Tipo": "T/P",
-            "dia": "Miércoles"
-        }
-    ],
-    "Mecánica Cuántica I": [
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA 22"
-            ],
-            "Horario": "09:00-13:00",
-            "Tipo": "T/P",
-            "dia": "Miércoles"
-        }
-    ],
-    "Termodinámica y Mecánica Estadística I": [
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA 22"
-            ],
-            "Horario": "09:00-13:00",
-            "Tipo": "T/P",
-            "dia": "Martes"
-        }
-    ],
-    "Mecánica Cuántica II": [
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA 12"
-            ],
-            "Horario": "09:00-13:00",
-            "Tipo": "T/P",
-            "dia": "Martes"
-        }
-    ],
-    "Física Experimental V": [
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "LEF1"
-            ],
-            "Horario": "14:00-18:00",
-            "Tipo": "T/P",
-            "dia": "Martes"
-        }
-    ],
-    "Física Experimental IV": [
+    "Análisis Matemático I": [
         {
             "comm": "1",
             "Ubicacion": [
-                "LEF"
+                "AULA A5",
+                "AULA A7",
+                "AULA A10"
             ],
-            "Horario": "09:00 - 13:00",
-            "Tipo": "T/P",
+            "Horario": "11:00 - 13:00",
+            "Tipo": "Práctico",
             "dia": "Lunes"
-        },
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA 16"
-            ],
-            "Horario": "14:00-16:00",
-            "Tipo": "Teórico",
-            "dia": "Miércoles"
         },
         {
             "comm": "2",
             "Ubicacion": [
-                "LEF"
+                "AULA A5",
+                "AULA A7",
+                "AULA A10"
             ],
-            "Horario": "14:00 - 18:00",
-            "Tipo": "T/P",
-            "dia": "Martes"
+            "Horario": "11:00 - 13:00",
+            "Tipo": "Práctico",
+            "dia": "Lunes"
         },
         {
             "comm": "3",
             "Ubicacion": [
-                "LEF"
+                "AULA A5",
+                "AULA A7",
+                "AULA A10"
             ],
-            "Horario": "14:00 - 18:00",
-            "Tipo": "T/P",
-            "dia": "Jueves"
-        }
-    ],
-    "Física General IV": [
+            "Horario": "11:00 - 13:00",
+            "Tipo": "Práctico",
+            "dia": "Lunes"
+        },
         {
-            "comm": "1",
+            "comm": "4",
             "Ubicacion": [
-                "AULA 27"
+                "AULA R8"
+            ],
+            "Horario": "14:00 - 16:00",
+            "Tipo": "Teórico",
+            "dia": "Lunes"
+        },
+        {
+            "comm": "4",
+            "Ubicacion": [
+                "AULA A5",
+                "AULA R6",
+                "AULA R1"
             ],
             "Horario": "16:00 - 18:00",
             "Tipo": "Práctico",
-            "dia": "Martes"
+            "dia": "Lunes"
+        },
+        {
+            "comm": "5",
+            "Ubicacion": [
+                "AULA A5",
+                "AULA R6",
+                "AULA R1"
+            ],
+            "Horario": "16:00 - 18:00",
+            "Tipo": "Práctico",
+            "dia": "Lunes"
+        },
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA D4"
+            ],
+            "Horario": "09:00 - 11:00",
+            "Tipo": "Teórico",
+            "dia": "Lunes"
+        }
+    ],
+    "Análisis Matemático II": [
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA R5"
+            ],
+            "Horario": "09:00 - 11:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
+        },
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA R3",
+                "AULA R7"
+            ],
+            "Horario": "11:00 - 13:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
         },
         {
             "comm": "2",
             "Ubicacion": [
-                "AULA 20"
+                "AULA R3",
+                "AULA R7"
+            ],
+            "Horario": "11:00 - 13:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
+        },
+        {
+            "comm": "3",
+            "Ubicacion": [
+                "AULA R3"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
+        }
+    ],
+    "Análisis Matemático III": [
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA R6"
             ],
             "Horario": "16:00 - 18:00",
             "Tipo": "Práctico",
-            "dia": "Martes"
+            "dia": "Miércoles"
         },
         {
-            "comm": "Unica",
+            "comm": "2",
             "Ubicacion": [
-                "AULA 27"
+                "AULA R6"
             ],
-            "Horario": "14:00-16:00",
+            "Horario": "16:00 - 18:00",
+            "Tipo": "Práctico",
+            "dia": "Miércoles"
+        },
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA R6"
+            ],
+            "Horario": "14:00 - 16:00",
             "Tipo": "Teórico",
-            "dia": "Martes"
+            "dia": "Miércoles"
+        },
+        {
+            "comm": "2",
+            "Ubicacion": [
+                "AULA R6"
+            ],
+            "Horario": "14:00 - 16:00",
+            "Tipo": "Teórico",
+            "dia": "Miércoles"
         }
     ],
     "Electromagnetismo I": [
@@ -187,46 +173,6 @@
             "Horario": "09:00-13:00",
             "Tipo": "Práctico",
             "dia": "Martes"
-        }
-    ],
-    "Mecánica": [
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA 16"
-            ],
-            "Horario": "09:00-13:00",
-            "Tipo": "T/P",
-            "dia": "Martes"
-        }
-    ],
-    "Física Experimental III": [
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "LEF 103"
-            ],
-            "Horario": "09:00 - 13:00",
-            "Tipo": "T/P",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "LEF 103"
-            ],
-            "Horario": "14:00 - 18:00",
-            "Tipo": "T/P",
-            "dia": "Miércoles"
-        },
-        {
-            "comm": "3",
-            "Ubicacion": [
-                "LEF 103"
-            ],
-            "Horario": "14:00 - 18:00",
-            "Tipo": "T/P",
-            "dia": "Viernes"
         }
     ],
     "Electromagnetismo II": [
@@ -250,24 +196,36 @@
             "dia": "Miércoles"
         }
     ],
-    "Métodos Matemáticos de la Física II": [
+    "Física": [
         {
             "comm": "Unica",
             "Ubicacion": [
-                "AULA 31"
+                "SALA IPT",
+                "AULA 32"
             ],
             "Horario": "09:00-13:00",
             "Tipo": "T/P",
-            "dia": "Miércoles"
+            "dia": "Martes"
+        }
+    ],
+    "Física Contemporánea": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA: 13"
+            ],
+            "Horario": "09:00-13:00",
+            "Tipo": "T/P",
+            "dia": "Martes"
         }
     ],
     "Física Experimental I": [
         {
-            "comm": "2",
+            "comm": "1",
             "Ubicacion": [
                 "LEF 102"
             ],
-            "Horario": "14:00 - 18:00",
+            "Horario": "09:00 - 13:00",
             "Tipo": "T/P",
             "dia": "Lunes"
         },
@@ -281,58 +239,101 @@
             "dia": "Jueves"
         },
         {
-            "comm": "1",
+            "comm": "2",
             "Ubicacion": [
                 "LEF 102"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Lunes"
+        },
+        {
+            "comm": "3",
+            "Ubicacion": [
+                "LEF 102"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Martes"
+        }
+    ],
+    "Física Experimental II": [
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "LEF"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Lunes"
+        },
+        {
+            "comm": "3",
+            "Ubicacion": [
+                "LEF"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
+        },
+        {
+            "comm": "2",
+            "Ubicacion": [
+                "LEF"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Martes"
+        }
+    ],
+    "Física Experimental III": [
+        {
+            "comm": "2",
+            "Ubicacion": [
+                "LEF 103"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
+        },
+        {
+            "comm": "3",
+            "Ubicacion": [
+                "LEF 103"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Viernes"
+        },
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "LEF 103"
+            ],
+            "Horario": "09:00 - 13:00",
+            "Tipo": "T/P",
+            "dia": "Lunes"
+        }
+    ],
+    "Física Experimental IV": [
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "LEF"
             ],
             "Horario": "09:00 - 13:00",
             "Tipo": "T/P",
             "dia": "Lunes"
         },
         {
-            "comm": "3",
+            "comm": "2",
             "Ubicacion": [
-                "LEF 102"
+                "LEF"
             ],
             "Horario": "14:00 - 18:00",
             "Tipo": "T/P",
             "dia": "Martes"
-        }
-    ],
-    "Métodos Matemáticos de la Física I": [
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA: A4"
-            ],
-            "Horario": "09:00-13:00",
-            "Tipo": "T/P",
-            "dia": "Martes"
-        }
-    ],
-    "Física GeneralII": [
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA 27",
-                "AULA 23"
-            ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "Práctico",
-            "dia": "Miércoles"
         },
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "AULA 27",
-                "AULA 23"
-            ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "Práctico",
-            "dia": "Miércoles"
-        }
-    ],
-    "Física Experimental II": [
         {
             "comm": "3",
             "Ubicacion": [
@@ -340,56 +341,58 @@
             ],
             "Horario": "14:00 - 18:00",
             "Tipo": "T/P",
-            "dia": "Miércoles"
-        },
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "LEF"
-            ],
-            "Horario": "14:00 - 18:00",
-            "Tipo": "T/P",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "LEF"
-            ],
-            "Horario": "14:00 - 18:00",
-            "Tipo": "T/P",
-            "dia": "Martes"
-        }
-    ],
-    "Métodos Numéricos": [
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "LAB 17",
-                "LAB 28"
-            ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "Práctico",
-            "dia": "Martes"
-        },
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "LAB 17",
-                "LAB 28"
-            ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "Práctico",
-            "dia": "Martes"
+            "dia": "Jueves"
         },
         {
             "comm": "Unica",
             "Ubicacion": [
                 "AULA 16"
             ],
+            "Horario": "14:00-16:00",
+            "Tipo": "Teórico",
+            "dia": "Miércoles"
+        }
+    ],
+    "Física Experimental V": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "LEF1"
+            ],
+            "Horario": "14:00-18:00",
+            "Tipo": "T/P",
+            "dia": "Martes"
+        }
+    ],
+    "Física General I": [
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "No especificada"
+            ],
+            "Horario": "09:00 - 13:00",
+            "Tipo": "T/P",
+            "dia": "Lunes"
+        },
+        {
+            "comm": "2",
+            "Ubicacion": [
+                "No especificada"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Lunes"
+        }
+    ],
+    "Física General II": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 27"
+            ],
             "Horario": "09:00-11:00",
             "Tipo": "Teórico",
-            "dia": "Martes"
+            "dia": "Miércoles"
         }
     ],
     "Física General III": [
@@ -423,61 +426,169 @@
             "dia": "Miércoles"
         }
     ],
-    "Física General II": [
+    "Física General IV": [
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA 27"
+            ],
+            "Horario": "16:00 - 18:00",
+            "Tipo": "Práctico",
+            "dia": "Martes"
+        },
+        {
+            "comm": "2",
+            "Ubicacion": [
+                "AULA 20"
+            ],
+            "Horario": "16:00 - 18:00",
+            "Tipo": "Práctico",
+            "dia": "Martes"
+        },
         {
             "comm": "Unica",
             "Ubicacion": [
                 "AULA 27"
             ],
-            "Horario": "09:00-11:00",
+            "Horario": "14:00-16:00",
             "Tipo": "Teórico",
-            "dia": "Miércoles"
+            "dia": "Martes"
         }
     ],
-    "Análisis Matemático III": [
+    "Física GeneralII": [
         {
             "comm": "1",
             "Ubicacion": [
-                "AULA R6"
+                "AULA 27",
+                "AULA 23"
             ],
-            "Horario": "14:00 - 16:00",
-            "Tipo": "Teórico",
-            "dia": "Miércoles"
-        },
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "AULA R6"
-            ],
-            "Horario": "14:00 - 16:00",
-            "Tipo": "Teórico",
-            "dia": "Miércoles"
-        },
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA R6"
-            ],
-            "Horario": "16:00 - 18:00",
+            "Horario": "11:00 - 13:00",
             "Tipo": "Práctico",
             "dia": "Miércoles"
         },
         {
             "comm": "2",
             "Ubicacion": [
-                "AULA R6"
+                "AULA 27",
+                "AULA 23"
             ],
-            "Horario": "16:00 - 18:00",
+            "Horario": "11:00 - 13:00",
             "Tipo": "Práctico",
             "dia": "Miércoles"
         }
     ],
-    "Álgebra II": [
+    "Física del Estado Sólido": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 16"
+            ],
+            "Horario": "09:00-13:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
+        }
+    ],
+    "Introducción a la Física": [
+        {
+            "comm": "2",
+            "Ubicacion": [
+                "AULA R5"
+            ],
+            "Horario": "14:00 - 16:00",
+            "Tipo": "Teórico",
+            "dia": "Lunes"
+        },
         {
             "comm": "1",
             "Ubicacion": [
-                "AULA: A6",
-                "AULA: A7"
+                "AULA D1"
+            ],
+            "Horario": "09:00 - 13:00",
+            "Tipo": "T/P",
+            "dia": "Lunes"
+        },
+        {
+            "comm": "2",
+            "Ubicacion": [
+                "AULA R4",
+                "AULA A11"
+            ],
+            "Horario": "16:00 - 18:00",
+            "Tipo": "Práctico",
+            "dia": "Lunes"
+        },
+        {
+            "comm": "3",
+            "Ubicacion": [
+                "AULA R4",
+                "AULA A11"
+            ],
+            "Horario": "16:00 - 18:00",
+            "Tipo": "Práctico",
+            "dia": "Lunes"
+        }
+    ],
+    "Mecánica": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 16"
+            ],
+            "Horario": "09:00-13:00",
+            "Tipo": "T/P",
+            "dia": "Martes"
+        }
+    ],
+    "Mecánica Cuántica I": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 22"
+            ],
+            "Horario": "09:00-13:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
+        }
+    ],
+    "Mecánica Cuántica II": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 12"
+            ],
+            "Horario": "09:00-13:00",
+            "Tipo": "T/P",
+            "dia": "Martes"
+        }
+    ],
+    "Métodos Matemáticos de la Física I": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA: A4"
+            ],
+            "Horario": "09:00-13:00",
+            "Tipo": "T/P",
+            "dia": "Martes"
+        }
+    ],
+    "Métodos Matemáticos de la Física II": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 31"
+            ],
+            "Horario": "09:00-13:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
+        }
+    ],
+    "Métodos Numéricos": [
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "LAB 17",
+                "LAB 28"
             ],
             "Horario": "11:00 - 13:00",
             "Tipo": "Práctico",
@@ -486,10 +597,134 @@
         {
             "comm": "2",
             "Ubicacion": [
-                "AULA: A6",
-                "AULA: A7"
+                "LAB 17",
+                "LAB 28"
             ],
             "Horario": "11:00 - 13:00",
+            "Tipo": "Práctico",
+            "dia": "Martes"
+        },
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 16"
+            ],
+            "Horario": "09:00-11:00",
+            "Tipo": "Teórico",
+            "dia": "Martes"
+        }
+    ],
+    "Procesamiento de imágenes satelitales meteorológicas con Python": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 14"
+            ],
+            "Horario": "09:00-13:00",
+            "Tipo": "T/P",
+            "dia": "Lunes"
+        }
+    ],
+    "Termodinámica y Mecánica Estadística I": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 22"
+            ],
+            "Horario": "09:00-13:00",
+            "Tipo": "T/P",
+            "dia": "Martes"
+        }
+    ],
+    "Termodinámica y Mecánica Estadística II": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 13"
+            ],
+            "Horario": "09:00-13:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
+        }
+    ],
+    "Álgebra I": [
+        {
+            "comm": "3",
+            "Ubicacion": [
+                "AULA A4",
+                "AULA A5"
+            ],
+            "Horario": "16:00 - 18:00",
+            "Tipo": "Práctico",
+            "dia": "Martes"
+        },
+        {
+            "comm": "4",
+            "Ubicacion": [
+                "AULA A4",
+                "AULA A5"
+            ],
+            "Horario": "16:00 - 18:00",
+            "Tipo": "Práctico",
+            "dia": "Martes"
+        },
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA: A2"
+            ],
+            "Horario": "09:00 - 11:00",
+            "Tipo": "Teórico",
+            "dia": "Martes"
+        },
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA A2",
+                "AULA A7"
+            ],
+            "Horario": "11:00 - 13:00",
+            "Tipo": "Práctico",
+            "dia": "Martes"
+        },
+        {
+            "comm": "2",
+            "Ubicacion": [
+                "AULA A2",
+                "AULA A7"
+            ],
+            "Horario": "11:00 - 13:00",
+            "Tipo": "Práctico",
+            "dia": "Martes"
+        },
+        {
+            "comm": "3",
+            "Ubicacion": [
+                "AULA D1"
+            ],
+            "Horario": "14:00 - 16:00",
+            "Tipo": "Teórico",
+            "dia": "Martes"
+        }
+    ],
+    "Álgebra II": [
+        {
+            "comm": "3",
+            "Ubicacion": [
+                "AULA: A6",
+                "AULA: A9"
+            ],
+            "Horario": "16:00 - 18:00",
+            "Tipo": "Práctico",
+            "dia": "Martes"
+        },
+        {
+            "comm": "4",
+            "Ubicacion": [
+                "AULA: A6",
+                "AULA: A9"
+            ],
+            "Horario": "16:00 - 18:00",
             "Tipo": "Práctico",
             "dia": "Martes"
         },
@@ -512,257 +747,22 @@
             "dia": "Martes"
         },
         {
-            "comm": "3",
+            "comm": "1",
             "Ubicacion": [
                 "AULA: A6",
-                "AULA: A9"
+                "AULA: A7"
             ],
-            "Horario": "16:00 - 18:00",
+            "Horario": "11:00 - 13:00",
             "Tipo": "Práctico",
             "dia": "Martes"
         },
         {
-            "comm": "4",
+            "comm": "2",
             "Ubicacion": [
                 "AULA: A6",
-                "AULA: A9"
-            ],
-            "Horario": "16:00 - 18:00",
-            "Tipo": "Práctico",
-            "dia": "Martes"
-        }
-    ],
-    "Análisis Matemático II": [
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA R3",
-                "AULA R7"
+                "AULA: A7"
             ],
             "Horario": "11:00 - 13:00",
-            "Tipo": "T/P",
-            "dia": "Miércoles"
-        },
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "AULA R3",
-                "AULA R7"
-            ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "T/P",
-            "dia": "Miércoles"
-        },
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA R5"
-            ],
-            "Horario": "09:00 - 11:00",
-            "Tipo": "T/P",
-            "dia": "Miércoles"
-        },
-        {
-            "comm": "3",
-            "Ubicacion": [
-                "AULA R3"
-            ],
-            "Horario": "14:00 - 18:00",
-            "Tipo": "T/P",
-            "dia": "Miércoles"
-        }
-    ],
-    "Análisis Matemático I": [
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA D4"
-            ],
-            "Horario": "09:00 - 11:00",
-            "Tipo": "Teórico",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "4",
-            "Ubicacion": [
-                "AULA A5",
-                "AULA R6",
-                "AULA R1"
-            ],
-            "Horario": "16:00 - 18:00",
-            "Tipo": "Práctico",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "5",
-            "Ubicacion": [
-                "AULA A5",
-                "AULA R6",
-                "AULA R1"
-            ],
-            "Horario": "16:00 - 18:00",
-            "Tipo": "Práctico",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "4",
-            "Ubicacion": [
-                "AULA R8"
-            ],
-            "Horario": "14:00 - 16:00",
-            "Tipo": "Teórico",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA A5",
-                "AULA A7",
-                "AULA A10"
-            ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "Práctico",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "AULA A5",
-                "AULA A7",
-                "AULA A10"
-            ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "Práctico",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "3",
-            "Ubicacion": [
-                "AULA A5",
-                "AULA A7",
-                "AULA A10"
-            ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "Práctico",
-            "dia": "Lunes"
-        }
-    ],
-    "Física General I": [
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "No especificada"
-            ],
-            "Horario": "14:00 - 18:00",
-            "Tipo": "T/P",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "No especificada"
-            ],
-            "Horario": "09:00 - 13:00",
-            "Tipo": "T/P",
-            "dia": "Lunes"
-        }
-    ],
-    "Introducción a la Física": [
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "AULA R5"
-            ],
-            "Horario": "14:00 - 16:00",
-            "Tipo": "Teórico",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "AULA R4",
-                "AULA A11"
-            ],
-            "Horario": "16:00 - 18:00",
-            "Tipo": "Práctico",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "3",
-            "Ubicacion": [
-                "AULA R4",
-                "AULA A11"
-            ],
-            "Horario": "16:00 - 18:00",
-            "Tipo": "Práctico",
-            "dia": "Lunes"
-        },
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA D1"
-            ],
-            "Horario": "09:00 - 13:00",
-            "Tipo": "T/P",
-            "dia": "Lunes"
-        }
-    ],
-    "Álgebra I": [
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA A2",
-                "AULA A7"
-            ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "Práctico",
-            "dia": "Martes"
-        },
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "AULA A2",
-                "AULA A7"
-            ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "Práctico",
-            "dia": "Martes"
-        },
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA: A2"
-            ],
-            "Horario": "09:00 - 11:00",
-            "Tipo": "Teórico",
-            "dia": "Martes"
-        },
-        {
-            "comm": "3",
-            "Ubicacion": [
-                "AULA D1"
-            ],
-            "Horario": "14:00 - 16:00",
-            "Tipo": "Teórico",
-            "dia": "Martes"
-        },
-        {
-            "comm": "3",
-            "Ubicacion": [
-                "AULA A4",
-                "AULA A5"
-            ],
-            "Horario": "16:00 - 18:00",
-            "Tipo": "Práctico",
-            "dia": "Martes"
-        },
-        {
-            "comm": "4",
-            "Ubicacion": [
-                "AULA A4",
-                "AULA A5"
-            ],
-            "Horario": "16:00 - 18:00",
             "Tipo": "Práctico",
             "dia": "Martes"
         }

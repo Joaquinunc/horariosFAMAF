@@ -126,17 +126,17 @@ def obtener_data():
                         materias_agrupadas[nombre_final].extend(nuevas_comisiones)
         else:
             print(f"Error en URL {url}: {result.status_code}")
-
+    materias_ordenadas = dict(sorted(materias_agrupadas.items()))
     # 2. MOVIDO AFUERA DEL BUCLE: Guardar el archivo una sola vez al final
     print("\nGuardando resultados finales...")
     try:
         with open("./src/backend/comisiones.json", 'w', encoding='utf-8') as f:
-            json.dump(materias_agrupadas, f, ensure_ascii=False, indent=4)
-            print(f"Archivo 'comisiones.json' generado con {len(materias_agrupadas)} materias.")
+            json.dump(materias_ordenadas, f, ensure_ascii=False, indent=4)
+            print(f"Archivo 'comisiones.json' generado con {len(materias_ordenadas)} materias.")
     except FileNotFoundError:
         # Por si la carpeta no existe
         with open("comisiones.json", 'w', encoding='utf-8') as f:
-            json.dump(materias_agrupadas, f, ensure_ascii=False, indent=4)
+            json.dump(materias_ordenadas, f, ensure_ascii=False, indent=4)
             print("Carpeta './src/backend/' no encontrada. Guardado en directorio actual como 'comisiones.json'.")
 
 if __name__ == "__main__":
