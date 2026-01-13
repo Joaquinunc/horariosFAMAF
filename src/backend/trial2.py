@@ -6,11 +6,11 @@ import json
 
 YEAR = 2025
 urls =[
-    "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics",
-    "https://calendar.google.com/calendar/ical/te92ikk33p99erffndio7n05r4@group.calendar.google.com/public/basic.ics",
-    "https://calendar.google.com/calendar/ical/fa5rbun3hjemqcdsdc7jhk2a74@group.calendar.google.com/public/basic.ics",
-    "https://calendar.google.com/calendar/ical/v0vq4m435094kh02d2vd8fomj4@group.calendar.google.com/public/basic.ics",
-    "https://calendar.google.com/calendar/ical/hrn217r8opp551cdb08i5mpljs@group.calendar.google.com/public/basic.ics"
+    "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics"
+    #"https://calendar.google.com/calendar/ical/te92ikk33p99erffndio7n05r4@group.calendar.google.com/public/basic.ics",
+    #"https://calendar.google.com/calendar/ical/fa5rbun3hjemqcdsdc7jhk2a74@group.calendar.google.com/public/basic.ics",
+    #"https://calendar.google.com/calendar/ical/v0vq4m435094kh02d2vd8fomj4@group.calendar.google.com/public/basic.ics",
+    #"https://calendar.google.com/calendar/ical/hrn217r8opp551cdb08i5mpljs@group.calendar.google.com/public/basic.ics"
 ]
 
 dict_m = {
@@ -74,8 +74,15 @@ def comparser(inputcom, starthour, endhour, dtype, inpday):
 
 def obtener_data():
     # 1. MOVIDO AFUERA: Diccionario global para acumular todas las URLs
-    materias_agrupadas = {}
-
+    #materias_agrupadas = {}
+    try:
+        with open("./src/backend/comisiones.json", 'r', encoding='utf-8') as f:
+            materias_agrupadas = json.load(f)
+            print(f"Archivo existente cargado con {len(materias_agrupadas)} materias.")
+    except (FileNotFoundError, json.JSONDecodeError):
+        # Si el archivo no existe o está vacío, empezamos con un diccionario nuevo
+        materias_agrupadas = {}
+        print("No se encontró archivo previo o está vacío. Iniciando nueva base de datos.")
     for url in urls:    
         print(f"Procesando: {url}")
         result = requests.get(url)

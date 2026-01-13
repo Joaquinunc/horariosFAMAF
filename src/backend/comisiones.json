@@ -45,6 +45,15 @@
             "dia": "Lunes"
         },
         {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA D4"
+            ],
+            "Horario": "09:00 - 11:00",
+            "Tipo": "Teórico",
+            "dia": "Lunes"
+        },
+        {
             "comm": "4",
             "Ubicacion": [
                 "AULA R8"
@@ -74,27 +83,9 @@
             "Horario": "16:00 - 18:00",
             "Tipo": "Práctico",
             "dia": "Lunes"
-        },
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA D4"
-            ],
-            "Horario": "09:00 - 11:00",
-            "Tipo": "Teórico",
-            "dia": "Lunes"
         }
     ],
     "Análisis Matemático II": [
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA R5"
-            ],
-            "Horario": "09:00 - 11:00",
-            "Tipo": "T/P",
-            "dia": "Miércoles"
-        },
         {
             "comm": "1",
             "Ubicacion": [
@@ -112,6 +103,15 @@
                 "AULA R7"
             ],
             "Horario": "11:00 - 13:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
+        },
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA R5"
+            ],
+            "Horario": "09:00 - 11:00",
             "Tipo": "T/P",
             "dia": "Miércoles"
         },
@@ -131,8 +131,8 @@
             "Ubicacion": [
                 "AULA R6"
             ],
-            "Horario": "16:00 - 18:00",
-            "Tipo": "Práctico",
+            "Horario": "14:00 - 16:00",
+            "Tipo": "Teórico",
             "dia": "Miércoles"
         },
         {
@@ -140,8 +140,8 @@
             "Ubicacion": [
                 "AULA R6"
             ],
-            "Horario": "16:00 - 18:00",
-            "Tipo": "Práctico",
+            "Horario": "14:00 - 16:00",
+            "Tipo": "Teórico",
             "dia": "Miércoles"
         },
         {
@@ -149,8 +149,8 @@
             "Ubicacion": [
                 "AULA R6"
             ],
-            "Horario": "14:00 - 16:00",
-            "Tipo": "Teórico",
+            "Horario": "16:00 - 18:00",
+            "Tipo": "Práctico",
             "dia": "Miércoles"
         },
         {
@@ -158,8 +158,8 @@
             "Ubicacion": [
                 "AULA R6"
             ],
-            "Horario": "14:00 - 16:00",
-            "Tipo": "Teórico",
+            "Horario": "16:00 - 18:00",
+            "Tipo": "Práctico",
             "dia": "Miércoles"
         }
     ],
@@ -179,19 +179,19 @@
         {
             "comm": "Unica",
             "Ubicacion": [
-                "AULA: 16",
-                "AULA: 22"
+                "AULA 16"
             ],
-            "Horario": "11:00-13:00",
+            "Horario": "09:00-11:00",
             "Tipo": "T/P",
             "dia": "Miércoles"
         },
         {
             "comm": "Unica",
             "Ubicacion": [
-                "AULA 16"
+                "AULA: 16",
+                "AULA: 22"
             ],
-            "Horario": "09:00-11:00",
+            "Horario": "11:00-13:00",
             "Tipo": "T/P",
             "dia": "Miércoles"
         }
@@ -221,13 +221,13 @@
     ],
     "Física Experimental I": [
         {
-            "comm": "1",
+            "comm": "3",
             "Ubicacion": [
                 "LEF 102"
             ],
-            "Horario": "09:00 - 13:00",
+            "Horario": "14:00 - 18:00",
             "Tipo": "T/P",
-            "dia": "Lunes"
+            "dia": "Martes"
         },
         {
             "comm": "4",
@@ -248,25 +248,16 @@
             "dia": "Lunes"
         },
         {
-            "comm": "3",
+            "comm": "1",
             "Ubicacion": [
                 "LEF 102"
             ],
-            "Horario": "14:00 - 18:00",
+            "Horario": "09:00 - 13:00",
             "Tipo": "T/P",
-            "dia": "Martes"
+            "dia": "Lunes"
         }
     ],
     "Física Experimental II": [
-        {
-            "comm": "1",
-            "Ubicacion": [
-                "LEF"
-            ],
-            "Horario": "14:00 - 18:00",
-            "Tipo": "T/P",
-            "dia": "Lunes"
-        },
         {
             "comm": "3",
             "Ubicacion": [
@@ -275,6 +266,15 @@
             "Horario": "14:00 - 18:00",
             "Tipo": "T/P",
             "dia": "Miércoles"
+        },
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "LEF"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Lunes"
         },
         {
             "comm": "2",
@@ -288,15 +288,6 @@
     ],
     "Física Experimental III": [
         {
-            "comm": "2",
-            "Ubicacion": [
-                "LEF 103"
-            ],
-            "Horario": "14:00 - 18:00",
-            "Tipo": "T/P",
-            "dia": "Miércoles"
-        },
-        {
             "comm": "3",
             "Ubicacion": [
                 "LEF 103"
@@ -304,6 +295,15 @@
             "Horario": "14:00 - 18:00",
             "Tipo": "T/P",
             "dia": "Viernes"
+        },
+        {
+            "comm": "2",
+            "Ubicacion": [
+                "LEF 103"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Miércoles"
         },
         {
             "comm": "1",
@@ -326,15 +326,6 @@
             "dia": "Lunes"
         },
         {
-            "comm": "2",
-            "Ubicacion": [
-                "LEF"
-            ],
-            "Horario": "14:00 - 18:00",
-            "Tipo": "T/P",
-            "dia": "Martes"
-        },
-        {
             "comm": "3",
             "Ubicacion": [
                 "LEF"
@@ -342,6 +333,15 @@
             "Horario": "14:00 - 18:00",
             "Tipo": "T/P",
             "dia": "Jueves"
+        },
+        {
+            "comm": "2",
+            "Ubicacion": [
+                "LEF"
+            ],
+            "Horario": "14:00 - 18:00",
+            "Tipo": "T/P",
+            "dia": "Martes"
         },
         {
             "comm": "Unica",
@@ -397,6 +397,15 @@
     ],
     "Física General III": [
         {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 31"
+            ],
+            "Horario": "09:00-11:00",
+            "Tipo": "Teórico",
+            "dia": "Miércoles"
+        },
+        {
             "comm": "1",
             "Ubicacion": [
                 "AULA 23",
@@ -415,18 +424,18 @@
             "Horario": "11:00 - 13:00",
             "Tipo": "T/P",
             "dia": "Miércoles"
-        },
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA 31"
-            ],
-            "Horario": "09:00-11:00",
-            "Tipo": "Teórico",
-            "dia": "Miércoles"
         }
     ],
     "Física General IV": [
+        {
+            "comm": "Unica",
+            "Ubicacion": [
+                "AULA 27"
+            ],
+            "Horario": "14:00-16:00",
+            "Tipo": "Teórico",
+            "dia": "Martes"
+        },
         {
             "comm": "1",
             "Ubicacion": [
@@ -443,15 +452,6 @@
             ],
             "Horario": "16:00 - 18:00",
             "Tipo": "Práctico",
-            "dia": "Martes"
-        },
-        {
-            "comm": "Unica",
-            "Ubicacion": [
-                "AULA 27"
-            ],
-            "Horario": "14:00-16:00",
-            "Tipo": "Teórico",
             "dia": "Martes"
         }
     ],
@@ -499,15 +499,6 @@
             "dia": "Lunes"
         },
         {
-            "comm": "1",
-            "Ubicacion": [
-                "AULA D1"
-            ],
-            "Horario": "09:00 - 13:00",
-            "Tipo": "T/P",
-            "dia": "Lunes"
-        },
-        {
             "comm": "2",
             "Ubicacion": [
                 "AULA R4",
@@ -525,6 +516,15 @@
             ],
             "Horario": "16:00 - 18:00",
             "Tipo": "Práctico",
+            "dia": "Lunes"
+        },
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA D1"
+            ],
+            "Horario": "09:00 - 13:00",
+            "Tipo": "T/P",
             "dia": "Lunes"
         }
     ],
@@ -671,15 +671,6 @@
         {
             "comm": "1",
             "Ubicacion": [
-                "AULA: A2"
-            ],
-            "Horario": "09:00 - 11:00",
-            "Tipo": "Teórico",
-            "dia": "Martes"
-        },
-        {
-            "comm": "1",
-            "Ubicacion": [
                 "AULA A2",
                 "AULA A7"
             ],
@@ -705,9 +696,38 @@
             "Horario": "14:00 - 16:00",
             "Tipo": "Teórico",
             "dia": "Martes"
+        },
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA: A2"
+            ],
+            "Horario": "09:00 - 11:00",
+            "Tipo": "Teórico",
+            "dia": "Martes"
         }
     ],
     "Álgebra II": [
+        {
+            "comm": "1",
+            "Ubicacion": [
+                "AULA: A6",
+                "AULA: A7"
+            ],
+            "Horario": "11:00 - 13:00",
+            "Tipo": "Práctico",
+            "dia": "Martes"
+        },
+        {
+            "comm": "2",
+            "Ubicacion": [
+                "AULA: A6",
+                "AULA: A7"
+            ],
+            "Horario": "11:00 - 13:00",
+            "Tipo": "Práctico",
+            "dia": "Martes"
+        },
         {
             "comm": "3",
             "Ubicacion": [
@@ -729,15 +749,6 @@
             "dia": "Martes"
         },
         {
-            "comm": "3",
-            "Ubicacion": [
-                "AULA D5"
-            ],
-            "Horario": "14:00 - 16:00",
-            "Tipo": "Teórico",
-            "dia": "Martes"
-        },
-        {
             "comm": "1",
             "Ubicacion": [
                 "AULA A2"
@@ -747,23 +758,12 @@
             "dia": "Martes"
         },
         {
-            "comm": "1",
+            "comm": "3",
             "Ubicacion": [
-                "AULA: A6",
-                "AULA: A7"
+                "AULA D5"
             ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "Práctico",
-            "dia": "Martes"
-        },
-        {
-            "comm": "2",
-            "Ubicacion": [
-                "AULA: A6",
-                "AULA: A7"
-            ],
-            "Horario": "11:00 - 13:00",
-            "Tipo": "Práctico",
+            "Horario": "14:00 - 16:00",
+            "Tipo": "Teórico",
             "dia": "Martes"
         }
     ]
