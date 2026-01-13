@@ -21,6 +21,27 @@ def obtener_carrera(enlace):
         else:
             print("ocurrio algun error")
 
+def obtener_cuatri(enlace):
+    separador_cuatris = {"Primer cuatrimestre":[], "Segundo cuatrimestre": []}
+    result = requests.get(enlace)
+    if result.status_code == 200:
+        gcal = Calendar.from_ical(result.content)
+
+        for component in gcal.walk():
+            if component.name == "VEVENT":
+                dtstart = component.get('dtstart').dt
+                if hasattr(dtstart, 'year') and dtstart.year == 2025:
+                    summary = component.get('summary').to_ical().decode('utf-8')
+                    #month = dtstart.strftime("%B")
+                    nummes = dtstart.month
+                    #print(f"evento: {summary}, mes: ({nummes}) {month}")
+                    if nummes < 8:
+                        separador_cuatris["Primer cuatrimestre"].append(summary)
+                    else:
+                        separador_cuatris["Segundo cuatrimestre"].append(summary)
+        print(separador_cuatris)
+
+
 reporte = []
 materias_raras = [
                   "Física del Estado Sólido - AULA 16", 
@@ -83,5 +104,5 @@ def mparser():
 
 if __name__ == "__main__":
     print("ejecutando programa...")
-    res = obtener_carrera(url)
-    print(f"carrera: {res}")
+    obtener_cuatri(url)
+    

@@ -91,8 +91,7 @@ def obtener_data():
             gcal = Calendar.from_ical(result.content) 
             carrera = gcal.get('x-wr-caldesc')
             if carrera not in info:
-                info[carrera] = {}
-            materias_agrupadas = info[carrera]   
+                info[carrera] = {"Primer Cuatrimestre":{}, "Segundo Cuatrimestre":{}}  
 
             for component in gcal.walk():
                 if component.name == "VEVENT":
@@ -100,7 +99,12 @@ def obtener_data():
                     
                     if hasattr(dtstart, 'year') and dtstart.year == YEAR:
                         summary = component.get('summary').to_ical().decode('utf-8')
-                        
+                        # Cuatrimestre
+                        # mes para separar en el cuatrimestre
+                        nummes = dtstart.month
+                        cuatri = "Primer Cuatrimestre" if nummes < 8 else "Segundo Cuatrimestre"
+                        materias_agrupadas = info[carrera][cuatri]
+
                         # Tipo
                         tipo_match = re.search(r"\(([TP])\)|Te[óo]rico|Pr[áa]ctico", summary, re.IGNORECASE)
                         tipo_str = "T/P"
@@ -110,7 +114,7 @@ def obtener_data():
 
                         # Nombre Normalizado
                         nombre_final = normalizar_nombre(summary)
-
+                        
                         # Horarios y Comisiones
                         hora_inicio = dtstart.strftime("%H:%M")
                         hora_fin = component.get('dtend').dt.strftime("%H:%M")
@@ -140,7 +144,10 @@ def obtener_data():
             print(f"Error en URL {url}: {result.status_code}")
     info_ordenada = {}
     for carr in info.keys():
-        info_ordenada[carr] = dict(sorted(info[carr].items()))
+        info_ordenada[carr] = {}
+        for cuat in ["Primer Cuatrimestre", "Segundo Cuatrimestre"]:
+            info_ordenada[carr][cuat] = dict(sorted(info[carr][cuat].items()))
+        dict(sorted(info[carr].items()))
     # 2. MOVIDO AFUERA DEL BUCLE: Guardar el archivo una sola vez al final
     print("\nGuardando resultados finales...")
     try:
