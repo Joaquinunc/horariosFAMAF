@@ -26,6 +26,18 @@ dict_t = {
     "P": "Practico"
 }
 
+def obtener_dia_semana(dia_ingles):
+    dias = {
+        "Monday": "Lunes",
+        "Tuesday": "Martes",
+        "Wednesday": "Miércoles",
+        "Thursday": "Jueves",
+        "Friday": "Viernes",
+        "Saturday": "Sábado",
+        "Sunday": "Domingo"
+    }
+    return dias.get(dia_ingles, dia_ingles)
+
 def normalizar_nombre(nombre_sucio):
     nombre = re.split(r"\(|Com|Aula|:", nombre_sucio, flags=re.IGNORECASE)[0]
     nombre = nombre.strip().rstrip("-").strip()
@@ -40,7 +52,7 @@ def parser_materia(input_text):
     encontrados = re.findall(patron, input_text, re.IGNORECASE)
     return [res.strip() for res in encontrados if res.strip()]
 
-def comparser(inputcom, starthour, endhour, dtype):
+def comparser(inputcom, starthour, endhour, dtype, inpday):
     datos = []
     for c in inputcom:
         numeros_com = re.findall(r"(?:comisión|com\.?)\s*(\d+)", c, re.IGNORECASE)
@@ -51,7 +63,8 @@ def comparser(inputcom, starthour, endhour, dtype):
                     "comm": n,     
                     "Ubicacion": aulas if aulas else ["No especificada"], 
                     "Horario": f"{starthour} - {endhour}",
-                    "Tipo": dtype
+                    "Tipo": dtype,
+                    "dia":inpday
                 })
     return datos
 
@@ -86,17 +99,20 @@ def obtener_data():
                         hora_inicio = dtstart.strftime("%H:%M")
                         hora_fin = component.get('dtend').dt.strftime("%H:%M")
                         
+                        dia_raw = dtstart.strftime("%A")
+                        dia = obtener_dia_semana(dia_raw)
                         datacomm = re.findall(r"(?:com\.?|comisión)\s*\d+[^/]*", summary, re.IGNORECASE)
                         
                         if datacomm:
-                            nuevas_comisiones = comparser(datacomm, hora_inicio, hora_fin, tipo_str)
+                            nuevas_comisiones = comparser(datacomm, hora_inicio, hora_fin, tipo_str, dia)
                         else:
                             aulas = parser_materia(summary)
                             nuevas_comisiones = [{
                                 "comm": "Unica",
                                 "Ubicacion": aulas if aulas else ["No especificada"],
                                 "Horario": f"{hora_inicio}-{hora_fin}",
-                                "Tipo": tipo_str
+                                "Tipo": tipo_str,
+                                "dia": dia
                             }]
 
                         if nombre_final not in materias_agrupadas:
