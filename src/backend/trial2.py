@@ -6,11 +6,11 @@ import json
 
 YEAR = 2025
 urls =[
-    "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics"
-    #"https://calendar.google.com/calendar/ical/te92ikk33p99erffndio7n05r4@group.calendar.google.com/public/basic.ics",
-    #"https://calendar.google.com/calendar/ical/fa5rbun3hjemqcdsdc7jhk2a74@group.calendar.google.com/public/basic.ics",
-    #"https://calendar.google.com/calendar/ical/v0vq4m435094kh02d2vd8fomj4@group.calendar.google.com/public/basic.ics",
-    #"https://calendar.google.com/calendar/ical/hrn217r8opp551cdb08i5mpljs@group.calendar.google.com/public/basic.ics"
+    "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics",
+    "https://calendar.google.com/calendar/ical/te92ikk33p99erffndio7n05r4@group.calendar.google.com/public/basic.ics",
+    "https://calendar.google.com/calendar/ical/fa5rbun3hjemqcdsdc7jhk2a74@group.calendar.google.com/public/basic.ics",
+    "https://calendar.google.com/calendar/ical/v0vq4m435094kh02d2vd8fomj4@group.calendar.google.com/public/basic.ics",
+    "https://calendar.google.com/calendar/ical/hrn217r8opp551cdb08i5mpljs@group.calendar.google.com/public/basic.ics"
 ]
 
 dict_m = {
@@ -40,12 +40,12 @@ def obtener_dia_semana(dia_ingles):
 
 def normalizar_nombre(nombre_sucio):
     nombre = re.split(r"\(|Com|Aula|:|LEF|Te[óo]rico|Pr[áa]ctico", nombre_sucio, flags=re.IGNORECASE)[0]
-    print(f"nombre_sucio: {nombre_sucio}")
-    print(f"nombre1: {nombre}")
+    #print(f"nombre_sucio: {nombre_sucio}")
+    #print(f"nombre1: {nombre}")
     nombre = nombre.strip().rstrip("-").strip()
-    print(f"nombre2: {nombre}")
+    #print(f"nombre2: {nombre}")
     nombre_lower = nombre.lower()
-    print(f"nombre3: {nombre}")
+    #print(f"nombre3: {nombre}")
     for clave, valor in dict_m.items():
         if clave.lower() in nombre_lower:
             nombre = re.sub(re.escape(clave), valor, nombre, flags=re.IGNORECASE)
@@ -74,21 +74,26 @@ def comparser(inputcom, starthour, endhour, dtype, inpday):
 
 def obtener_data():
     # 1. MOVIDO AFUERA: Diccionario global para acumular todas las URLs
-    #materias_agrupadas = {}
+
     try:
         with open("./src/backend/comisiones.json", 'r', encoding='utf-8') as f:
-            materias_agrupadas = json.load(f)
-            print(f"Archivo existente cargado con {len(materias_agrupadas)} materias.")
+            info = json.load(f)
+            print(f"Archivo existente cargado con {len(info)} materias.")
     except (FileNotFoundError, json.JSONDecodeError):
         # Si el archivo no existe o está vacío, empezamos con un diccionario nuevo
-        materias_agrupadas = {}
+        info = {}
         print("No se encontró archivo previo o está vacío. Iniciando nueva base de datos.")
     for url in urls:    
         print(f"Procesando: {url}")
         result = requests.get(url)
-
+        
         if result.status_code == 200:
-            gcal = Calendar.from_ical(result.content)    
+            gcal = Calendar.from_ical(result.content) 
+            carrera = gcal.get('x-wr-caldesc')
+            if carrera not in info:
+                info[carrera] = {}
+            materias_agrupadas = info[carrera]   
+
             for component in gcal.walk():
                 if component.name == "VEVENT":
                     dtstart = component.get('dtstart').dt
@@ -133,17 +138,19 @@ def obtener_data():
                         materias_agrupadas[nombre_final].extend(nuevas_comisiones)
         else:
             print(f"Error en URL {url}: {result.status_code}")
-    materias_ordenadas = dict(sorted(materias_agrupadas.items()))
+    info_ordenada = {}
+    for carr in info.keys():
+        info_ordenada[carr] = dict(sorted(info[carr].items()))
     # 2. MOVIDO AFUERA DEL BUCLE: Guardar el archivo una sola vez al final
     print("\nGuardando resultados finales...")
     try:
         with open("./src/backend/comisiones.json", 'w', encoding='utf-8') as f:
-            json.dump(materias_ordenadas, f, ensure_ascii=False, indent=4)
-            print(f"Archivo 'comisiones.json' generado con {len(materias_ordenadas)} materias.")
+            json.dump(info_ordenada, f, ensure_ascii=False, indent=4)
+            print(f"Archivo 'comisiones.json' generado con {len(info_ordenada)} materias.")
     except FileNotFoundError:
         # Por si la carpeta no existe
         with open("comisiones.json", 'w', encoding='utf-8') as f:
-            json.dump(materias_ordenadas, f, ensure_ascii=False, indent=4)
+            json.dump(info_ordenada, f, ensure_ascii=False, indent=4)
             print("Carpeta './src/backend/' no encontrada. Guardado en directorio actual como 'comisiones.json'.")
 
 if __name__ == "__main__":

@@ -1,10 +1,26 @@
 import re
 from icalendar import Calendar
 from datetime import datetime
+import requests
 
 #url quinto anio Fisica
-#url = "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics"
-# tercero
+url = "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics"
+
+def obtener_carrera(enlace):
+    #print("ejecutando funcion...")
+    result = requests.get(enlace)
+    #print(f"result: {result}")
+    if result.status_code == 200:
+        gcal = Calendar.from_ical(result.content)
+        #print(f"calendar:{gcal}")
+        description = gcal.get('x-wr-caldesc')
+        #print(f"description: {description}")   OK
+        if description is not None:
+            print("entrando al caso bueno")
+            return description
+        else:
+            print("ocurrio algun error")
+
 reporte = []
 materias_raras = [
                   "Física del Estado Sólido - AULA 16", 
@@ -32,34 +48,40 @@ def comparser(input):
             })
     return datos
 
-for m in materias_raras:
-    nombre_m = re.split(r"| - ", m)[0]
-    
-    # caso raro 1: Com.1 Aula x/ Com.2 Aula y
-    datacomm = re.findall(r"(?:com\.?|comisión)\s*\d+[^/]*", m, re.IGNORECASE)
-    print(f"{datacomm}")
-    comisiones = []
-    if datacomm:
-        comisiones = comparser(datacomm)
-    else:
-        aulas = re.findall(r"aula \d+ y \d+|aula \d+|sala [A-Z]+ y aula \d+", m, re.IGNORECASE)
-        comisiones = [{
-             "comm":"Unica",
-             "Ubicacion": aulas
-        }]
+def mparser():
+    for m in materias_raras:
+        nombre_m = re.split(r"| - ", m)[0]
+        
+        # caso raro 1: Com.1 Aula x/ Com.2 Aula y
+        datacomm = re.findall(r"(?:com\.?|comisión)\s*\d+[^/]*", m, re.IGNORECASE)
+        print(f"{datacomm}")
+        comisiones = []
+        if datacomm:
+            comisiones = comparser(datacomm)
+        else:
+            aulas = re.findall(r"aula \d+ y \d+|aula \d+|sala [A-Z]+ y aula \d+", m, re.IGNORECASE)
+            comisiones = [{
+                "comm":"Unica",
+                "Ubicacion": aulas
+            }]
 
-    reporte.append({
-        "nombre": nombre_m,
-        "Comisiones":
-              comisiones
-    })
+        reporte.append({
+            "nombre": nombre_m,
+            "Comisiones":
+                comisiones
+        })
 
 
-for r in reporte:
-        print(
-            f"{r['nombre']}\n"
-            f"\tComisiones:"
-        )
-        for c in r['Comisiones']:
-            print(f"\t\tComision: {c['comm']}, Ubicacion: {c['Ubicacion']}")
-            
+    for r in reporte:
+            print(
+                f"{r['nombre']}\n"
+                f"\tComisiones:"
+            )
+            for c in r['Comisiones']:
+                print(f"\t\tComision: {c['comm']}, Ubicacion: {c['Ubicacion']}")
+
+
+if __name__ == "__main__":
+    print("ejecutando programa...")
+    res = obtener_carrera(url)
+    print(f"carrera: {res}")
