@@ -22,8 +22,8 @@ dict_m = {
 }
 
 dict_t = {
-    "T": "Teorico",
-    "P": "Practico"
+    "T": "Teórico",
+    "P": "Práctico"
 }
 
 def obtener_dia_semana(dia_ingles):
@@ -39,18 +39,22 @@ def obtener_dia_semana(dia_ingles):
     return dias.get(dia_ingles, dia_ingles)
 
 def normalizar_nombre(nombre_sucio):
-    nombre = re.split(r"\(|Com|Aula|:", nombre_sucio, flags=re.IGNORECASE)[0]
+    nombre = re.split(r"\(|Com|Aula|:|LEF|Te[óo]rico|Pr[áa]ctico", nombre_sucio, flags=re.IGNORECASE)[0]
+    print(f"nombre_sucio: {nombre_sucio}")
+    print(f"nombre1: {nombre}")
     nombre = nombre.strip().rstrip("-").strip()
+    print(f"nombre2: {nombre}")
     nombre_lower = nombre.lower()
+    print(f"nombre3: {nombre}")
     for clave, valor in dict_m.items():
         if clave.lower() in nombre_lower:
             nombre = re.sub(re.escape(clave), valor, nombre, flags=re.IGNORECASE)
     return nombre.strip()
 
 def parser_materia(input_text):
-    patron = r"(?:AULA|LAB|LEF|R|PAB|LABORATORIO)\b[\s.:]*[A-Z]?\s*\d*|SALA [A-Z]+"
+    patron = r"(?:AULA|LAB|LEF|R|PAB|LABORATORIO)\b[\s.:]*[A-Z]?\s*\d*|SALA [A-Z]+|LEF\d?"
     encontrados = re.findall(patron, input_text, re.IGNORECASE)
-    return [res.strip() for res in encontrados if res.strip()]
+    return [res.strip().upper() for res in encontrados if res.strip()]
 
 def comparser(inputcom, starthour, endhour, dtype, inpday):
     datos = []
@@ -107,6 +111,8 @@ def obtener_data():
                             nuevas_comisiones = comparser(datacomm, hora_inicio, hora_fin, tipo_str, dia)
                         else:
                             aulas = parser_materia(summary)
+                            for a in aulas:
+                                a.upper()
                             nuevas_comisiones = [{
                                 "comm": "Unica",
                                 "Ubicacion": aulas if aulas else ["No especificada"],
