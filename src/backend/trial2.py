@@ -26,6 +26,16 @@ dict_t = {
     "P": "Práctico"
 }
 
+data_c = {"Licenciatura en Ciencias de la Computación": {}, 
+          "Licenciatura en Física": {}, 
+          "Licenciatura en Astronomía": {}, 
+          "Licenciatura en Matemática": {}, 
+          "Licenciatura en Matemática Aplicada": {}, 
+          "Licenciatura en Hidrometeorología": {}, 
+          "Profesorado en Matemática": {},
+          "Profesorado en Física": {}
+          }
+
 def obtener_dia_semana(dia_ingles):
     dias = {
         "Monday": "Lunes",
@@ -81,7 +91,7 @@ def obtener_data():
             print(f"Archivo existente cargado con {len(info)} materias.")
     except (FileNotFoundError, json.JSONDecodeError):
         # Si el archivo no existe o está vacío, empezamos con un diccionario nuevo
-        info = {}
+        info = {key : {} for key in data_c}
         print("No se encontró archivo previo o está vacío. Iniciando nueva base de datos.")
     for url in urls:    
         print(f"Procesando: {url}")
@@ -89,9 +99,20 @@ def obtener_data():
         
         if result.status_code == 200:
             gcal = Calendar.from_ical(result.content) 
-            carrera = gcal.get('x-wr-caldesc')
-            if carrera not in info:
-                info[carrera] = {"Primer Cuatrimestre":{}, "Segundo Cuatrimestre":{}}  
+            carrera_raw = str(gcal.get('x-wr-caldesc'))
+            carrera = None
+            anio = ""
+            print(carrera_raw)
+            for carr in data_c.keys():
+                
+                if carr in carrera_raw:
+                    carrera = carr
+                    carr_list = carrera_raw.split(" ")
+                    anio = ' '.join(carr_list[0:2])
+                    print(carrera, carr_list, anio)
+            
+            if anio not in info[carrera]:
+                info[carrera][anio]={"Primer Cuatrimestre":{}, "Segundo Cuatrimestre":{}}
 
             for component in gcal.walk():
                 if component.name == "VEVENT":
@@ -103,7 +124,7 @@ def obtener_data():
                         # mes para separar en el cuatrimestre
                         nummes = dtstart.month
                         cuatri = "Primer Cuatrimestre" if nummes < 8 else "Segundo Cuatrimestre"
-                        materias_agrupadas = info[carrera][cuatri]
+                        materias_agrupadas = info[carrera][anio][cuatri]
 
                         # Tipo
                         tipo_match = re.search(r"\(([TP])\)|Te[óo]rico|Pr[áa]ctico", summary, re.IGNORECASE)
@@ -142,18 +163,21 @@ def obtener_data():
                         materias_agrupadas[nombre_final].extend(nuevas_comisiones)
         else:
             print(f"Error en URL {url}: {result.status_code}")
+    
     info_ordenada = {}
     for carr in info.keys():
         info_ordenada[carr] = {}
-        for cuat in ["Primer Cuatrimestre", "Segundo Cuatrimestre"]:
-            info_ordenada[carr][cuat] = dict(sorted(info[carr][cuat].items()))
-        dict(sorted(info[carr].items()))
+        for y in info[carr].keys():
+            info_ordenada[carr][y] = {}
+            for cuat in ["Primer Cuatrimestre", "Segundo Cuatrimestre"]:
+                info_ordenada[carr][y][cuat] = dict(sorted(info[carr][y][cuat].items()))
+
     # 2. MOVIDO AFUERA DEL BUCLE: Guardar el archivo una sola vez al final
     print("\nGuardando resultados finales...")
     try:
         with open("./src/backend/comisiones.json", 'w', encoding='utf-8') as f:
             json.dump(info_ordenada, f, ensure_ascii=False, indent=4)
-            print(f"Archivo 'comisiones.json' generado con {len(info_ordenada)} materias.")
+            print(f"Archivo 'comisiones.json' generado con {len(info_ordenada)} carreras.")
     except FileNotFoundError:
         # Por si la carpeta no existe
         with open("comisiones.json", 'w', encoding='utf-8') as f:

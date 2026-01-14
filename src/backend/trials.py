@@ -6,6 +6,33 @@ import requests
 #url quinto anio Fisica
 url = "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics"
 
+data_c = {"Licenciatura en Ciencias de la Computación": {}, 
+          "Licenciatura en Física": {}, 
+          "Licenciatura en Astronomía": {}, 
+          "Licenciatura en Matemática": {}, 
+          "Licenciatura en Matemática Aplicada": {}, 
+          "Licenciatura en Hidrometeorología": {}, 
+          "Profesorado en Matemática": {},
+          "Profesorado en Física": {}
+          }
+
+def asignar_cuatris(carrs: dict):
+    cuatris_materias = obtener_cuatri(url)
+    carrera = str(obtener_carrera(url))
+    print(carrera)
+    for i in carrs:
+        if i in carrera:
+            carrera_list =carrera.split(" ")
+            anio = ' '.join(carrera_list[0:2])
+            print(carrera, anio)
+            
+            if anio not in carrs[i]:
+                carrs[i][anio] = {}
+            
+            carrs[i][anio].update(cuatris_materias)
+            break
+    print(f"cuatris separados: {carrs}")
+
 def obtener_carrera(enlace):
     #print("ejecutando funcion...")
     result = requests.get(enlace)
@@ -15,6 +42,9 @@ def obtener_carrera(enlace):
         #print(f"calendar:{gcal}")
         description = gcal.get('x-wr-caldesc')
         #print(f"description: {description}")   OK
+        #description_list = description.split(" ")
+        #descr_year = ' '.join(description_list[0:2])
+        #print(descr_year)
         if description is not None:
             print("entrando al caso bueno")
             return description
@@ -26,8 +56,9 @@ def obtener_cuatri(enlace):
     result = requests.get(enlace)
     if result.status_code == 200:
         gcal = Calendar.from_ical(result.content)
-
+    
         for component in gcal.walk():
+            carrera = component.get('')
             if component.name == "VEVENT":
                 dtstart = component.get('dtstart').dt
                 if hasattr(dtstart, 'year') and dtstart.year == 2025:
@@ -39,7 +70,7 @@ def obtener_cuatri(enlace):
                         separador_cuatris["Primer cuatrimestre"].append(summary)
                     else:
                         separador_cuatris["Segundo cuatrimestre"].append(summary)
-        print(separador_cuatris)
+        return separador_cuatris
 
 
 reporte = []
@@ -104,5 +135,6 @@ def mparser():
 
 if __name__ == "__main__":
     print("ejecutando programa...")
-    obtener_cuatri(url)
-    
+   # obtener_cuatri(url)
+    asignar_cuatris(data_c)
+    #obtener_carrera(url)
