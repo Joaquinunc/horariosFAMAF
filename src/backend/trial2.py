@@ -26,6 +26,14 @@ dict_t = {
     "P": "Práctico"
 }
 
+dict_n = {
+    "Primer":"1°",
+    "Segundo":"2°",
+    "Tercer":"3°",
+    "Cuarto": "4°",
+    "Quinto":"5°"
+}
+
 data_c = {"Licenciatura en Ciencias de la Computación": {}, 
           "Licenciatura en Física": {}, 
           "Licenciatura en Astronomía": {}, 
@@ -102,14 +110,15 @@ def obtener_data():
             carrera_raw = str(gcal.get('x-wr-caldesc'))
             carrera = None
             anio = ""
-            print(carrera_raw)
             for carr in data_c.keys():
                 
                 if carr in carrera_raw:
                     carrera = carr
-                    carr_list = carrera_raw.split(" ")
-                    anio = ' '.join(carr_list[0:2])
-                    print(carrera, carr_list, anio)
+                    carrera2 = re.search(r"(Primer|Segundo|Tercer|Cuarto|Quinto)\s+año", carrera_raw, re.IGNORECASE)
+                    print(carrera2)
+                    ord_anio = carrera2.group(1)
+                    num_anio = dict_n.get(ord_anio, ord_anio)
+                    anio = f"{num_anio} año"
             
             if anio not in info[carrera]:
                 info[carrera][anio]={"Primer Cuatrimestre":{}, "Segundo Cuatrimestre":{}}
@@ -165,13 +174,26 @@ def obtener_data():
             print(f"Error en URL {url}: {result.status_code}")
     
     info_ordenada = {}
-    for carr in info.keys():
+    for carr in sorted(info.keys()):
         info_ordenada[carr] = {}
-        for y in info[carr].keys():
+        for y in sorted(info[carr].keys()):
             info_ordenada[carr][y] = {}
             for cuat in ["Primer Cuatrimestre", "Segundo Cuatrimestre"]:
-                info_ordenada[carr][y][cuat] = dict(sorted(info[carr][y][cuat].items()))
-
+                # 1. Ordenamos las materias alfabéticamente por nombre
+                materias_del_cuatri = info[carr][y][cuat]
+                materias_nombres_ordenados = sorted(materias_del_cuatri.keys())
+                
+                info_ordenada[carr][y][cuat] = {}
+                
+                for nombre_m in materias_nombres_ordenados:
+                    comisiones = materias_del_cuatri[nombre_m]
+                    comisiones.sort(key=lambda x: (
+                        int(x['comm']) if x['comm'].isdigit() else 99, 
+                        x['dia'], 
+                        x['Horario']
+                    ))
+                    
+                    info_ordenada[carr][y][cuat][nombre_m] = comisiones
     # 2. MOVIDO AFUERA DEL BUCLE: Guardar el archivo una sola vez al final
     print("\nGuardando resultados finales...")
     try:
