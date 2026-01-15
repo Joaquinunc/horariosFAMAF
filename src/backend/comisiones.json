@@ -675,20 +675,6 @@
                                     "AULA 13",
                                     "R H"
                                 ],
-                                "Horario": "14:00-18:00",
-                                "Tipo": "Teórico"
-                            }
-                        ],
-                        "dia": "Jueves"
-                    },
-                    {
-                        "Numero_c": "Unica",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "AULA 13",
-                                    "R H"
-                                ],
                                 "Horario": "09:00-13:00",
                                 "Tipo": "Teórico"
                             },
@@ -702,6 +688,20 @@
                             }
                         ],
                         "dia": "Lunes"
+                    },
+                    {
+                        "Numero_c": "Unica",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA 13",
+                                    "R H"
+                                ],
+                                "Horario": "14:00-18:00",
+                                "Tipo": "Teórico"
+                            }
+                        ],
+                        "dia": "Jueves"
                     }
                 ]
             },
@@ -1071,7 +1071,7 @@
                                 "Tipo": "T/P"
                             }
                         ],
-                        "dia": "Lunes"
+                        "dia": "Miércoles"
                     },
                     {
                         "Numero_c": "1",
@@ -1088,23 +1088,6 @@
                                 "Tipo": "T/P"
                             }
                         ],
-                        "dia": "Miércoles"
-                    },
-                    {
-                        "Numero_c": "2",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "LAB 17",
-                                    "LAB 28",
-                                    "AULA R7",
-                                    "AULA R7",
-                                    "LAB 28"
-                                ],
-                                "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P"
-                            }
-                        ],
                         "dia": "Lunes"
                     },
                     {
@@ -1125,7 +1108,7 @@
                         "dia": "Miércoles"
                     },
                     {
-                        "Numero_c": "3",
+                        "Numero_c": "2",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1157,6 +1140,23 @@
                             }
                         ],
                         "dia": "Miércoles"
+                    },
+                    {
+                        "Numero_c": "3",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "LAB 17",
+                                    "LAB 28",
+                                    "AULA R7",
+                                    "AULA R7",
+                                    "LAB 28"
+                                ],
+                                "Horario": "09:00 - 13:00",
+                                "Tipo": "T/P"
+                            }
+                        ],
+                        "dia": "Lunes"
                     }
                 ],
                 "Introducción a los Algoritmos": [
@@ -1435,6 +1435,20 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
+                                    "AULA R6",
+                                    "AULA R2"
+                                ],
+                                "Horario": "16:00 - 18:00",
+                                "Tipo": "T/P"
+                            }
+                        ],
+                        "dia": "Martes"
+                    },
+                    {
+                        "Numero_c": "5",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
                                     "LAB 17",
                                     "LAB 28",
                                     "LAB 30"
@@ -1444,20 +1458,6 @@
                             }
                         ],
                         "dia": "Lunes"
-                    },
-                    {
-                        "Numero_c": "5",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "AULA R6",
-                                    "AULA R2"
-                                ],
-                                "Horario": "16:00 - 18:00",
-                                "Tipo": "T/P"
-                            }
-                        ],
-                        "dia": "Martes"
                     }
                 ],
                 "Análisis Matemático II": [
@@ -1834,11 +1834,11 @@
                                 "Ubicacion": [
                                     "LAB 17"
                                 ],
-                                "Horario": "09:00-11:00",
+                                "Horario": "09:00-13:00",
                                 "Tipo": "T/P"
                             }
                         ],
-                        "dia": "Martes"
+                        "dia": "Viernes"
                     },
                     {
                         "Numero_c": "Unica",
@@ -1847,11 +1847,11 @@
                                 "Ubicacion": [
                                     "LAB 17"
                                 ],
-                                "Horario": "09:00-13:00",
+                                "Horario": "09:00-11:00",
                                 "Tipo": "T/P"
                             }
                         ],
-                        "dia": "Viernes"
+                        "dia": "Martes"
                     }
                 ],
                 "Redes y Sistemas Distribuidos": [
@@ -4770,11 +4770,11 @@
                                 "Ubicacion": [
                                     "LAB 17"
                                 ],
-                                "Horario": "09:00-13:00",
+                                "Horario": "09:00-11:00",
                                 "Tipo": "T/P"
                             }
                         ],
-                        "dia": "Viernes"
+                        "dia": "Martes"
                     },
                     {
                         "Numero_c": "Unica",
@@ -4783,11 +4783,11 @@
                                 "Ubicacion": [
                                     "LAB 17"
                                 ],
-                                "Horario": "09:00-11:00",
+                                "Horario": "09:00-13:00",
                                 "Tipo": "T/P"
                             }
                         ],
-                        "dia": "Martes"
+                        "dia": "Viernes"
                     }
                 ],
                 "Procesamiento de imágenes satelitales meteorológicas con Python": [
@@ -5343,6 +5343,19 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
+                                    "AULA 31"
+                                ],
+                                "Horario": "09:00-11:00",
+                                "Tipo": "Teórico"
+                            }
+                        ],
+                        "dia": "Miércoles"
+                    },
+                    {
+                        "Numero_c": "Unica",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
                                     "LABORATORIO",
                                     "LEF 101"
                                 ],
@@ -5351,19 +5364,6 @@
                             }
                         ],
                         "dia": "Martes"
-                    },
-                    {
-                        "Numero_c": "Unica",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "AULA 31"
-                                ],
-                                "Horario": "09:00-11:00",
-                                "Tipo": "Teórico"
-                            }
-                        ],
-                        "dia": "Miércoles"
                     }
                 ],
                 "Pedagogía": [
@@ -5372,20 +5372,13 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA C"
+                                    "No especificada"
                                 ],
-                                "Horario": "16:00-18:00",
+                                "Horario": "14:00-16:00",
                                 "Tipo": "T/P"
-                            },
-                            {
-                                "Ubicacion": [
-                                    "AULA P"
-                                ],
-                                "Horario": "18:00-22:00",
-                                "Tipo": "Teórico"
                             }
                         ],
-                        "dia": "Martes"
+                        "dia": "Viernes"
                     },
                     {
                         "Numero_c": "Unica",
@@ -5418,13 +5411,20 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA C"
                                 ],
-                                "Horario": "14:00-16:00",
+                                "Horario": "16:00-18:00",
                                 "Tipo": "T/P"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA P"
+                                ],
+                                "Horario": "18:00-22:00",
+                                "Tipo": "Teórico"
                             }
                         ],
-                        "dia": "Viernes"
+                        "dia": "Martes"
                     }
                 ]
             }
@@ -6130,6 +6130,19 @@
                                 "Tipo": "T/P"
                             }
                         ],
+                        "dia": "Lunes"
+                    },
+                    {
+                        "Numero_c": "Unica",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA P"
+                                ],
+                                "Horario": "18:00-20:00",
+                                "Tipo": "T/P"
+                            }
+                        ],
                         "dia": "Jueves"
                     },
                     {
@@ -6144,19 +6157,6 @@
                             }
                         ],
                         "dia": "Viernes"
-                    },
-                    {
-                        "Numero_c": "Unica",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "AULA P"
-                                ],
-                                "Horario": "18:00-20:00",
-                                "Tipo": "T/P"
-                            }
-                        ],
-                        "dia": "Lunes"
                     }
                 ]
             }
