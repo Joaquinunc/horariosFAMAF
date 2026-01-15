@@ -10,8 +10,17 @@ urls =[
     "https://calendar.google.com/calendar/ical/te92ikk33p99erffndio7n05r4@group.calendar.google.com/public/basic.ics",
     "https://calendar.google.com/calendar/ical/fa5rbun3hjemqcdsdc7jhk2a74@group.calendar.google.com/public/basic.ics",
     "https://calendar.google.com/calendar/ical/v0vq4m435094kh02d2vd8fomj4@group.calendar.google.com/public/basic.ics",
-    "https://calendar.google.com/calendar/ical/hrn217r8opp551cdb08i5mpljs@group.calendar.google.com/public/basic.ics"
-]
+    "https://calendar.google.com/calendar/ical/hrn217r8opp551cdb08i5mpljs@group.calendar.google.com/public/basic.ics",
+    "https://calendar.google.com/calendar/ical/c_efaa9d6520092e37e395ed64ce45a8d4c8703086dcd2711d8504138451882f90%40group.calendar.google.com/public/basic.ics",
+    "https://calendar.google.com/calendar/ical/c_e84762490ff47889ffcadee6da5159a2dbfd33be72790742e30b78e7d4e10c53%40group.calendar.google.com/public/basic.ics"
+] # Fisica + Hidro
+
+
+
+dict_url = {
+    "https://calendar.google.com/calendar/ical/c_efaa9d6520092e37e395ed64ce45a8d4c8703086dcd2711d8504138451882f90%40group.calendar.google.com/public/basic.ics" : "Primer año de Licenciatura en Hidrometeorología",
+    "https://calendar.google.com/calendar/ical/c_e84762490ff47889ffcadee6da5159a2dbfd33be72790742e30b78e7d4e10c53%40group.calendar.google.com/public/basic.ics" : "Segundo año Licenciatura en Hidrometeorología"
+}
 
 dict_m = {
     "fís gral": "Física General",
@@ -70,7 +79,7 @@ def normalizar_nombre(nombre_sucio):
     return nombre.strip()
 
 def parser_materia(input_text):
-    patron = r"(?:AULA|LAB|LEF|R|PAB|LABORATORIO)\b[\s.:]*[A-Z]?\s*\d*|SALA [A-Z]+|LEF\d?"
+    patron = r"(?:AULA|LAB|LEF|R|PAB|LABORATORIO)\b[\s.:]*[A-Z]?\s*\d*|SALA [A-Z]+|LEF\d?|LABORATORIO [A-Z]+ [A-Z]+ [A-Z]+"
     encontrados = re.findall(patron, input_text, re.IGNORECASE)
     return [res.strip().upper() for res in encontrados if res.strip()]
 
@@ -82,21 +91,73 @@ def comparser(inputcom, starthour, endhour, dtype, inpday):
         if numeros_com:
             for n in numeros_com:
                 datos.append({
-                    "comm": n,     
-                    "Ubicacion": aulas if aulas else ["No especificada"], 
-                    "Horario": f"{starthour} - {endhour}",
-                    "Tipo": dtype,
+                    "Numero_c": n,     
+                    "Detalle":[{
+                        "Ubicacion": aulas if aulas else ["No especificada"], 
+                        "Horario": f"{starthour} - {endhour}",
+                        "Tipo": dtype
+                    }],                   
                     "dia":inpday
                 })
     return datos
 
+def comjoiner(dupcomms:dict, nombre_carrera:str, materias_agr: dict):
+    for dc in dupcomms:
+                            # Buscamos si ya existe esta comisión para este día en esta materia
+                            existente = next((item for item in materias_agr[nombre_carrera] 
+                                            if item["Numero_c"] == dc["Numero_c"] and item["dia"] == dc["dia"]), None)
+                            
+                            detalle_actual = dc.get("nuevo_detalle") or dc["Detalle"][0]
+
+                            if existente:
+                                # Si ya existe la comisión y el día, solo agregamos el detalle (si no es duplicado)
+                                if detalle_actual not in existente["Detalle"]:
+                                    existente["Detalle"].append(detalle_actual)
+                            else:
+                                # Si no existe, preparamos la estructura Detalle y la agregamos
+                                if "nuevo_detalle" in dc:
+                                    nueva_entrada = {
+                                        "Numero_c": dc["Numero_c"],
+                                        "Detalle": [dc["nuevo_detalle"]],
+                                        "dia": dc["dia"]
+                                    }
+                                else:
+                                    nueva_entrada = dc
+                                materias_agr[nombre_carrera].append(nueva_entrada)
+    return materias_agr
+
+def data_sorter(data:dict):
+
+    sorted_data = {}
+    for carr in sorted(data.keys()):
+        sorted_data[carr] = {}
+        for y in sorted(data[carr].keys()):
+            sorted_data[carr][y] = {}
+            for cuat in ["Primer Cuatrimestre", "Segundo Cuatrimestre"]:
+                # 1. Ordenamos las materias alfabéticamente por nombre
+                materias_del_cuatri = data[carr][y][cuat]
+                materias_nombres_ordenados = sorted(materias_del_cuatri.keys())
+                
+                sorted_data[carr][y][cuat] = {}
+                
+                for nombre_m in materias_nombres_ordenados:
+                    comisiones = materias_del_cuatri[nombre_m]
+                    comisiones.sort(key=lambda x: (
+                        int(x['Numero_c']) if x['Numero_c'].isdigit() else 99
+                    ))
+
+                    for c in comisiones:
+                        c['Detalle'].sort(key=lambda d: d['Horario'])
+                    sorted_data[carr][y][cuat][nombre_m] = comisiones
+
+    return sorted_data
 def obtener_data():
     # 1. MOVIDO AFUERA: Diccionario global para acumular todas las URLs
 
     try:
         with open("./src/backend/comisiones.json", 'r', encoding='utf-8') as f:
             info = json.load(f)
-            print(f"Archivo existente cargado con {len(info)} materias.")
+            print(f"Archivo existente cargado con {len(info)} carreras.")
     except (FileNotFoundError, json.JSONDecodeError):
         # Si el archivo no existe o está vacío, empezamos con un diccionario nuevo
         info = {key : {} for key in data_c}
@@ -107,19 +168,24 @@ def obtener_data():
         
         if result.status_code == 200:
             gcal = Calendar.from_ical(result.content) 
-            carrera_raw = str(gcal.get('x-wr-caldesc'))
+            carrera_rawr = str(gcal.get('x-wr-caldesc'))
+            carrera_raw = None
+            if carrera_rawr == "None":
+                carrera_raw = dict_url.get(url)
+            else:
+                carrera_raw = carrera_rawr
             carrera = None
             anio = ""
             for carr in data_c.keys():
-                
+                   
                 if carr in carrera_raw:
                     carrera = carr
                     carrera2 = re.search(r"(Primer|Segundo|Tercer|Cuarto|Quinto)\s+año", carrera_raw, re.IGNORECASE)
-                    print(carrera2)
+                   
                     ord_anio = carrera2.group(1)
                     num_anio = dict_n.get(ord_anio, ord_anio)
                     anio = f"{num_anio} año"
-            
+
             if anio not in info[carrera]:
                 info[carrera][anio]={"Primer Cuatrimestre":{}, "Segundo Cuatrimestre":{}}
 
@@ -160,40 +226,24 @@ def obtener_data():
                             for a in aulas:
                                 a.upper()
                             nuevas_comisiones = [{
-                                "comm": "Unica",
-                                "Ubicacion": aulas if aulas else ["No especificada"],
-                                "Horario": f"{hora_inicio}-{hora_fin}",
-                                "Tipo": tipo_str,
+                                "Numero_c": "Unica",
+                                "Detalle":[{
+                                    "Ubicacion": aulas if aulas else ["No especificada"],
+                                    "Horario": f"{hora_inicio}-{hora_fin}",
+                                    "Tipo": tipo_str}],
                                 "dia": dia
                             }]
 
                         if nombre_final not in materias_agrupadas:
                             materias_agrupadas[nombre_final] = []
-                        materias_agrupadas[nombre_final].extend(nuevas_comisiones)
+
+                        materias_agrupadas = comjoiner(
+                            nuevas_comisiones, nombre_final, materias_agrupadas)
         else:
             print(f"Error en URL {url}: {result.status_code}")
     
-    info_ordenada = {}
-    for carr in sorted(info.keys()):
-        info_ordenada[carr] = {}
-        for y in sorted(info[carr].keys()):
-            info_ordenada[carr][y] = {}
-            for cuat in ["Primer Cuatrimestre", "Segundo Cuatrimestre"]:
-                # 1. Ordenamos las materias alfabéticamente por nombre
-                materias_del_cuatri = info[carr][y][cuat]
-                materias_nombres_ordenados = sorted(materias_del_cuatri.keys())
-                
-                info_ordenada[carr][y][cuat] = {}
-                
-                for nombre_m in materias_nombres_ordenados:
-                    comisiones = materias_del_cuatri[nombre_m]
-                    comisiones.sort(key=lambda x: (
-                        int(x['comm']) if x['comm'].isdigit() else 99, 
-                        x['dia'], 
-                        x['Horario']
-                    ))
-                    
-                    info_ordenada[carr][y][cuat][nombre_m] = comisiones
+    info_ordenada = data_sorter(info)
+   
     # 2. MOVIDO AFUERA DEL BUCLE: Guardar el archivo una sola vez al final
     print("\nGuardando resultados finales...")
     try:

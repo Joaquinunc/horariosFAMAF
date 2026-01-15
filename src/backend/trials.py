@@ -4,8 +4,14 @@ from datetime import datetime
 import requests
 
 #url quinto anio Fisica
-url = "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics"
+#url = "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics"
+# url hidro
+url = "https://calendar.google.com/calendar/ical/c_e84762490ff47889ffcadee6da5159a2dbfd33be72790742e30b78e7d4e10c53%40group.calendar.google.com/public/basic.ics"
 
+dict_url = {
+    "https://calendar.google.com/calendar/ical/c_efaa9d6520092e37e395ed64ce45a8d4c8703086dcd2711d8504138451882f90%40group.calendar.google.com/public/basic.ics" : "Primer año de Licenciatura en Hidrometeorología",
+    "https://calendar.google.com/calendar/ical/c_e84762490ff47889ffcadee6da5159a2dbfd33be72790742e30b78e7d4e10c53%40group.calendar.google.com/public/basic.ics" : "Segundo año Licenciatura en Hidrometeorología"
+}
 data_c = {"Licenciatura en Ciencias de la Computación": {}, 
           "Licenciatura en Física": {}, 
           "Licenciatura en Astronomía": {}, 
@@ -49,7 +55,9 @@ def obtener_carrera(enlace):
             print("entrando al caso bueno")
             return description
         else:
-            print("ocurrio algun error")
+            print("no tiene caldesc, obteniendo diccionario del url")
+            descr2 = dict_url.get(enlace)
+            return descr2
 
 def obtener_cuatri(enlace):
     separador_cuatris = {"Primer cuatrimestre":[], "Segundo cuatrimestre": []}
