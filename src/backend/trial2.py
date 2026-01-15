@@ -21,23 +21,38 @@ def obtener_dia_semana(dia_ingles):
     return dias.get(dia_ingles, dia_ingles)
 
 def normalizar_nombre(nombre_sucio):
-    nombre = re.split(r"\(|Com|Aula|:|LEF|Te[óo]rico|Pr[áa]ctico| - ", nombre_sucio, flags=re.IGNORECASE)[0]
-    print(f"nombre_sucio: {nombre_sucio}")
-    #print(f"nombre1: {nombre}")
-    nombre = nombre.strip().rstrip("-").strip()
-    #print(f"nombre2: {nombre}")
+    # Usamos \b para "Com" para que no corte en "Compiladores"
+    # Agregamos \. para que detecte "Com."
+    patron_split = r"\(|\bCom\b|\bCom\.|\bAula\b|:|LEF|Te[óo]rico|Pr[áa]ctico| - "
+    
+    # Realizamos el split
+    partes = re.split(patron_split, nombre_sucio, flags=re.IGNORECASE)
+    
+    # Tomamos la primera parte
+    nombre = partes[0].strip()
+    
+    # Si por alguna razón el nombre quedó vacío (por ejemplo, empezó con una keyword)
+    # podrías tomar la cadena original hasta el primer paréntesis o similar
+    if not nombre and len(partes) > 1:
+        # Lógica de seguridad: si el split inicial falló, limpiar manualmente
+        nombre = nombre_sucio.split('(')[0].strip()
+
+    # Limpieza de guiones y espacios
+    nombre = nombre.rstrip("-").strip()
+    
+    # Normalización con diccionario dict_m
     nombre_lower = nombre.lower()
-    #print(f"nombre3: {nombre}")
     for clave, valor in dict_m.items():
         if clave.lower() in nombre_lower:
-            nombre = re.sub(re.escape(clave), valor, nombre, flags=re.IGNORECASE)
-            #print(f"nombre4:{nombre}")
+            # Usamos regex con word boundaries también aquí para evitar reemplazos parciales
+            nombre = re.sub(rf"\b{re.escape(clave)}\b", valor, nombre, flags=re.IGNORECASE)
+            
     return nombre.strip()
 
 def parser_materia(input_text):
-    patron = r"(?:AULA|LAB|LEF|R|PAB|LABORATORIO|VIRTUAL)\b[\s.:]*[A-Z]?\s*\d*|SALA [A-Z]+|LEF\d?|LABORATORIO [A-Z]+ [A-Z]+ [A-Z]+|OAC|AULA  [A-Z]+"
+    patron = r"(?:AULA|LAB|LEF|R|PAB|LABORATORIO|VIRTUAL)\b[\s.:]*[A-Z]?\s*\d*|SALA [A-Z]+|LEF\d?|LABORATORIO [A-Z]+ [A-Z]+ [A-Z]+|OAC|AULA  [A-Z]+|VAY"
     encontrados = re.findall(patron, input_text, re.IGNORECASE)
-    print(f"patrones encontrados: {encontrados}")
+    #print(f"patrones encontrados: {encontrados}")
     return [res.strip().upper() for res in encontrados if res.strip()]
 
 def comparser(inputcom, starthour, endhour, dtype, inpday, summary):
@@ -46,7 +61,7 @@ def comparser(inputcom, starthour, endhour, dtype, inpday, summary):
     for c in inputcom:
         numeros_com = re.findall(r"(?:comisión|com|c\.?)[\s.\-:]*(\d+)", c, re.IGNORECASE)
         
-        print(f"numeros_com{numeros_com} aulas: {aulas}")
+        #print(f"numeros_com{numeros_com} aulas: {aulas}")
         if numeros_com:
             for n in numeros_com:
                 datos.append({
@@ -169,7 +184,7 @@ def obtener_data():
 
                         # Nombre Normalizado
                         nombre_final = normalizar_nombre(summary)
-                        
+                        print(f"nombre final:{nombre_final}")
                         # Horarios y Comisiones
                         hora_inicio = dtstart.strftime("%H:%M")
                         hora_fin = component.get('dtend').dt.strftime("%H:%M")

@@ -582,11 +582,11 @@
                                 "Ubicacion": [
                                     "LAB. D"
                                 ],
-                                "Horario": "14:00 - 18:00",
+                                "Horario": "09:00 - 13:00",
                                 "Tipo": "T/P"
                             }
                         ],
-                        "dia": "Jueves"
+                        "dia": "Lunes"
                     },
                     {
                         "Numero_c": "Unica",
@@ -595,11 +595,11 @@
                                 "Ubicacion": [
                                     "LAB. D"
                                 ],
-                                "Horario": "09:00 - 13:00",
+                                "Horario": "14:00 - 18:00",
                                 "Tipo": "T/P"
                             }
                         ],
-                        "dia": "Lunes"
+                        "dia": "Jueves"
                     }
                 ],
                 "Métodos Matemáticos de la Física I": [
@@ -676,20 +676,6 @@
                                     "AULA 13",
                                     "R H"
                                 ],
-                                "Horario": "14:00 - 18:00",
-                                "Tipo": "Teórico"
-                            }
-                        ],
-                        "dia": "Jueves"
-                    },
-                    {
-                        "Numero_c": "Unica",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "AULA 13",
-                                    "R H"
-                                ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Teórico"
                             },
@@ -703,6 +689,20 @@
                             }
                         ],
                         "dia": "Lunes"
+                    },
+                    {
+                        "Numero_c": "Unica",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA 13",
+                                    "R H"
+                                ],
+                                "Horario": "14:00 - 18:00",
+                                "Tipo": "Teórico"
+                            }
+                        ],
+                        "dia": "Jueves"
                     }
                 ]
             },
@@ -780,21 +780,6 @@
         },
         "4° año": {
             "Primer Cuatrimestre": {
-                "": [
-                    {
-                        "Numero_c": "Unica",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "AULA 14"
-                                ],
-                                "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P"
-                            }
-                        ],
-                        "dia": "Miércoles"
-                    }
-                ],
                 "Astrofísica General": [
                     {
                         "Numero_c": "Unica",
@@ -832,6 +817,21 @@
                             }
                         ],
                         "dia": "Lunes"
+                    }
+                ],
+                "Complementos de Física Moderna": [
+                    {
+                        "Numero_c": "Unica",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA 14"
+                                ],
+                                "Horario": "09:00 - 13:00",
+                                "Tipo": "T/P"
+                            }
+                        ],
+                        "dia": "Miércoles"
                     }
                 ],
                 "Seminario": [
@@ -1385,21 +1385,6 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA A9",
-                                    "AULA A10",
-                                    "AULA A11"
-                                ],
-                                "Horario": "11:00 - 13:00",
-                                "Tipo": "T/P"
-                            }
-                        ],
-                        "dia": "Martes"
-                    },
-                    {
-                        "Numero_c": "3",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
                                     "LAB 17",
                                     "LAB 28",
                                     "LAB 30"
@@ -1409,6 +1394,21 @@
                             }
                         ],
                         "dia": "Lunes"
+                    },
+                    {
+                        "Numero_c": "3",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA A9",
+                                    "AULA A10",
+                                    "AULA A11"
+                                ],
+                                "Horario": "11:00 - 13:00",
+                                "Tipo": "T/P"
+                            }
+                        ],
+                        "dia": "Martes"
                     },
                     {
                         "Numero_c": "4",
@@ -1757,7 +1757,7 @@
                         "dia": "Martes"
                     }
                 ],
-                "Organización del": [
+                "Organización del Computador": [
                     {
                         "Numero_c": "9",
                         "Detalle": [
@@ -1775,7 +1775,7 @@
                 ]
             },
             "Segundo Cuatrimestre": {
-                "Introducción a la Lógica y la": [
+                "Introducción a la Lógica y la Computación": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -1892,7 +1892,7 @@
                 ]
             },
             "Segundo Cuatrimestre": {
-                "Arquitectura de": [
+                "Arquitectura de Computadoras": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -1955,7 +1955,7 @@
         },
         "4° año": {
             "Primer Cuatrimestre": {
-                "": [
+                "Computación y Sociedad": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -1970,7 +1970,7 @@
                         "dia": "Lunes"
                     }
                 ],
-                "Lenguajes Formales y": [
+                "Lenguajes Formales y Computabilidad": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -2043,7 +2043,7 @@
         },
         "5° año": {
             "Primer Cuatrimestre": {
-                "": [
+                "Computación y Sociedad": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -2080,7 +2080,7 @@
                         "dia": "Martes"
                     }
                 ],
-                "Introd a  la Didact de la": [
+                "Introd a  la Didact de la Comp y la IA": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -2095,7 +2095,7 @@
                         "dia": "Jueves"
                     }
                 ],
-                "Lenguajes y": [
+                "Lenguajes y Compiladores": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -2840,19 +2840,6 @@
                 ],
                 "Física Experimental III": [
                     {
-                        "Numero_c": "1",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "LEF 103"
-                                ],
-                                "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P"
-                            }
-                        ],
-                        "dia": "Lunes"
-                    },
-                    {
                         "Numero_c": "2",
                         "Detalle": [
                             {
@@ -2877,6 +2864,21 @@
                             }
                         ],
                         "dia": "Viernes"
+                    }
+                ],
+                "Física Experimental III Com1": [
+                    {
+                        "Numero_c": "1",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "LEF 103"
+                                ],
+                                "Horario": "09:00 - 13:00",
+                                "Tipo": "T/P"
+                            }
+                        ],
+                        "dia": "Lunes"
                     }
                 ],
                 "Física General IV": [
@@ -3131,7 +3133,7 @@
                         "dia": "Lunes"
                     }
                 ],
-                "Física": [
+                "Física Computacional": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -4163,7 +4165,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "VAY"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "T/P"
@@ -4552,7 +4554,7 @@
                         "dia": "Miércoles"
                     }
                 ],
-                "Funciones": [
+                "Funciones Complejas": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -5246,7 +5248,7 @@
         },
         "2° año": {
             "Primer Cuatrimestre": {
-                "": [
+                "Complementos de Análisis Matemático": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -5321,7 +5323,7 @@
                         "dia": "Miércoles"
                     }
                 ],
-                "Psic.del Aprend": [
+                "Psicología del Aprendizaje": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -5379,6 +5381,19 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
+                                    "AULA 31"
+                                ],
+                                "Horario": "09:00 - 11:00",
+                                "Tipo": "Teórico"
+                            }
+                        ],
+                        "dia": "Miércoles"
+                    },
+                    {
+                        "Numero_c": "Unica",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
                                     "LABORATORIO",
                                     "LEF 101"
                                 ],
@@ -5387,48 +5402,9 @@
                             }
                         ],
                         "dia": "Martes"
-                    },
-                    {
-                        "Numero_c": "Unica",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "AULA 31"
-                                ],
-                                "Horario": "09:00 - 11:00",
-                                "Tipo": "Teórico"
-                            }
-                        ],
-                        "dia": "Miércoles"
                     }
                 ],
                 "Pedagogía": [
-                    {
-                        "Numero_c": "Unica",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "AULA P"
-                                ],
-                                "Horario": "18:00 - 20:00",
-                                "Tipo": "T/P"
-                            }
-                        ],
-                        "dia": "Jueves"
-                    },
-                    {
-                        "Numero_c": "Unica",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "AULA P"
-                                ],
-                                "Horario": "18:00 - 20:00",
-                                "Tipo": "T/P"
-                            }
-                        ],
-                        "dia": "Lunes"
-                    },
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -5461,13 +5437,39 @@
                             }
                         ],
                         "dia": "Viernes"
+                    },
+                    {
+                        "Numero_c": "Unica",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA P"
+                                ],
+                                "Horario": "18:00 - 20:00",
+                                "Tipo": "T/P"
+                            }
+                        ],
+                        "dia": "Jueves"
+                    },
+                    {
+                        "Numero_c": "Unica",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA P"
+                                ],
+                                "Horario": "18:00 - 20:00",
+                                "Tipo": "T/P"
+                            }
+                        ],
+                        "dia": "Lunes"
                     }
                 ]
             }
         },
         "3° año": {
             "Primer Cuatrimestre": {
-                "": [
+                "Computación": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -5498,7 +5500,7 @@
                         "dia": "Lunes"
                     }
                 ],
-                "Física Experimental III": [
+                "Física Experimental III Com1": [
                     {
                         "Numero_c": "1",
                         "Detalle": [
@@ -5617,11 +5619,11 @@
                                     "AULA 25",
                                     "R H"
                                 ],
-                                "Horario": "09:00 - 13:00",
+                                "Horario": "16:00 - 18:00",
                                 "Tipo": "T/P"
                             }
                         ],
-                        "dia": "Lunes"
+                        "dia": "Martes"
                     },
                     {
                         "Numero_c": "Unica",
@@ -5631,11 +5633,11 @@
                                     "AULA 25",
                                     "R H"
                                 ],
-                                "Horario": "16:00 - 18:00",
+                                "Horario": "09:00 - 13:00",
                                 "Tipo": "T/P"
                             }
                         ],
-                        "dia": "Martes"
+                        "dia": "Lunes"
                     }
                 ],
                 "Metodología y Práctica de la Enseñanza": [
@@ -6012,21 +6014,6 @@
         },
         "2° año": {
             "Primer Cuatrimestre": {
-                "": [
-                    {
-                        "Numero_c": "Unica",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "AULA 22"
-                                ],
-                                "Horario": "14:00 - 16:00",
-                                "Tipo": "T/P"
-                            }
-                        ],
-                        "dia": "Martes"
-                    }
-                ],
                 "Análisis Matemático III": [
                     {
                         "Numero_c": "1",
@@ -6069,20 +6056,22 @@
                         "dia": "Miércoles"
                     }
                 ],
-                "Psic.del Aprend": [
+                "Complementos de Álgebra Lineal": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA P"
+                                    "AULA 22"
                                 ],
-                                "Horario": "16:00 - 18:00",
-                                "Tipo": "Práctico"
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "T/P"
                             }
                         ],
-                        "dia": "Lunes"
-                    },
+                        "dia": "Martes"
+                    }
+                ],
+                "Psicología del Aprendizaje": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -6102,6 +6091,19 @@
                             }
                         ],
                         "dia": "Martes"
+                    },
+                    {
+                        "Numero_c": "Unica",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA P"
+                                ],
+                                "Horario": "16:00 - 18:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dia": "Lunes"
                     }
                 ]
             },
@@ -6162,19 +6164,6 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA P"
-                                ],
-                                "Horario": "18:00 - 20:00",
-                                "Tipo": "T/P"
-                            }
-                        ],
-                        "dia": "Jueves"
-                    },
-                    {
-                        "Numero_c": "Unica",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
                                     "No especificada"
                                 ],
                                 "Horario": "14:00 - 16:00",
@@ -6195,13 +6184,26 @@
                             }
                         ],
                         "dia": "Lunes"
+                    },
+                    {
+                        "Numero_c": "Unica",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA P"
+                                ],
+                                "Horario": "18:00 - 20:00",
+                                "Tipo": "T/P"
+                            }
+                        ],
+                        "dia": "Jueves"
                     }
                 ]
             }
         },
         "3° año": {
             "Primer Cuatrimestre": {
-                "": [
+                "Computación": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [
@@ -6265,7 +6267,7 @@
                         "dia": "Lunes"
                     }
                 ],
-                "Elementos de Funciones": [
+                "Elementos de Funciones Complejas": [
                     {
                         "Numero_c": "Unica",
                         "Detalle": [

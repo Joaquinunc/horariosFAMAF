@@ -82,7 +82,8 @@ dict_m = {
     "An Numér ": "Análisis Numérico ",
     "An.Numér. ": "Análisis Numérico ",
     "Mat. Disc. I":"Matemática Discreta I",
-    "Mat.Discr.I":"Matemática Discreta I"
+    "Mat.Discr.I":"Matemática Discreta I",
+    "Psic.del Aprend":"Psicología del Aprendizaje"
 
 }
 # Identificador de clases teoricas y practicas
