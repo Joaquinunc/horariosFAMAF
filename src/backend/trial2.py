@@ -23,28 +23,30 @@ def obtener_dia_semana(dia_ingles):
 def normalizar_nombre(nombre_sucio):
     nombre = re.split(r"\(|Com|Aula|:|LEF|Te[óo]rico|Pr[áa]ctico| - ", nombre_sucio, flags=re.IGNORECASE)[0]
     print(f"nombre_sucio: {nombre_sucio}")
-    print(f"nombre1: {nombre}")
+    #print(f"nombre1: {nombre}")
     nombre = nombre.strip().rstrip("-").strip()
-    print(f"nombre2: {nombre}")
+    #print(f"nombre2: {nombre}")
     nombre_lower = nombre.lower()
-    print(f"nombre3: {nombre}")
+    #print(f"nombre3: {nombre}")
     for clave, valor in dict_m.items():
         if clave.lower() in nombre_lower:
             nombre = re.sub(re.escape(clave), valor, nombre, flags=re.IGNORECASE)
-            print(f"nombre4:{nombre}")
+            #print(f"nombre4:{nombre}")
     return nombre.strip()
 
 def parser_materia(input_text):
-    patron = r"(?:AULA|LAB|LEF|R|PAB|LABORATORIO)\b[\s.:]*[A-Z]?\s*\d*|SALA [A-Z]+|LEF\d?|LABORATORIO [A-Z]+ [A-Z]+ [A-Z]+"
+    patron = r"(?:AULA|LAB|LEF|R|PAB|LABORATORIO|VIRTUAL)\b[\s.:]*[A-Z]?\s*\d*|SALA [A-Z]+|LEF\d?|LABORATORIO [A-Z]+ [A-Z]+ [A-Z]+|OAC|AULA  [A-Z]+"
     encontrados = re.findall(patron, input_text, re.IGNORECASE)
+    print(f"patrones encontrados: {encontrados}")
     return [res.strip().upper() for res in encontrados if res.strip()]
 
-def comparser(inputcom, starthour, endhour, dtype, inpday):
+def comparser(inputcom, starthour, endhour, dtype, inpday, summary):
     datos = []
+    aulas = parser_materia(summary)
     for c in inputcom:
         numeros_com = re.findall(r"(?:comisión|com|c\.?)[\s.\-:]*(\d+)", c, re.IGNORECASE)
-        aulas = parser_materia(c)
-        print(f"numeros_com{numeros_com}")
+        
+        print(f"numeros_com{numeros_com} aulas: {aulas}")
         if numeros_com:
             for n in numeros_com:
                 datos.append({
@@ -177,8 +179,8 @@ def obtener_data():
                         datacomm = re.findall(r"(?:com\.?|comisión|c)\s*\d+[^/]*", summary, re.IGNORECASE)
                         
                         if datacomm:
-                            print(datacomm)
-                            nuevas_comisiones = comparser(datacomm, hora_inicio, hora_fin, tipo_str, dia)
+                            print(f"datacomm: {datacomm}")
+                            nuevas_comisiones = comparser(datacomm, hora_inicio, hora_fin, tipo_str, dia, summary)
                         else:
                             aulas = parser_materia(summary)
                             for a in aulas:
@@ -187,7 +189,7 @@ def obtener_data():
                                 "Numero_c": "Unica",
                                 "Detalle":[{
                                     "Ubicacion": aulas if aulas else ["No especificada"],
-                                    "Horario": f"{hora_inicio}-{hora_fin}",
+                                    "Horario": f"{hora_inicio} - {hora_fin}",
                                     "Tipo": tipo_str}],
                                 "dia": dia
                             }]
