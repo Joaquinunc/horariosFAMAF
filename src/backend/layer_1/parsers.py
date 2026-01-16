@@ -1,5 +1,5 @@
 import re
-from layer_0.constants import urls, dict_url, dict_m, dict_n, dict_t, data_c
+from layer_0.constants import dict_url, dict_m, dict_n, dict_t, data_c
 
 def obtener_dia_semana(dia_ingles):
     dias = {
@@ -61,6 +61,15 @@ def normalizar_nombre(nombre_sucio):
             nombre = re.sub(rf"\b{re.escape(clave)}\b", valor, nombre, flags=re.IGNORECASE)
             
     return nombre.strip()
+
+def obtener_typ(clase):
+    tipo_match = re.search(r"\(([TP])\)|Te[óo]rico|Pr[áa]ctico", clase, re.IGNORECASE)
+    tipo_clase = "T/P"
+    if tipo_match:
+        letra = (tipo_match.group(1) or tipo_match.group(0)[0]).upper()
+        tipo_clase = dict_t.get(letra, tipo_clase)
+    
+    return tipo_clase 
 
 def parser_materia(input_text):
     patron = r"(?:AULA|LAB|LEF|R|PAB|LABORATORIO|VIRTUAL)\b[\s.:]*[A-Z]?\s*\d*|SALA [A-Z]+|LEF\d?|LABORATORIO [A-Z]+ [A-Z]+ [A-Z]+|OAC|AULA  [A-Z]+|VAY"

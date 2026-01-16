@@ -1,38 +1,13 @@
 from icalendar import Calendar
-from datetime import datetime
-from layer_0.constants import urls, dict_url, dict_m, dict_n, dict_t, data_c
-from layer_1.parsers import obtener_dia_semana, obtener_carrera, normalizar_nombre, parser_materia, comparser, comjoiner
+from layer_0.constants import urls, data_c
+from layer_1.parsers import obtener_dia_semana, obtener_carrera, normalizar_nombre, parser_materia, comparser, comjoiner, obtener_typ
+from layer_1.sorter import data_sorter
 import re
 import requests
 import json
 
 YEAR = 2025
 
-def data_sorter(data:dict):
-
-    sorted_data = {}
-    for carr in sorted(data.keys()):
-        sorted_data[carr] = {}
-        for y in sorted(data[carr].keys()):
-            sorted_data[carr][y] = {}
-            for cuat in ["Primer Cuatrimestre", "Segundo Cuatrimestre"]:
-                # 1. Ordenamos las materias alfabéticamente por nombre
-                materias_del_cuatri = data[carr][y][cuat]
-                materias_nombres_ordenados = sorted(materias_del_cuatri.keys())
-                
-                sorted_data[carr][y][cuat] = {}
-                
-                for nombre_m in materias_nombres_ordenados:
-                    comisiones = materias_del_cuatri[nombre_m]
-                    comisiones.sort(key=lambda x: (
-                        int(x['Numero_c']) if x['Numero_c'].isdigit() else 99
-                    ))
-
-                    for c in comisiones:
-                        c['Detalle'].sort(key=lambda d: d['Horario'])
-                    sorted_data[carr][y][cuat][nombre_m] = comisiones
-
-    return sorted_data
 def obtener_data():
     # 1. MOVIDO AFUERA: Diccionario global para acumular todas las URLs
 
@@ -68,11 +43,7 @@ def obtener_data():
                         materias_agrupadas = info[carrera][anio][cuatri]
 
                         # Tipo
-                        tipo_match = re.search(r"\(([TP])\)|Te[óo]rico|Pr[áa]ctico", summary, re.IGNORECASE)
-                        tipo_str = "T/P"
-                        if tipo_match:
-                            letra = (tipo_match.group(1) or tipo_match.group(0)[0]).upper()
-                            tipo_str = dict_t.get(letra, tipo_str)
+                        tipo_str = obtener_typ(summary)
 
                         # Nombre Normalizado
                         nombre_final = normalizar_nombre(summary)
