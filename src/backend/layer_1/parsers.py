@@ -93,33 +93,33 @@ def comparser(inputcom, starthour, endhour, dtype, inpday, summary):
                         "Horario": f"{starthour} - {endhour}",
                         "Tipo": dtype
                     }],                   
-                    "dia":inpday
+                    "dias":[inpday]
                 })
     return datos
 
 def comjoiner(dupcomms:dict, nombre_carrera:str, materias_agr: dict):
     for dc in dupcomms:
         # Buscamos si ya existe esta comisión para este día en esta materia
-                            existente = next((item for item in materias_agr[nombre_carrera] 
-                                            if item["Numero_c"] == dc["Numero_c"] and item["dia"] == dc["dia"]), None)
+        existente = next((item for item in materias_agr[nombre_carrera] 
+                                            if item["Numero_c"] == dc["Numero_c"] and item["dias"] == dc["dias"]), None)
                             
-                            detalle_actual = dc.get("nuevo_detalle") or dc["Detalle"][0]
+        detalle_actual = dc.get("nuevo_detalle") or dc["Detalle"][0]
 
-                            if existente:
-                                # Si ya existe la comisión y el día, solo agregamos el detalle (si no es duplicado)
-                                if detalle_actual not in existente["Detalle"]:
-                                    existente["Detalle"].append(detalle_actual)
-                            else:
-                                # Si no existe, preparamos la estructura Detalle y la agregamos
-                                if "nuevo_detalle" in dc:
-                                    nueva_entrada = {
-                                        "Numero_c": dc["Numero_c"],
-                                        "Detalle": [dc["nuevo_detalle"]],
-                                        "dia": dc["dia"]
+        if existente:
+                            # Si ya existe la comisión y el día, solo agregamos el detalle (si no es duplicado)
+                if detalle_actual not in existente["Detalle"]:
+                        existente["Detalle"].append(detalle_actual)
+        else:
+                            # Si no existe, preparamos la estructura Detalle y la agregamos
+            if "nuevo_detalle" in dc:
+                nueva_entrada = {
+                    "Numero_c": dc["Numero_c"],
+                    "Detalle": [dc["nuevo_detalle"]],
+                    "dias": dc["dia"]
                                     }
-                                else:
-                                    nueva_entrada = dc
-                                materias_agr[nombre_carrera].append(nueva_entrada)
+            else:
+                nueva_entrada = dc
+            materias_agr[nombre_carrera].append(nueva_entrada)
     return materias_agr
 
 def data_sorter(data:dict):
