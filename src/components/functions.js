@@ -1,5 +1,3 @@
-import FAMAPS from '../images/FAMAPS.png';
-import info from '../data/data.json';
 
 function OptMap({items}){
   return items.map((option, index) => (
@@ -24,40 +22,8 @@ export function timeRet(comisionData) {
   if (!comisionData) return <p>No hay horarios disponibles para la comisión seleccionada</p>;
 
   // Verificar si es formato de ingresante (tiene 'clases') o no ingresante (tiene 'Detalle' y 'dias')
-  const esIngresante = comisionData.clases !== undefined;
 
-  if (esIngresante) {
-    // Formato para ingresantes
-    return (
-      <table className="tabla-horarios">
-        <thead>
-          <tr>
-            <th>Comisión</th>
-            <th>Día</th>
-            <th>Horario</th>
-            <th>Ubicación</th>
-          </tr>
-        </thead>
-        <tbody>
-          {comisionData.clases.map((clase, indexDia) => (
-            clase.ubicacion.map((loc, indexLoc) => (
-              <tr key={`${indexDia}-${indexLoc}`}>
-                <td style={{textAlign: 'center' }}>
-                  {(indexLoc === 0 && indexDia === 0) ? comisionData.comision : ""} 
-                </td>
-                <td style={{textAlign: 'center' }}>
-                  {indexLoc === 0 ? clase.dia : ""}
-                </td>
-                <td style={{textAlign: 'center' }}>{loc.hora_inicio} - {loc.hora_fin}</td>
-                <td style={{textAlign: 'center' }}>{loc.aula}</td>
-              </tr>
-            ))
-          ))}
-        </tbody>
-      </table>
-    );
-  } else {
-    // Formato para no ingresantes (comisiones.json)
+    // Formato de respuesta general (comisiones.json)
     return (
       <table className="tabla-horarios">
         <thead>
@@ -88,7 +54,6 @@ export function timeRet(comisionData) {
         </tbody>
       </table>
     );
-  }
 }
 
 export function location(){

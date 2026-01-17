@@ -1,5 +1,4 @@
 import info2 from '../data/comisiones.json';
-import infoi from '../data/data.json';
 import { useState } from "react";
 
 /*
@@ -14,12 +13,8 @@ export default function GralHook(){
     const [Cuatrimestre, setCuatrimestre] = useState('');
     const [comision, setComision] = useState('');
     const [materia, setMateria]= useState('');
-    const [ingreso, setIngreso] = useState(false);
     const [result, setResult] = useState(false);
 
-    // informacion del ingreso solamente
-    const comisiones = infoi.Ingreso.horarios_2026.map(h => h.comision);
-    const toarrcom = [...new Set(comisiones)];
     // Obtenemos la lista de carreras
     const Carreras = Object.keys(info2);
     console.log(Carreras);
@@ -41,8 +36,7 @@ export default function GralHook(){
     const Comisiones_nums = Comisiones.map(c => c.Numero_c);
     console.log(Comisiones_nums);
     
-    const ComisionSeleccionada = ingreso ? infoi.Ingreso.horarios_2026.find(h => h.comision === comision) 
-    :Comisiones.find(c => c.Numero_c === comision); 
+    const ComisionSeleccionada = Comisiones.find(c => c.Numero_c === comision); 
     console.log(ComisionSeleccionada);
 
    return { 
@@ -51,13 +45,11 @@ export default function GralHook(){
         Cuatrimestre, setCuatrimestre, 
         comision, setComision, 
         materia, setMateria, 
-        ingreso, setIngreso, 
         result, setResult, 
         Carreras, 
         Anios, 
         Cuatrimestres, 
         Materias, 
-        toarrcom, 
         Comisiones, 
         Comisiones_nums,
         ComisionSeleccionada

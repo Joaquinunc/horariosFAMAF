@@ -5,17 +5,13 @@ import GralHook from './components/constants';
 function App() {
 
   const {carrera, setCarrera, Anio, setAnio, Cuatrimestre, setCuatrimestre, comision, 
-            setComision, materia, setMateria, ingreso, setIngreso, result, setResult, 
-            Carreras, Anios, Cuatrimestres, Materias, toarrcom, Comisiones_nums, ComisionSeleccionada} = GralHook();
+            setComision, materia, setMateria, result, setResult, 
+            Carreras, Anios, Cuatrimestres, Materias, Comisiones_nums, ComisionSeleccionada} = GralHook();
   return (
     <div className='App'>
       <h1 className='Title'>Horarios FAMAF</h1>
-      <div className='subT'>
-        <h3>Soy ingresante</h3>
-        <input id='checkbox_id' type='checkbox' checked={ingreso} onChange={(e) => setIngreso(e.target.checked)}/>
-      </div>
       <form className='elements' onSubmit={(e) => {e.preventDefault(); setResult(true)}}>          
-          {!ingreso &&(
+          {(
             <article> 
               <FieldRet label="Seleccione una Carrera:" atribute={carrera} setter={setCarrera} elems={Carreras}/>
               <FieldRet label="Seleccione un anio de cursada:" atribute={Anio} setter={setAnio} elems={Anios}/>
@@ -23,7 +19,7 @@ function App() {
               <FieldRet label="Seleccione una materia:" atribute={materia} setter={setMateria} elems={Materias}/>
             </article>  
           )}         
-          <FieldRet label="Seleccione una comision:" atribute={comision} setter={setComision} elems={ingreso ? toarrcom : Comisiones_nums}/>
+          <FieldRet label="Seleccione una comision:" atribute={comision} setter={setComision} elems={Comisiones_nums}/>
           <button className='button' type='submit'>Consultar horarios de la materia</button>
           {result && comision && (
             <>

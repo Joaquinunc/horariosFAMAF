@@ -1,4 +1,298 @@
 {
+    "Ingreso": {
+      "Enero - Marzo":{
+            "Cuatrimestre 0":{
+                 "Cursillo de Nivelacion":[
+        {
+                        "Numero_c": "M1",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "09:00 - 11:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "11:00 - 13:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },   
+        {
+                        "Numero_c": "M3",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "09:00 - 11:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "11:00 - 13:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },  
+        {
+                        "Numero_c": "M4",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "09:00 - 11:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "11:00 - 13:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },  
+        {
+                        "Numero_c": "M5",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "09:00 - 11:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "11:00 - 13:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },  
+        {
+                        "Numero_c": "M6",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "09:00 - 11:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "11:00 - 13:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },  
+        {
+                        "Numero_c": "M8",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "09:00 - 11:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "11:00 - 13:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },  
+        {
+                        "Numero_c": "M9",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "09:00 - 11:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "11:00 - 13:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },  
+        {
+                        "Numero_c": "T1",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "16:00 - 18:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },  
+        {
+                        "Numero_c": "T2",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "16:00 - 18:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },
+        {
+                        "Numero_c": "T3",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "16:00 - 18:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },
+        {
+                        "Numero_c": "T4",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "16:00 - 18:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },
+        {
+                        "Numero_c": "T5",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "16:00 - 18:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        },
+        {
+                        "Numero_c": "T6",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico"
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA C500"
+                                ],
+                                "Horario": "16:00 - 18:00",
+                                "Tipo": "Práctico"
+                            }
+                        ],
+                        "dias": [
+                            "Lunes a Viernes"
+                        ]
+        }      
+      ]
+            }
+       }
+    },
     "Licenciatura en Astronomía": {
         "1° año": {
             "Primer Cuatrimestre": {
