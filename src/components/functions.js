@@ -19,44 +19,76 @@ export function FieldRet({label, atribute, setter, elems}){
   );
 }
 
-export function timeRet(micomm) {
-  // 1. Buscamos la comisión específica
-  const comisionData = info.Ingreso.horarios_2026.find(h => h.comision === micomm);
-
+export function timeRet(comisionData) {
   // Si no hay datos, evitamos errores
-  if (!comisionData) return <p>No hay horarios disponibles para la comisión {micomm}</p>;
+  if (!comisionData) return <p>No hay horarios disponibles para la comisión seleccionada</p>;
 
-  return (
-    <table className="tabla-horarios">
-      <thead>
-        <tr>
-          <th>Comision</th>
-          <th>Día</th>
-          <th>Horario</th>
-          <th>Ubicación</th>
-        </tr>
-      </thead>
-      <tbody>
-      
-        {comisionData.clases.map((clase, indexDia) => (
-          // Por cada día (Lunes, Miércoles...), mapeamos sus ubicaciones
-          clase.ubicacion.map((loc, indexLoc) => (
-            <tr key={`${indexDia}-${indexLoc}`}>
-              {/* Solo mostramos el nombre del día en la primera fila de ese día */}
-              <td style={{textAlign: 'center' }}>
-                {(indexLoc === 0 && indexDia === 0)? micomm: ""} 
-              </td>
-              <td style={{textAlign: 'center' }}>
-                {indexLoc === 0 ? clase.dia : ""}
-              </td>
-              <td style={{textAlign: 'center' }}>{loc.hora_inicio} - {loc.hora_fin}</td>
-              <td style={{textAlign: 'center' }}>{loc.aula}</td>
-            </tr>
-          ))
-        ))}
-      </tbody>
-    </table>
-  );
+  // Verificar si es formato de ingresante (tiene 'clases') o no ingresante (tiene 'Detalle' y 'dias')
+  const esIngresante = comisionData.clases !== undefined;
+
+  if (esIngresante) {
+    // Formato para ingresantes
+    return (
+      <table className="tabla-horarios">
+        <thead>
+          <tr>
+            <th>Comisión</th>
+            <th>Día</th>
+            <th>Horario</th>
+            <th>Ubicación</th>
+          </tr>
+        </thead>
+        <tbody>
+          {comisionData.clases.map((clase, indexDia) => (
+            clase.ubicacion.map((loc, indexLoc) => (
+              <tr key={`${indexDia}-${indexLoc}`}>
+                <td style={{textAlign: 'center' }}>
+                  {(indexLoc === 0 && indexDia === 0) ? comisionData.comision : ""} 
+                </td>
+                <td style={{textAlign: 'center' }}>
+                  {indexLoc === 0 ? clase.dia : ""}
+                </td>
+                <td style={{textAlign: 'center' }}>{loc.hora_inicio} - {loc.hora_fin}</td>
+                <td style={{textAlign: 'center' }}>{loc.aula}</td>
+              </tr>
+            ))
+          ))}
+        </tbody>
+      </table>
+    );
+  } else {
+    // Formato para no ingresantes (comisiones.json)
+    return (
+      <table className="tabla-horarios">
+        <thead>
+          <tr>
+            <th>Comisión</th>
+            <th>Día</th>
+            <th>Horario</th>
+            <th>Ubicación</th>
+            <th>Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          {comisionData.Detalle.map((detalle, indexDetalle) => 
+            comisionData.dias.map((dia, indexDia) => (
+              <tr key={`${indexDetalle}-${indexDia}`}>
+                <td style={{textAlign: 'center' }}>
+                  {(indexDetalle === 0 && indexDia === 0) ? comisionData.Numero_c : ""} 
+                </td>
+                <td style={{textAlign: 'center' }}>
+                  {indexDia === 0 ? dia : dia}
+                </td>
+                <td style={{textAlign: 'center' }}>{detalle.Horario}</td>
+                <td style={{textAlign: 'center' }}>{detalle.Ubicacion.join(", ")}</td>
+                <td style={{textAlign: 'center' }}>{detalle.Tipo}</td>
+              </tr>
+            ))
+          )}
+        </tbody>
+      </table>
+    );
+  }
 }
 
 export function location(){
