@@ -1,6 +1,11 @@
-import carreras from '../data/carreras.json';
-import info from '../data/data.json';
+import info2 from '../data/comisiones.json';
 import { useState } from "react";
+
+/*
+GralHook()
+Funcion que se encarga de encapsular todas las constantes que luego se utilizara en App.js
+asi como de obtener la informacion de la base de datos.
+*/
 
 export default function GralHook(){
     const [carrera, setCarrera] = useState('');
@@ -8,30 +13,45 @@ export default function GralHook(){
     const [Cuatrimestre, setCuatrimestre] = useState('');
     const [comision, setComision] = useState('');
     const [materia, setMateria]= useState('');
-    const [ingreso, setIngreso] = useState(false);
     const [result, setResult] = useState(false);
+
+    // Obtenemos la lista de carreras
+    const Carreras = Object.keys(info2);
+    console.log(Carreras);
+    // Obtenemos la lista de anios de cursada de una carrera
+    const Anios = carrera ? Object.keys(info2[carrera]):[];
+    console.log(Anios);
+    // Lista de cuatrimestres de un anio de cursada
+    const Cuatrimestres = carrera && Anio ?Object.keys(info2[carrera][Anio]) : [];
+    // Lista de materias de un cuatrimestre
+    console.log(Cuatrimestres);
+    const Materias = carrera && Anio && Cuatrimestre ? Object.keys(info2[carrera][Anio][Cuatrimestre]):[];
+    console.log(Materias);
+    // Lista de comisiones para una materia
+    const Comisiones = carrera && Anio && Cuatrimestre && materia
+    ? info2[carrera][Anio][Cuatrimestre][materia]
+    : [];
+    console.log(Comisiones);
+    // Numeros de comisiones
+    const Comisiones_nums = Comisiones.map(c => c.Numero_c);
+    console.log(Comisiones_nums);
     
-    const comisiones = info.Ingreso.horarios_2026.map(h => h.comision);
-    const toarrcom = [...new Set(comisiones)];
-    
-    const Carreras = carreras.Info.map(c => c.Nombre_carrera);
-    const datosCarreraSeleccionada = carreras.Info.find(c => c.Nombre_carrera === carrera);
-    console.log(carrera);
+    const ComisionSeleccionada = Comisiones.find(c => c.Numero_c === comision); 
+    console.log(ComisionSeleccionada);
 
-    
-    const Anios =datosCarreraSeleccionada ? datosCarreraSeleccionada.Plan_estudios.map(p => p.Año) : [];
-    console.log(Anios)
-
-    const Anioselec = datosCarreraSeleccionada?.Plan_estudios.find(a => a.Año === Anio) 
-    console.log(Anioselec);
-    
-    const Cuatrimestres = Anioselec ? Anioselec.Cuatrimestres.map(c => c.Orden) : []; 
-
-    const cuatriselec = Anioselec?.Cuatrimestres.find(c => c.Orden === Cuatrimestre);
-    console.log(cuatriselec);
-
-    const Materias = cuatriselec? cuatriselec.Materias : [];
-
-    return { carrera, setCarrera, Anio, setAnio, Cuatrimestre, setCuatrimestre, comision, 
-            setComision, materia, setMateria, ingreso, setIngreso, result, setResult, Carreras, Anios, Cuatrimestres, Materias, toarrcom}
+   return { 
+        carrera, setCarrera, 
+        Anio, setAnio, 
+        Cuatrimestre, setCuatrimestre, 
+        comision, setComision, 
+        materia, setMateria, 
+        result, setResult, 
+        Carreras, 
+        Anios, 
+        Cuatrimestres, 
+        Materias, 
+        Comisiones, 
+        Comisiones_nums,
+        ComisionSeleccionada
+    }
 }
