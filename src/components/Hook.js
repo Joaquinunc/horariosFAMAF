@@ -71,13 +71,7 @@ export default function GralHook(){
     
     const ComisionSeleccionada = Comisiones && Array.isArray(Comisiones) ? Comisiones.find(c => c.Numero_c === comision) : null; 
     console.log(ComisionSeleccionada);
-    console.log({
-  carrera,
-  Anio,
-  Cuatrimestre,
-  existeCarrera: info2[carrera],
-  existeAnio: info2[carrera]?.[Anio]
-});
+    
    return { 
         carrera, setCarrera, 
         Anio, setAnio, 

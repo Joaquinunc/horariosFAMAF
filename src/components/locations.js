@@ -11,12 +11,19 @@ function location_setter(Comm){
   console.log(aulas);
   const aulaRegex = /(AULA)\s*([A-Z])?\d+|(LAB)\s*\d+|(LEF)\s*\d*|(OAC)/i;
 
-  const bloques = aulas
-    .map(a => a.match(aulaRegex))
-    .filter(Boolean)
-    .map(m => m[2]);
-  console.log(bloques);
-  const blksortes = [...new Set(bloques)].sort();
+  const bloquesmatch = aulas.map(a => a.match(aulaRegex));
+  const blkfilter = bloquesmatch.filter(Boolean);
+  const blksmap = blkfilter.map(m => {
+        if (m[2]) return m[2];       // AULA A, B, C, D, R...
+        if (m[3]) return 'LAB';
+        if (m[4]) return 'LEF';
+        if (m[5]) return 'OAC';
+        return null;
+    }   
+  );
+
+  console.log("bloquesmatch",bloquesmatch,"blkfilter",blkfilter, "blksmap",blksmap);
+  const blksortes = [...new Set(blksmap)].sort();
   console.log(blksortes) 
   return blksortes
 }
@@ -63,7 +70,21 @@ function location_finder(Comm) {
         texto: 'Tiene en aulas D y R',
         mapa: 'DR'
       };
-    
+    case 'AR':
+      return {
+        texto: 'Tiene en aulas A y R',
+        mapa: 'AR'
+      };
+    case 'OAC':
+      return {
+            texto: 'Tiene en Observatorio astronomico de cordoba',
+            mapa: 'OAC' 
+        };
+    case 'LABR':
+      return {
+        texto: 'Tiene en LABs y R',
+        mapa: 'LABR'
+      };
     default:
       return {
         texto: `Tiene en aulas ${bloques.join(' - ')}`,
