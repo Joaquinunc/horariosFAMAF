@@ -68,6 +68,40 @@
   background-color: rgb(10, 153, 153);
   border-color: rgb(10, 153, 153);
 }
+
+.result{
+  color:rgb(7, 66, 66);
+  background-color: rgba(205, 241, 241, 0.986);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.tabla-horarios{
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(10, 153, 153);
+  border-radius: 3px;
+}
+.tabla-horarios th{
+  padding: 8px 12px;
+  border: 1px solid rgb(10, 153, 153);
+  background: rgb(10, 153, 153);
+  color: white;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: 1px solid  rgba(205, 241, 241, 0.986);
+}
+
+.tabla-horarios th:last-child {
+  border-right: none;
+}
+
+.tabla-horarios td {
+  padding: 8px 12px;
+  border: 1px solid rgb(10, 153, 153);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

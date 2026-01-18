@@ -1,10 +1,20 @@
-
+/*
+OptMap: funcion que se encarga de obtener las opciones disponibles de informacion
+in: items (opciones)
+out: opciones a elegir en formato visible
+*/
 function OptMap({items}){
   return items.map((option, index) => (
     <option key={index} value={option}>{option}</option>
   ));
 }
-
+/*
+FieldRet: funcion que se encarga de devolver los campos de seleccion para que el usuario elija 
+la informacion que desea averiguar
+in: label (descripcion); atribute (elemento de informacion); setter (gestion de opciones) visibles;
+elems (opciones disponibles para elegir)
+out: Pieza de html en la que el usuario puede seleccionar entre sus opciones la que busca conocer 
+*/
 export function FieldRet({label, atribute, setter, elems}){
   return(
      <div className='campos'>
@@ -16,7 +26,11 @@ export function FieldRet({label, atribute, setter, elems}){
       </div>
   );
 }
-
+/*
+timeRet: Funcion que se encarga de devolver la informacion solicitada por el usuario, en formato de tablas
+in: Objeto Comision seleccionado
+out: tabla con horarios, dias y ubicacion textual en formato de tablas
+*/
 export function timeRet(comisionData) {
   // Si no hay datos, evitamos errores
   if (!comisionData) return <p>No hay horarios disponibles para la comisión seleccionada</p>;
@@ -25,33 +39,32 @@ export function timeRet(comisionData) {
 
     // Formato de respuesta general (comisiones.json)
     return (
+     <div className="result">
+      <h3>Comisión: {comisionData.Numero_c}</h3>
+      
       <table className="tabla-horarios">
         <thead>
           <tr>
-            <th>Comisión</th>
-            <th>Día</th>
+            <th>Días</th>
             <th>Horario</th>
             <th>Ubicación</th>
             <th>Tipo</th>
           </tr>
         </thead>
         <tbody>
+          
           {comisionData.Detalle.map((detalle, indexDetalle) => 
-            comisionData.dias.map((dia, indexDia) => (
-              <tr key={`${indexDetalle}-${indexDia}`}>
+              <tr key={{indexDetalle}}>
                 <td style={{textAlign: 'center' }}>
-                  {(indexDetalle === 0 && indexDia === 0) ? comisionData.Numero_c : ""} 
-                </td>
-                <td style={{textAlign: 'center' }}>
-                  {indexDia === 0 ? dia : dia}
+                  {detalle.dias.join(', ')}
                 </td>
                 <td style={{textAlign: 'center' }}>{detalle.Horario}</td>
                 <td style={{textAlign: 'center' }}>{detalle.Ubicacion.join(", ")}</td>
                 <td style={{textAlign: 'center' }}>{detalle.Tipo}</td>
               </tr>
-            ))
           )}
         </tbody>
       </table>
+      </div> 
     );
 }
