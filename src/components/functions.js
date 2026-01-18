@@ -1,10 +1,20 @@
-
+/*
+OptMap: funcion que se encarga de obtener las opciones disponibles de informacion
+in: items (opciones)
+out: opciones a elegir en formato visible
+*/
 function OptMap({items}){
   return items.map((option, index) => (
     <option key={index} value={option}>{option}</option>
   ));
 }
-
+/*
+FieldRet: funcion que se encarga de devolver los campos de seleccion para que el usuario elija 
+la informacion que desea averiguar
+in: label (descripcion); atribute (elemento de informacion); setter (gestion de opciones) visibles;
+elems (opciones disponibles para elegir)
+out: Pieza de html en la que el usuario puede seleccionar entre sus opciones la que busca conocer 
+*/
 export function FieldRet({label, atribute, setter, elems}){
   return(
      <div className='campos'>
@@ -16,7 +26,11 @@ export function FieldRet({label, atribute, setter, elems}){
       </div>
   );
 }
-
+/*
+timeRet: Funcion que se encarga de devolver la informacion solicitada por el usuario, en formato de tablas
+in: Objeto Comision seleccionado
+out: tabla con horarios, dias y ubicacion textual en formato de tablas
+*/
 export function timeRet(comisionData) {
   // Si no hay datos, evitamos errores
   if (!comisionData) return <p>No hay horarios disponibles para la comisión seleccionada</p>;

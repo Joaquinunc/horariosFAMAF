@@ -81,19 +81,26 @@
   width: 100%;
   border-collapse: collapse;
   border: 1px solid rgb(10, 153, 153);
+  border-radius: 3px;
 }
 .tabla-horarios th{
   padding: 8px 12px;
   border: 1px solid rgb(10, 153, 153);
   background: rgb(10, 153, 153);
   color: white;
-  border-color:aliceblue;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: 1px solid  rgba(205, 241, 241, 0.986);
+}
+
+.tabla-horarios th:last-child {
+  border-right: none;
 }
 
 .tabla-horarios td {
   padding: 8px 12px;
   border: 1px solid rgb(10, 153, 153);
-
 }
 .App-logo {
   height: 40vmin;

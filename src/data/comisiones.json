@@ -547,7 +547,7 @@
                 ],
                 "Seminarios Astronómicos": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -952,7 +952,7 @@
                 ],
                 "Astronomía de Posición y Métodos Numéricos": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1103,7 +1103,7 @@
                 ],
                 "Introducción a la Astrofísica": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1134,7 +1134,7 @@
                 ],
                 "Lab. de Termodinámica y Electromagnetismo": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1163,7 +1163,7 @@
                 ],
                 "Métodos Matemáticos de la Física I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1185,7 +1185,7 @@
             "Primer Cuatrimestre": {
                 "Electromagnetismo I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1215,7 +1215,7 @@
                 ],
                 "Métodos Matemáticos de la Física II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1233,7 +1233,7 @@
                 ],
                 "Seminario": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1250,7 +1250,7 @@
                 ],
                 "Óptica Astronómica": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1289,7 +1289,7 @@
             "Segundo Cuatrimestre": {
                 "Astronomía Esférica": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1319,7 +1319,7 @@
                 ],
                 "Electromagnetismo II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1349,7 +1349,7 @@
                 ],
                 "Mecánica": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1371,7 +1371,7 @@
             "Primer Cuatrimestre": {
                 "Astrofísica General": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1390,7 +1390,7 @@
                 ],
                 "Astrometría General": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1420,7 +1420,7 @@
                 ],
                 "Complementos de Física Moderna": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1438,7 +1438,7 @@
                 ],
                 "Seminario": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1457,7 +1457,7 @@
             "Segundo Cuatrimestre": {
                 "Astrometría": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1475,7 +1475,7 @@
                 ],
                 "Mecánica Celeste I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1505,7 +1505,7 @@
                 ],
                 "Seminario II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -1526,7 +1526,7 @@
             "Primer Cuatrimestre": {
                 "Seminarios": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2494,7 +2494,7 @@
                 ],
                 "Organización del Computador": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2514,7 +2514,7 @@
             "Segundo Cuatrimestre": {
                 "Introducción a la Lógica y la Computación": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2532,7 +2532,7 @@
                 ],
                 "Probabilidad y Estadística": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2550,7 +2550,7 @@
                 ],
                 "Sistemas Operativos": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2584,7 +2584,7 @@
             "Primer Cuatrimestre": {
                 "Matemática Discreta II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2602,7 +2602,7 @@
                 ],
                 "Paradigmas de Programación": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2630,7 +2630,7 @@
                 ],
                 "Redes y Sistemas Distribuidos": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2650,7 +2650,7 @@
             "Segundo Cuatrimestre": {
                 "Arquitectura de Computadoras": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2668,7 +2668,7 @@
                 ],
                 "Bases de Datos": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2696,7 +2696,7 @@
                 ],
                 "Ingeniería del Software I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2719,7 +2719,7 @@
             "Primer Cuatrimestre": {
                 "Lenguajes Formales y Computabilidad": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2737,7 +2737,7 @@
                 ],
                 "Modelos y Simulación": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2768,7 +2768,7 @@
             "Segundo Cuatrimestre": {
                 "Física": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2786,7 +2786,7 @@
                 ],
                 "Lógica": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2808,7 +2808,7 @@
             "Primer Cuatrimestre": {
                 "Computación y Sociedad": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2825,7 +2825,7 @@
                 ],
                 "Ingeniería del Software II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2854,7 +2854,7 @@
                 ],
                 "Introducción a la Didáctica de la Computacion y la IA": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2871,7 +2871,7 @@
                 ],
                 "Lenguajes y Compiladores": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2888,7 +2888,7 @@
                 ],
                 "Procesamiento de imágenes satelitales meteorológicas con Python": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2905,7 +2905,7 @@
                 ],
                 "Técnicas avanzadas de diseño de software": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -2924,7 +2924,7 @@
             "Segundo Cuatrimestre": {
                 "Inteligencia Artificial": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -3801,7 +3801,7 @@
                 ],
                 "Métodos Matemáticos de la Física I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -3823,7 +3823,7 @@
             "Primer Cuatrimestre": {
                 "Electromagnetismo I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -3956,7 +3956,7 @@
                 ],
                 "Métodos Matemáticos de la Física II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -3976,7 +3976,7 @@
             "Segundo Cuatrimestre": {
                 "Electromagnetismo II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4082,7 +4082,7 @@
                 ],
                 "Mecánica": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4104,7 +4104,7 @@
             "Primer Cuatrimestre": {
                 "Física Experimental V": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4122,7 +4122,7 @@
                 ],
                 "Mecánica Cuántica I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4140,7 +4140,7 @@
                 ],
                 "Termodinámica y Mecánica Estadística I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4160,7 +4160,7 @@
             "Segundo Cuatrimestre": {
                 "Mecánica Cuántica II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4178,7 +4178,7 @@
                 ],
                 "Termodinámica y Mecánica Estadística II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4200,7 +4200,7 @@
             "Primer Cuatrimestre": {
                 "Agujeros Negros y Singularidades": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4218,7 +4218,7 @@
                 ],
                 "Física Computacional": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4237,7 +4237,7 @@
                 ],
                 "Física del Estado Sólido": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4255,7 +4255,7 @@
                 ],
                 "Procesamiento de imágenes satelitales meteorológicas con Python": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4274,7 +4274,7 @@
             "Segundo Cuatrimestre": {
                 "Física Contemporánea": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4332,7 +4332,7 @@
                 ],
                 "Introducción a la Atmósfera": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4435,7 +4435,7 @@
                 ],
                 "Instrumental y prácticas de laboratorio I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -4567,7 +4567,7 @@
             "Segundo Cuatrimestre": {
                 "Inglés": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5264,7 +5264,7 @@
                 ],
                 "Álgebra III": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5284,7 +5284,7 @@
             "Segundo Cuatrimestre": {
                 "Análisis Numérico II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5313,7 +5313,7 @@
                 ],
                 "Geometría Diferencial": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5331,7 +5331,7 @@
                 ],
                 "Probabilidad": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5353,7 +5353,7 @@
             "Primer Cuatrimestre": {
                 "Funciones Reales": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5371,7 +5371,7 @@
                 ],
                 "Topología General": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5391,7 +5391,7 @@
             "Segundo Cuatrimestre": {
                 "Estructuras Algebraicas": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5409,7 +5409,7 @@
                 ],
                 "Funciones Analíticas": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5431,7 +5431,7 @@
             "Primer Cuatrimestre": {
                 "Ecuaciones Diferenciales I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5449,7 +5449,7 @@
                 ],
                 "Geometría Superior": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5469,7 +5469,7 @@
             "Segundo Cuatrimestre": {
                 "Análisis Funcional": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5487,7 +5487,7 @@
                 ],
                 "Ecuaciones Diferenciales II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5509,7 +5509,7 @@
             "Primer Cuatrimestre": {
                 "Grupos y álgebras de Lie": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5527,7 +5527,7 @@
                 ],
                 "Haces perversos y aplicaciones a la teoría de representaciones": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5545,7 +5545,7 @@
                 ],
                 "Inferencia Estadística": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5564,7 +5564,7 @@
                 ],
                 "Introducción a las Álgebras de Hopf": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5584,7 +5584,7 @@
             "Segundo Cuatrimestre": {
                 "Representaciones de grupos finitos": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5609,7 +5609,7 @@
             "Primer Cuatrimestre": {
                 "Algoritmos y Programación": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -5845,7 +5845,7 @@
                 ],
                 "Física I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6001,7 +6001,7 @@
                 ],
                 "Cálculo Vectorial": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6019,7 +6019,7 @@
                 ],
                 "Física II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6039,7 +6039,7 @@
             "Segundo Cuatrimestre": {
                 "Análisis Numérico II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6068,7 +6068,7 @@
                 ],
                 "Funciones Complejas": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6086,7 +6086,7 @@
                 ],
                 "Probabilidad y Estadística": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6108,7 +6108,7 @@
             "Primer Cuatrimestre": {
                 "Algoritmos y Estructura de Datos": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6139,7 +6139,7 @@
                 ],
                 "Ecuaciones Diferenciales I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6157,7 +6157,7 @@
                 ],
                 "Modelos y Simulación": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6188,7 +6188,7 @@
             "Segundo Cuatrimestre": {
                 "Análisis Numérico III": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6217,7 +6217,7 @@
                 ],
                 "Ecuaciones Diferenciales II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6235,7 +6235,7 @@
                 ],
                 "Matemática Financiera": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6257,7 +6257,7 @@
             "Primer Cuatrimestre": {
                 "Ciencia de Datos": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6275,7 +6275,7 @@
                 ],
                 "Investigación de Operaciones": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6293,7 +6293,7 @@
                 ],
                 "Matemática Discreta II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6313,7 +6313,7 @@
             "Segundo Cuatrimestre": {
                 "Optimización": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6331,7 +6331,7 @@
                 ],
                 "Sistemas de Control": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6362,7 +6362,7 @@
             "Primer Cuatrimestre": {
                 "Modelos de Programación LAB 17": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6393,7 +6393,7 @@
                 ],
                 "Procesamiento de imágenes satelitales meteorológicas con Python": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -6412,7 +6412,7 @@
             "Segundo Cuatrimestre": {
                 "Gestión de Proyectos": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7054,7 +7054,7 @@
             "Primer Cuatrimestre": {
                 "Complementos de Análisis Matemático": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7145,7 +7145,7 @@
                 ],
                 "Psicología del Aprendizaje": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7243,7 +7243,7 @@
                 ],
                 "Pedagogía": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7294,7 +7294,7 @@
             "Primer Cuatrimestre": {
                 "Computación": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7312,7 +7312,7 @@
                 ],
                 "Didáctica Especial y Taller de Física": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7404,7 +7404,7 @@
             "Segundo Cuatrimestre": {
                 "Didáctica Especial y Taller de Física": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7422,7 +7422,7 @@
                 ],
                 "Introducción a la Probabilidad y Estadística": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7440,7 +7440,7 @@
                 ],
                 "Mecánica Clásica": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7462,7 +7462,7 @@
             "Primer Cuatrimestre": {
                 "Física Moderna": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7479,7 +7479,7 @@
                 ],
                 "Metodología y Práctica de la Enseñanza": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7506,7 +7506,7 @@
                 ],
                 "Seminario Formador de Formadores": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7525,7 +7525,7 @@
             "Segundo Cuatrimestre": {
                 "Metodología y Práctica de la Enseñanza": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -7543,7 +7543,7 @@
                 ],
                 "Seminario Formador de Formadores": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8058,7 +8058,7 @@
                 ],
                 "Complementos de Álgebra Lineal": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8076,7 +8076,7 @@
                 ],
                 "Psicología del Aprendizaje": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8117,7 +8117,7 @@
             "Segundo Cuatrimestre": {
                 "Elementos de Física": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8135,7 +8135,7 @@
                 ],
                 "Geometría I": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8153,7 +8153,7 @@
                 ],
                 "Pedagogía": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8204,7 +8204,7 @@
             "Primer Cuatrimestre": {
                 "Computación": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8222,7 +8222,7 @@
                 ],
                 "Didáctica Especial y Taller de Matemática": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8240,7 +8240,7 @@
                 ],
                 "Geometría II": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8260,7 +8260,7 @@
             "Segundo Cuatrimestre": {
                 "Didáctica Especial y Taller de Matemática": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8278,7 +8278,7 @@
                 ],
                 "Elementos de Funciones Complejas": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8299,7 +8299,7 @@
             "Primer Cuatrimestre": {
                 "Elementos de Funciones Reales": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8317,7 +8317,7 @@
                 ],
                 "Elementos de Topología": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8335,7 +8335,7 @@
                 ],
                 "Metodología y Práctica de la Enseñanza": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8353,7 +8353,7 @@
                 ],
                 "Seminario Formador de Formadores": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8372,7 +8372,7 @@
             "Segundo Cuatrimestre": {
                 "Matemática Financiera": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8390,7 +8390,7 @@
                 ],
                 "Metodología y Práctica de la Enseñanza": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
@@ -8408,7 +8408,7 @@
                 ],
                 "Seminario Formador de Formadores": [
                     {
-                        "Numero_c": "Unica",
+                        "Numero_c": "Única",
                         "Detalle": [
                             {
                                 "Ubicacion": [
