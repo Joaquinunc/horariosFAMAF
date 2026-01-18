@@ -1,6 +1,9 @@
 import { urls } from "./constants";
 
-
+/*
+en este modulo se encuentran todas las funciones que se encargan de obtener, procesar y devolver
+la ubicacion en una pestania de google maps visible para el usuario
+*/
 function location_setter(Comm){
   if (!Comm || !Comm.Detalle) return [];
   
@@ -63,7 +66,7 @@ function location_finder(Comm) {
     
     default:
       return {
-        texto: `Tiene en aulas ${bloques.join(' y ')}`,
+        texto: `Tiene en aulas ${bloques.join(' - ')}`,
         mapa: 'FAMAF'
       };
   }

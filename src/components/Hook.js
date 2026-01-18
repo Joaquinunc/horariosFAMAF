@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 
 /*
 GralHook()
-Funcion que se encarga de encapsular todas las constantes que luego se utilizara en App.js
-asi como de obtener la informacion de la base de datos.
+Funcion que se encarga de enlazar el frontend con la base de datos, obteniendo la informacion
+necesaria para las consultas, fijandose en resetearlas al realizan consultas nuevas
 */
 
 export default function GralHook(){
+    // diferentes elementos de la base de datos con su estado
     const [carrera, setCarrera] = useState('');
     const [Anio, setAnio] = useState('');
     const [Cuatrimestre, setCuatrimestre] = useState('');

@@ -18,8 +18,12 @@ OAC
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27238.290947294056!2d-64.23480058916014!3d-31.4200115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a27e84ea72c5%3A0x4b2df0340a54c6dc!2sObservatorio%20Astron%C3%B3mico%20de%20C%C3%B3rdoba%20(O.A.C.)%20%5BSede%20Central%5D%20%7C%20U.N.C.!5e0!3m2!1ses!2sar!4v1768702723055!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 LAB hidraulica - FCEFYN
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.029371355047!2d-64.19616082788762!3d-31.440858340504246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3b5aae0a57f%3A0xa190890f706762e0!2sUNC%20-%20FCEFyN%20-%20Laboratorio%20de%20Hidr%C3%A1ulica!5e0!3m2!1ses!2sar!4v1768702798777!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+Baterias A + D
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1fAiLlaMfBsVoTiM-9zk-hxlvAYLXlg8&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
 FAMAF (default)
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.1202646650886!2d-64.19518052550266!3d-31.438355897311702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2f50c080985%3A0xec1e4c66fe09e826!2sFacultad%20de%20Matem%C3%A1tica%2C%20Astronom%C3%ADa%2C%20F%C3%ADsica%20y%20Computaci%C3%B3n%20-%20FaMAF!5e0!3m2!1ses!2sar!4v1768702871414!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
 */
 export const urls = {
     A: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.182284093421!2d-64.18960452550283!3d-31.43664829722908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2f304344497%3A0x36358f37fd8013b5!2zQXVsYXMgZGUgdXNvIGNvbcO6biAiQSIgKEJhdGVyw61hICJBIikgfCBVLk4uQy4!5e0!3m2!1ses!2sar!4v1768700635022!5m2!1ses!2sar",
@@ -29,5 +33,6 @@ export const urls = {
     R:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.2210138306477!2d-64.19077542550274!3d-31.435581897177503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3820366176b%3A0xf7b448cbbede28b7!2sPabell%C3%B3n%20de%20los%20Reformistas%20%7C%20U.N.C.!5e0!3m2!1ses!2sar!4v1768702634156!5m2!1ses!2sar",
     OAC:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27238.290947294056!2d-64.23480058916014!3d-31.4200115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a27e84ea72c5%3A0x4b2df0340a54c6dc!2sObservatorio%20Astron%C3%B3mico%20de%20C%C3%B3rdoba%20(O.A.C.)%20%5BSede%20Central%5D%20%7C%20U.N.C.!5e0!3m2!1ses!2sar!4v1768702723055!5m2!1ses!2sar",
     FCEFYN:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.029371355047!2d-64.19616082788762!3d-31.440858340504246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3b5aae0a57f%3A0xa190890f706762e0!2sUNC%20-%20FCEFyN%20-%20Laboratorio%20de%20Hidr%C3%A1ulica!5e0!3m2!1ses!2sar!4v1768702798777!5m2!1ses!2sar",
+    AD:"https://www.google.com/maps/d/u/0/embed?mid=1fAiLlaMfBsVoTiM-9zk-hxlvAYLXlg8&ehbc=2E312F&noprof=1",
     FAMAF:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.1202646650886!2d-64.19518052550266!3d-31.438355897311702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2f50c080985%3A0xec1e4c66fe09e826!2sFacultad%20de%20Matem%C3%A1tica%2C%20Astronom%C3%ADa%2C%20F%C3%ADsica%20y%20Computaci%C3%B3n%20-%20FaMAF!5e0!3m2!1ses!2sar!4v1768702871414!5m2!1ses!2sar"
 };
