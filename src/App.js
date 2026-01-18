@@ -15,12 +15,12 @@ function App() {
           {(
             <article> 
               <FieldRet label="Seleccione una Carrera:" atribute={carrera} setter={setCarrera} elems={Carreras}/>
-              <FieldRet label="Seleccione un anio de cursada:" atribute={Anio} setter={setAnio} elems={Anios}/>
+              <FieldRet label="Seleccione un año de cursada:" atribute={Anio} setter={setAnio} elems={Anios}/>
               <FieldRet label="Seleccione un cuatrimestre:" atribute={Cuatrimestre} setter={setCuatrimestre} elems={Cuatrimestres}/>
               <FieldRet label="Seleccione una materia:" atribute={materia} setter={setMateria} elems={Materias}/>
             </article>  
           )}         
-          <FieldRet label="Seleccione una comision:" atribute={comision} setter={setComision} elems={Comisiones_nums}/>
+          <FieldRet label="Seleccione una comisión:" atribute={comision} setter={setComision} elems={Comisiones_nums}/>
           <button className='button' type='submit'>Consultar horarios de la materia</button>
           {result && comision && (
             <>

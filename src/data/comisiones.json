@@ -2194,7 +2194,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA B"
+                                    "AULA B1"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico"
@@ -5072,7 +5072,7 @@
                                     "AULA D1"
                                 ],
                                 "Horario": "14:00 - 16:00",
-                                "Tipo": "T/P"
+                                "Tipo": "Teórico"
                             },
                             {
                                 "Ubicacion": [
@@ -5146,7 +5146,7 @@
                             }
                         ],
                         "dias": [
-                            "Martes"
+                            "Martes","Jueves"
                         ]
                     }
                 ]
@@ -6424,7 +6424,6 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "R D",
                                     "AULA 21"
                                 ],
                                 "Horario": "14:00 - 18:00",
@@ -7165,7 +7164,6 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "R D",
                                     "AULA 10"
                                 ],
                                 "Horario": "14:00 - 18:00",

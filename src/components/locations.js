@@ -9,7 +9,7 @@ function location_setter(Comm){
   
   const aulas = Comm.Detalle.flatMap(d => d.Ubicacion);
   console.log(aulas);
-  const aulaRegex = /(AULA)\s*([A-Z])?\d+|(LAB)\s*\d+|(LEF)\s*\d*|(OAC)/i;
+  const aulaRegex = /(AULA)\s*([A-Z])?\d+|(LAB)\s*\d+|(LEF)\s*\d*|(OAC)|(HIDRAULICA)/i;
 
   const bloquesmatch = aulas.map(a => a.match(aulaRegex));
   const blkfilter = bloquesmatch.filter(Boolean);
@@ -18,6 +18,7 @@ function location_setter(Comm){
         if (m[3]) return 'LAB';
         if (m[4]) return 'LEF';
         if (m[5]) return 'OAC';
+        if (m[6]) return 'HIDR';
         return null;
     }   
   );
@@ -84,6 +85,31 @@ function location_finder(Comm) {
       return {
         texto: 'Tiene en LABs y R',
         mapa: 'LABR'
+      };
+    case 'ADLAB':
+      return {
+        texto: 'Tiene en LABs, Aulas A y D',
+        mapa: 'ADLAB'
+      };
+    case 'ALAB':
+      return {
+        texto: 'Tiene en LABs y Aulas A',
+        mapa: 'ALAB'
+      };
+    case 'BLAB':
+      return {
+        texto: 'Tiene en LABs y Aulas A',
+        mapa: 'BLAB'
+      };
+    case 'HIDR':
+      return{
+        texto: 'Tiene en LAB fcefyn',
+        mapa: 'HIDR'
+      }
+    case 'ALEF':
+      return {
+        texto: 'Tiene en LEFs Aulas A',
+        mapa: 'ALAB'
       };
     default:
       return {
