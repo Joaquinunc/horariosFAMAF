@@ -31,7 +31,7 @@ export function timeRet(comisionData) {
       <table className="tabla-horarios">
         <thead>
           <tr>
-            <th>Día</th>
+            <th>Días</th>
             <th>Horario</th>
             <th>Ubicación</th>
             <th>Tipo</th>
