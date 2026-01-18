@@ -1259,27 +1259,19 @@
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Teórico",
                                 "dias": [
-                                    "Lunes"
-                                ]
-                            },
-                            {
-                                "Ubicacion": [
-                                    "AULA 13"
-                                ],
-                                "Horario": "14:00 - 18:00",
-                                "Tipo": "Teórico",
-                                "dias": [
+                                    "Lunes",
                                     "Jueves"
                                 ]
                             },
                             {
                                 "Ubicacion": [
-                                    "LEF 101"
+                                    "LEF 101 (Lunes tarde)"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "Laboratorio",
+                                "Tipo": "Práctico",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes",
+                                    "Jueves"
                                 ]
                             }
                         ]
@@ -1924,12 +1916,14 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "LAB 17"
+                                    "LAB 17 (Lunes)"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "T/P",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves"
                                 ]
                             },
                             {
@@ -1939,6 +1933,7 @@
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
                                 "dias": [
+                                    "Lunes",
                                     "Martes",
                                     "Jueves"
                                 ]
@@ -1962,12 +1957,14 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "LAB 28"
+                                    "LAB 28 (Lunes)"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves"
                                 ]
                             },
                             {
@@ -1977,6 +1974,7 @@
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
                                 "dias": [
+                                    "Lunes",
                                     "Martes",
                                     "Jueves"
                                 ]
@@ -1988,6 +1986,7 @@
                                 "Horario": "11:00 - 13:00",
                                 "Tipo": "Práctico",
                                 "dias": [
+                                    "Lunes",
                                     "Martes",
                                     "Jueves"
                                 ]
@@ -1999,12 +1998,14 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "LAB 17"
+                                    "LAB 17(Lunes)"
                                 ],
                                 "Horario": "14:00 - 18:00",
                                 "Tipo": "T/P",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves"
                                 ]
                             },
                             {
@@ -2014,6 +2015,7 @@
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
                                 "dias": [
+                                    "Lunes",
                                     "Martes",
                                     "Jueves"
                                 ]
@@ -2025,6 +2027,7 @@
                                 "Horario": "11:00 - 13:00",
                                 "Tipo": "T/P",
                                 "dias": [
+                                    "Lunes",
                                     "Martes",
                                     "Jueves"
                                 ]
@@ -2036,12 +2039,14 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "LAB 28"
+                                    "LAB 28 (Lunes)"
                                 ],
                                 "Horario": "14:00 - 18:00",
                                 "Tipo": "T/P",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves"
                                 ]
                             },
                             {
@@ -2051,6 +2056,7 @@
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
                                 "dias": [
+                                    "Lunes",
                                     "Martes",
                                     "Jueves"
                                 ]
@@ -2062,6 +2068,7 @@
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
                                 "dias": [
+                                    "Lunes",
                                     "Martes",
                                     "Jueves"
                                 ]
@@ -2073,12 +2080,14 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "LAB 30"
+                                    "LAB 30 (Lunes)"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "Laboratorio",
+                                "Tipo": "T/P",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves"
                                 ]
                             },
                             {
@@ -2088,6 +2097,7 @@
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
                                 "dias": [
+                                    "Lunes",
                                     "Martes",
                                     "Jueves"
                                 ]
@@ -2099,6 +2109,7 @@
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
                                 "dias": [
+                                    "Lunes",
                                     "Martes",
                                     "Jueves"
                                 ]
@@ -2336,11 +2347,13 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "LAB 17"
+                                    "LAB 17 (Jueves)"
                                 ],
                                 "Horario": "14:00 - 18:00",
                                 "Tipo": "T/P",
                                 "dias": [
+                                    "Lunes",
+                                    "Miércoles",
                                     "Jueves"
                                 ]
                             },
@@ -2352,7 +2365,8 @@
                                 "Tipo": "T/P",
                                 "dias": [
                                     "Lunes",
-                                    "Miércoles"
+                                    "Miércoles",
+                                    "Jueves"
                                 ]
                             }
                         ]
@@ -2362,11 +2376,13 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "LAB 28"
+                                    "LAB 28 (Jueves)"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "Laboratorio",
+                                "Tipo": "T/P",
                                 "dias": [
+                                    "Lunes",
+                                    "Miércoles",
                                     "Jueves"
                                 ]
                             },
@@ -2378,7 +2394,8 @@
                                 "Tipo": "T/P",
                                 "dias": [
                                     "Lunes",
-                                    "Miércoles"
+                                    "Miércoles",
+                                    "Jueves"
                                 ]
                             }
                         ]
@@ -2388,11 +2405,13 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "LAB 17"
+                                    "LAB 17 (Viernes)"
                                 ],
                                 "Horario": "14:00 - 18:00",
                                 "Tipo": "T/P",
                                 "dias": [
+                                    "Lunes",
+                                    "Miércoles",
                                     "Viernes"
                                 ]
                             },
@@ -2404,7 +2423,8 @@
                                 "Tipo": "T/P",
                                 "dias": [
                                     "Lunes",
-                                    "Miércoles"
+                                    "Miércoles",
+                                    "Viernes"
                                 ]
                             }
                         ]
@@ -2414,11 +2434,13 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "LAB 28"
+                                    "LAB 28 (Viernes)"
                                 ],
                                 "Horario": "14:00 - 18:00",
                                 "Tipo": "T/P",
                                 "dias": [
+                                    "Lunes",
+                                    "Miércoles",
                                     "Viernes"
                                 ]
                             },
@@ -2430,7 +2452,8 @@
                                 "Tipo": "T/P",
                                 "dias": [
                                     "Lunes",
-                                    "Miércoles"
+                                    "Miércoles",
+                                    "Viernes"
                                 ]
                             }
                         ]
@@ -2612,16 +2635,19 @@
                                 "Tipo": "T/P",
                                 "dias": [
                                     "Martes",
-                                    "Jueves"
+                                    "Jueves",
+                                    "Viernes"
                                 ]
                             },
                             {
                                 "Ubicacion": [
-                                    "LAB 17"
+                                    "LAB 17 (viernes)"
                                 ],
                                 "Horario": "09:00 - 13:00",
-                                "Tipo": "Laboratorio",
+                                "Tipo": "T/P",
                                 "dias": [
+                                    "Martes",
+                                    "Jueves",
                                     "Viernes"
                                 ]
                             }
@@ -2672,11 +2698,13 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "LAB 30"
+                                    "LAB 30 (Viernes)"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "Laboratorio",
+                                "Tipo": "T/P",
                                 "dias": [
+                                    "Martes",
+                                    "Jueves",
                                     "Viernes"
                                 ]
                             },
@@ -2688,7 +2716,8 @@
                                 "Tipo": "T/P",
                                 "dias": [
                                     "Martes",
-                                    "Jueves"
+                                    "Jueves",
+                                    "Viernes"
                                 ]
                             }
                         ]
@@ -4008,11 +4037,12 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA 16"
+                                    "AULA 16 (Miercoles)"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
                                 "dias": [
+                                    "Lunes",
                                     "Miércoles"
                                 ]
                             },
@@ -4023,7 +4053,8 @@
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "T/P",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes",
+                                    "Miércoles"
                                 ]
                             }
                         ]
@@ -4033,11 +4064,12 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA 16"
+                                    "AULA 16 (Miercoles)"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
                                 "dias": [
+                                    "Martes",
                                     "Miércoles"
                                 ]
                             },
@@ -4048,7 +4080,8 @@
                                 "Horario": "14:00 - 18:00",
                                 "Tipo": "T/P",
                                 "dias": [
-                                    "Martes"
+                                    "Martes",
+                                    "Miércoles"
                                 ]
                             }
                         ]
@@ -4058,11 +4091,12 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA 16"
+                                    "AULA 16 (Miercoles)"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
                                 "dias": [
+                                    "Jueves",
                                     "Miércoles"
                                 ]
                             },
@@ -5214,12 +5248,13 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "LAB 17"
+                                    "LAB 17 (Martes)"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "Laboratorio",
+                                "Tipo": "T/P",
                                 "dias": [
-                                    "Martes"
+                                    "Martes",
+                                    "Jueves"
                                 ]
                             }
                         ]
@@ -5251,12 +5286,13 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "LAB 17"
+                                    "LAB 17 (Martes)"
                                 ],
                                 "Horario": "14:00 - 18:00",
                                 "Tipo": "T/P",
                                 "dias": [
-                                    "Martes"
+                                    "Martes",
+                                    "Jueves"
                                 ]
                             }
                         ]
@@ -6899,11 +6935,13 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "LEF"
+                                    "LEF (viernes)"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "T/P",
                                 "dias": [
+                                    "Lunes",
+                                    "Miércoles",
                                     "Viernes"
                                 ]
                             }
@@ -6926,11 +6964,13 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "LEF"
+                                    "LEF (viernes)"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "T/P",
                                 "dias": [
+                                    "Lunes",
+                                    "Miércoles",
                                     "Viernes"
                                 ]
                             }
@@ -7160,12 +7200,13 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA PV-3"
+                                    "AULA PV-3 (Martes)"
                                 ],
                                 "Horario": "18:00 - 20:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Martes"
+                                    "Martes",
+                                    "Jueves"
                                 ]
                             }
                         ]
@@ -7191,12 +7232,14 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "LEF 101"
+                                    "LEF 101 (Martes)"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Laboratorio",
                                 "dias": [
-                                    "Martes"
+                                    "Martes",
+                                    "Miércoles",
+                                    "Viernes"
                                 ]
                             }
                         ]
@@ -7230,12 +7273,14 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "LEF 101"
+                                    "LEF 101 (Martes)"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Laboratorio",
                                 "dias": [
-                                    "Martes"
+                                    "Martes",
+                                    "Miércoles",
+                                    "Viernes"
                                 ]
                             }
                         ]
@@ -7247,42 +7292,54 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA PV-1"
+                                    "AULA PV-1 (lunes)"
                                 ],
                                 "Horario": "18:00 - 20:00",
                                 "Tipo": "T/P",
                                 "dias": [
-                                    "Lunes"
-                                ]
-                            },
-                            {
-                                "Ubicacion": [
-                                    "AULA PV-8"
-                                ],
-                                "Horario": "18:00 - 22:00",
-                                "Tipo": "Teórico",
-                                "dias": [
-                                    "Martes"
-                                ]
-                            },
-                            {
-                                "Ubicacion": [
-                                    "AULA CV-6"
-                                ],
-                                "Horario": "14:00 - 16:00",
-                                "Tipo": "Práctico",
-                                "dias": [
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves",
                                     "Viernes"
                                 ]
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA CV-6"
+                                    "AULA PV-8 (Martes)"
+                                ],
+                                "Horario": "18:00 - 22:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves",
+                                    "Viernes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA CV-6 (viernes)"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "T/P",
+                                "dias": [
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves",
+                                    "Viernes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA CV-6 (martes)"
                                 ],
                                 "Horario": "16:00 - 18:00",
-                                "Tipo": "Práctico",
-                                "dias": [                                   
-                                    "Martes"
+                                "Tipo": "T/P",
+                                "dias": [
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves",
+                                    "Viernes"
                                 ]
                             }
                         ]
@@ -7483,21 +7540,23 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA 13"
+                                    "AULA 13 (Martes)"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "T/P",
                                 "dias": [
-                                    "Martes"
+                                    "Martes",
+                                    "Jueves"
                                 ]
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA 14"
+                                    "AULA 14 (Jueves)"
                                 ],
                                 "Horario": "14:00 - 18:00",
                                 "Tipo": "T/P",
                                 "dias": [
+                                    "Martes",
                                     "Jueves"
                                 ]
                             }
@@ -8092,22 +8151,26 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA PV-3"
+                                    "AULA PV-3 (Lunes)"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves"
                                 ]
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA PV-3"
+                                    "AULA PV-3 (Martes)"
                                 ],
                                 "Horario": "18:00 - 20:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Martes"
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves"
                                 ]
                             }
                         ]
@@ -8157,41 +8220,53 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA PV-8"
-                                ],
-                                "Horario": "18:00 - 22:00",
-                                "Tipo": "Teórico",
-                                "dias": [
-                                    "Martes"
-                                ]
-                            },
-                            {
-                                "Ubicacion": [
-                                    "AULA PV-1"
+                                    "AULA PV-1 (Lunes)"
                                 ],
                                 "Horario": "18:00 - 20:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves",
+                                    "Viernes"
                                 ]
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA CV-6"
+                                    "AULA CV-6 (Martes)"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Martes"
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves",
+                                    "Viernes"
                                 ]
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA CV-6"
+                                    "AULA PV-8 (Martes)"
+                                ],
+                                "Horario": "18:00 - 22:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves",
+                                    "Viernes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA CV-6 (Viernes)"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Práctico",
                                 "dias": [
+                                    "Lunes",
+                                    "Martes",
+                                    "Jueves",
                                     "Viernes"
                                 ]
                             }
