@@ -25,10 +25,12 @@ export function timeRet(comisionData) {
 
     // Formato de respuesta general (comisiones.json)
     return (
+     <div>
+      <h3>Comisión: {comisionData.Numero_c}</h3>
+      
       <table className="tabla-horarios">
         <thead>
           <tr>
-            <th>Comisión</th>
             <th>Día</th>
             <th>Horario</th>
             <th>Ubicación</th>
@@ -36,22 +38,19 @@ export function timeRet(comisionData) {
           </tr>
         </thead>
         <tbody>
+          
           {comisionData.Detalle.map((detalle, indexDetalle) => 
-            comisionData.dias.map((dia, indexDia) => (
-              <tr key={`${indexDetalle}-${indexDia}`}>
+              <tr key={{indexDetalle}}>
                 <td style={{textAlign: 'center' }}>
-                  {(indexDetalle === 0 && indexDia === 0) ? comisionData.Numero_c : ""} 
-                </td>
-                <td style={{textAlign: 'center' }}>
-                  {indexDia === 0 ? dia : dia}
+                  {comisionData.dias.join(', ')}
                 </td>
                 <td style={{textAlign: 'center' }}>{detalle.Horario}</td>
                 <td style={{textAlign: 'center' }}>{detalle.Ubicacion.join(", ")}</td>
                 <td style={{textAlign: 'center' }}>{detalle.Tipo}</td>
               </tr>
-            ))
           )}
         </tbody>
       </table>
+      </div> 
     );
 }
