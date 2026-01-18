@@ -68,8 +68,11 @@ def obtener_data():
                                 "Detalle":[{
                                     "Ubicacion": aulas if aulas else ["No especificada"],
                                     "Horario": f"{hora_inicio} - {hora_fin}",
-                                    "Tipo": tipo_str}],
-                                "dias": [dia]
+                                    "Tipo": tipo_str,
+                                    "dias": [dia]
+                                    }
+                                ],
+                                
                             }]
 
                         if nombre_final not in materias_agrupadas:

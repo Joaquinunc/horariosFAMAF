@@ -91,36 +91,57 @@ def comparser(inputcom, starthour, endhour, dtype, inpday, summary):
                     "Detalle":[{
                         "Ubicacion": aulas if aulas else ["No especificada"], 
                         "Horario": f"{starthour} - {endhour}",
-                        "Tipo": dtype
-                    }],                   
-                    "dias":[inpday]
+                        "Tipo": dtype,
+                        "dias":[inpday]
+                    }],                                       
                 })
     return datos
 
-def comjoiner(dupcomms:dict, nombre_carrera:str, materias_agr: dict):
+def comjoiner(dupcomms: list, nombre_materia: str, materias_agrupadas: dict):
+    """
+    Agrega nuevas comisiones a una materia, fusionando detalles si la comisión ya existe
+    para el mismo día.
+    
+    Args:
+        dupcomms: Lista de nuevas comisiones a agregar
+        nombre_materia: Nombre de la materia
+        materias_agrupadas: Diccionario de materias del cuatrimestre actual
+    """
     for dc in dupcomms:
-        # Buscamos si ya existe esta comisión para este día en esta materia
-        existente = next((item for item in materias_agr[nombre_carrera] 
-                                            if item["Numero_c"] == dc["Numero_c"] and item["dias"] == dc["dias"]), None)
-                            
-        detalle_actual = dc.get("nuevo_detalle") or dc["Detalle"][0]
-
-        if existente:
-                            # Si ya existe la comisión y el día, solo agregamos el detalle (si no es duplicado)
-                if detalle_actual not in existente["Detalle"]:
-                        existente["Detalle"].append(detalle_actual)
-        else:
-                            # Si no existe, preparamos la estructura Detalle y la agregamos
-            if "nuevo_detalle" in dc:
-                nueva_entrada = {
-                    "Numero_c": dc["Numero_c"],
-                    "Detalle": [dc["nuevo_detalle"]],
-                    "dias": dc["dia"]
-                                    }
+        numero_comision = dc["Numero_c"]
+        detalle_nuevo = dc["Detalle"][0]
+        dia_nuevo = detalle_nuevo["dias"][0]
+        
+        # Buscamos si ya existe una comisión con este número
+        comision_existente = next(
+            (item for item in materias_agrupadas.get(nombre_materia, [])
+             if item["Numero_c"] == numero_comision),
+            None
+        )
+        
+        if comision_existente:
+            # Buscamos si ya existe un detalle para este día
+            detalle_existente = next(
+                (d for d in comision_existente["Detalle"]
+                 if d.get("dias") == [dia_nuevo]),  # Usar .get() en lugar de acceso directo
+                None
+            )
+            
+            if detalle_existente:
+                # Si el mismo horario/tipo/ubicación ya existe, no duplicar
+                if detalle_nuevo not in comision_existente["Detalle"]:
+                    comision_existente["Detalle"].append(detalle_nuevo)
             else:
-                nueva_entrada = dc
-            materias_agr[nombre_carrera].append(nueva_entrada)
-    return materias_agr
+                # Agregar nuevo detalle para este día
+                comision_existente["Detalle"].append(detalle_nuevo)
+        else:
+            # Nueva comisión: la agregamos a la materia
+            if nombre_materia not in materias_agrupadas:
+                materias_agrupadas[nombre_materia] = []
+            
+            materias_agrupadas[nombre_materia].append(dc)
+    
+    return materias_agrupadas
 
 def data_sorter(data:dict):
 

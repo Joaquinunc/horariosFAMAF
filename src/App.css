@@ -68,6 +68,10 @@
   background-color: rgb(10, 153, 153);
   border-color: rgb(10, 153, 153);
 }
+
+.result{
+  color:#454444;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

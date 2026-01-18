@@ -25,7 +25,7 @@ export function timeRet(comisionData) {
 
     // Formato de respuesta general (comisiones.json)
     return (
-     <div>
+     <div className="result">
       <h3>Comisión: {comisionData.Numero_c}</h3>
       
       <table className="tabla-horarios">
@@ -42,7 +42,7 @@ export function timeRet(comisionData) {
           {comisionData.Detalle.map((detalle, indexDetalle) => 
               <tr key={{indexDetalle}}>
                 <td style={{textAlign: 'center' }}>
-                  {comisionData.dias.join(', ')}
+                  {detalle.dias.join(', ')}
                 </td>
                 <td style={{textAlign: 'center' }}>{detalle.Horario}</td>
                 <td style={{textAlign: 'center' }}>{detalle.Ubicacion.join(", ")}</td>
