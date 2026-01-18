@@ -4,13 +4,20 @@ import { urls } from "./constants";
 en este modulo se encuentran todas las funciones que se encargan de obtener, procesar y devolver
 la ubicacion en una pestania de google maps visible para el usuario
 */
+
+/* 
+location_setter: funcion que analiza las ubicaciones de una comision, buscando una coincidencia 
+para proporcionar la ubicacion real.
+in: Objeto comision
+out: clave con ubicacion parcial
+*/
 function location_setter(Comm){
   if (!Comm || !Comm.Detalle) return [];
   
   const aulas = Comm.Detalle.flatMap(d => d.Ubicacion);
-  console.log(aulas);
-  const aulaRegex = /(AULA)\s*([A-Z])?\d+|(LAB)\s*\d+|(LEF)\s*\d*|(OAC)|(HIDRAULICA)/i;
-
+  //patrones contemplados
+  const aulaRegex = /(AULA)\s*([A-Z])?\d+|(LAB)\s*\d+|(LEF)\s*\d*|(OAC)|(HIDRAULICA)|(VIRTUAL)/i;
+  // filtrado y definicion de claves de busqueda
   const bloquesmatch = aulas.map(a => a.match(aulaRegex));
   const blkfilter = bloquesmatch.filter(Boolean);
   const blksmap = blkfilter.map(m => {
@@ -19,16 +26,20 @@ function location_setter(Comm){
         if (m[4]) return 'LEF';
         if (m[5]) return 'OAC';
         if (m[6]) return 'HIDR';
+        if (m[7]) return "VIRT";
         return null;
     }   
   );
-
-  console.log("bloquesmatch",bloquesmatch,"blkfilter",blkfilter, "blksmap",blksmap);
+  //ordenamiento de claves
   const blksortes = [...new Set(blksmap)].sort();
-  console.log(blksortes) 
   return blksortes
 }
-
+/*
+Locatrion finder: Funcion que se encarga de definir la clave final de las aulas de una comision
+que se utilizara para luego proporcionar la ubicacion en google maps
+in: Objeto comision
+out: Clave de busqueda para obtener la ubicacion final
+*/
 function location_finder(Comm) {
   const bloques = location_setter(Comm);
 
@@ -111,6 +122,11 @@ function location_finder(Comm) {
         texto: 'Tiene en LEFs Aulas A',
         mapa: 'ALAB'
       };
+    case 'VIRT':
+      return {
+        texto: 'Tiene Clases virtuales',
+        mapa: null
+      };
     default:
       return {
         texto: `Tiene en aulas ${bloques.join(' - ')}`,
@@ -133,6 +149,10 @@ export function location_mapper(Comisiones){
 
   console.log(texto);
      return (
-   <iframe src={urls[mapa]} width="600" height="450" style={{border:0}} loading="lazy"></iframe>
+      <>
+        {mapa && 
+          (<iframe src={urls[mapa]} width="580" height="450" style={{border:0, borderRadius:"3px"}} loading="lazy"></iframe>)
+        }
+      </>
   )
 }
