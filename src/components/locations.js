@@ -151,7 +151,7 @@ export function location_mapper(Comisiones){
      return (
       <>
         {mapa && 
-          (<iframe src={urls[mapa]} width="580" height="450" style={{border:0, borderRadius:"3px"}} loading="lazy"></iframe>)
+          (<iframe src={urls[mapa]} width="580" height="450" style={{border:0, borderRadius:"5px"}} loading="lazy"></iframe>)
         }
       </>
   )
