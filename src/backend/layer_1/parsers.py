@@ -52,7 +52,7 @@ def obtener_carrerayanio(enlace, gcalendar):
             ord_anio = carrera2.group(1)
             num_anio = dict_n.get(ord_anio, ord_anio)
             anio = f"{num_anio} año"
-        print(f"carrera: {carrera}")
+        #print(f"carrera: {carrera}")
     return anio, carrera
 
 """

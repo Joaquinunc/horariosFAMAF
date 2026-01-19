@@ -17,7 +17,7 @@ analizar sus elementos, organizarlos y finalmente guardarlos en un archivo en fo
 def obtener_data():
     #abrimos los datos y lo cargamos en info
     try:
-        with open("./src/backend/comisiones.json", 'r', encoding='utf-8') as f:
+        with open("./src/backend/comisiones2.json", 'r', encoding='utf-8') as f:
             info = json.load(f)
             print(f"Archivo existente cargado con {len(info)} carreras.")
     except (FileNotFoundError, json.JSONDecodeError):
@@ -57,7 +57,7 @@ def obtener_data():
 
                         # Nombre Normalizado
                         nombre_final = normalizar_nombre(summary)
-                        print(f"nombre final:{nombre_final}")
+                        #print(f"nombre final:{nombre_final}")
                         # Horarios y Comisiones
                         hora_inicio = dtstart.strftime("%H:%M")
                         hora_fin = component.get('dtend').dt.strftime("%H:%M")
@@ -68,7 +68,7 @@ def obtener_data():
                         datacomm = re.findall(r"(?:com\.?|comisión|c)\s*\d+[^/]*", summary, re.IGNORECASE)
                         
                         if datacomm:
-                            print(f"datacomm: {datacomm}")
+                            #print(f"datacomm: {datacomm}")
                             nuevas_comisiones = comparser(datacomm, hora_inicio, hora_fin, tipo_str, dia, summary)
                         else:
                             # si no hay comisiones, hacemos un parsing mas general
@@ -100,7 +100,7 @@ def obtener_data():
     # Guardar los datos obtenidos en formato json
     print("\nGuardando resultados finales...")
     try:
-        with open("./src/backend/comisiones.json", 'w', encoding='utf-8') as f:
+        with open("./src/backend/comisiones2.json", 'w', encoding='utf-8') as f:
             json.dump(info_ordenada, f, ensure_ascii=False, indent=4)
             print(f"Archivo 'comisiones.json' generado con {len(info_ordenada)} carreras.")
     except FileNotFoundError:
@@ -109,5 +109,3 @@ def obtener_data():
             json.dump(info_ordenada, f, ensure_ascii=False, indent=4)
             print("Carpeta './src/backend/' no encontrada. Guardado en directorio actual como 'comisiones.json'.")
 
-if __name__ == "__main__":
-    obtener_data()
