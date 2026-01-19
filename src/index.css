@@ -5,7 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f3f4f6;
+  background-image: url('../public/fground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed; /* Esto evita que la imagen cambie al hacer scroll o crecer el div */
+  background-position: center;  /* Asegura que la imagen esté centrada */
+  
+  /* Opcional: min-height para asegurar que cubra toda la pantalla desde el inicio */
+  min-height: 100vh;
 }
 
 code {
