@@ -71,7 +71,9 @@ export default function GralHook(){
     
     const ComisionSeleccionada = Comisiones && Array.isArray(Comisiones) ? Comisiones.find(c => c.Numero_c === comision) : null; 
     console.log(ComisionSeleccionada);
-    
+    const sinmateriasbul = Cuatrimestre && Materias.length === 0;
+    const sinmaterias = !Cuatrimestre? '' : Materias.length === 0 ? 'No hay materias para este cuatrimestre' : '';
+    console.log(sinmaterias, sinmateriasbul);
    return { 
         carrera, setCarrera, 
         Anio, setAnio, 
@@ -85,6 +87,6 @@ export default function GralHook(){
         Materias, 
         Comisiones, 
         Comisiones_nums,
-        ComisionSeleccionada
+        ComisionSeleccionada, sinmaterias, sinmateriasbul
     }
 }

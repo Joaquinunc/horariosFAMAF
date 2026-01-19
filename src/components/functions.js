@@ -16,7 +16,9 @@ elems (opciones disponibles para elegir)
 out: Pieza de html en la que el usuario puede seleccionar entre sus opciones la que busca conocer 
 */
 export function FieldRet({label, atribute, setter, elems}){
-  return(
+  const nodata = elems.length === 0;
+  console.log(nodata);
+  return( 
      <div className='campos'>
                 <label className='etiqueta'>{label}</label>
                 <select className='selector' value={atribute} onChange={(e) => setter(e.target.value)}>
