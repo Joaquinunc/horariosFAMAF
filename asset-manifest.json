@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/horariosFAMAF/static/css/main.f53719d7.css",
-    "main.js": "/horariosFAMAF/static/js/main.1f5ed547.js",
+    "main.css": "/horariosFAMAF/static/css/main.96519d56.css",
+    "main.js": "/horariosFAMAF/static/js/main.013772fb.js",
     "static/js/453.5ba3e8d7.chunk.js": "/horariosFAMAF/static/js/453.5ba3e8d7.chunk.js",
+    "static/media/fground.jpg": "/horariosFAMAF/static/media/fground.ca24c70b2e8cbcbb5e5b.jpg",
     "index.html": "/horariosFAMAF/index.html",
-    "main.f53719d7.css.map": "/horariosFAMAF/static/css/main.f53719d7.css.map",
-    "main.1f5ed547.js.map": "/horariosFAMAF/static/js/main.1f5ed547.js.map",
+    "main.96519d56.css.map": "/horariosFAMAF/static/css/main.96519d56.css.map",
+    "main.013772fb.js.map": "/horariosFAMAF/static/js/main.013772fb.js.map",
     "453.5ba3e8d7.chunk.js.map": "/horariosFAMAF/static/js/453.5ba3e8d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f53719d7.css",
-    "static/js/main.1f5ed547.js"
+    "static/css/main.96519d56.css",
+    "static/js/main.013772fb.js"
   ]
 }
