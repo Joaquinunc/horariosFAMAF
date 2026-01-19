@@ -1,27 +1,98 @@
-.warndiv{
-    position : fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #f8d7da; 
-    color: #721c24;
-    padding: 15px 30px;
-    border-radius: 8px;
-    border: 1px solid #f5c6cb;
-    box-Shadow: 0px 4px 15px rgba(0,0,0,0.2);
-    z-index:1000;
+/* Overlay oscuro de fondo */
+.warning-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    align-items: center;
-    gap: 15px
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-out;
 }
 
-.warnbutton{
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Contenedor del warning */
+.warndiv {
+    background-color: rgba(205, 241, 241, 0.986); 
+    color: rgb(7, 66, 66);
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(205, 241, 241, 0.986);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    width: 90%;
+    animation: slideDown 0.4s ease-out;
+    position: relative;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animación de salida */
+.warndiv.closing {
+    animation: slideUp 0.3s ease-in forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+.warning-overlay.closing {
+    animation: fadeOut 0.3s ease-in forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.warnbutton {
     background: none;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
-    color: #721c24;
+    color: rgb(7, 66, 66);
     font-weight: bold;
-    margin-left: 10px
-               
+    margin-left: auto;
+    transition: transform 0.2s, color 0.2s;
+    padding: 5px;
+}
+
+.warnbutton:hover {
+    transform: scale(1.2);
+    color: #a94442;
 }

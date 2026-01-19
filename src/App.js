@@ -40,13 +40,15 @@ function App() {
 
   return (
     <div className='App'>
-      <h1 className='Title'>Horarios FAMAF</h1>
+      <h1 className='Title'>FAMAFyC - Buscador de horarios</h1>
      {/* Mostramos el Pop-up si ambas condiciones son ciertas */}
       {sinmateriasbul && showWarning && (
+        <div className='warning'>
         <Warningpop 
           warningmsg={sinmaterias} 
           onClose={() => setShowWarning(false)} 
         />
+        </div>
       )}
       <form className='elements' onSubmit={handleSearch}>          
       
@@ -65,10 +67,10 @@ function App() {
           
           {!sinmateriasbul && (<button className='button' type='submit' disabled={!comision}>Consultar horarios de la materia</button>)}
           {result && comision && (
-            <>
+            <div className='resultados-container'>
               {timeRet(confirmCom)}
               {location_mapper(confirmCom)}
-            </>
+            </div>
           )}
       </form>       
     </div>

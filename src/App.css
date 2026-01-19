@@ -74,7 +74,7 @@
   background-color: rgba(205, 241, 241, 0.986);
   margin-top: 15px;
   margin-bottom: 15px;
-  padding: 0px 20px 20px 20px;
+  padding: 1px 20px 20px 20px;
   border-radius: 5px;
 }
 .tabla-horarios{
@@ -92,13 +92,6 @@
   border-bottom: none;
   border-left: none;
   border-right: 1px solid  rgba(205, 241, 241, 0.986);
-}
-
-.warning-text {
-    color: #d32f2f;
-    font-size: 0.85rem;
-    margin-top: 0.4rem;
-    display: block;
 }
 
 
@@ -143,4 +136,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Empieza un poco más abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);    /* Sube a su lugar */
+  }
+}
+
+.resultados-container {
+  display: block;
+  animation: slideUpFade 0.6s ease-out forwards;
+  margin-top: 10px; /* Reducimos un poco para que no empuje tanto */
+  width: 100%;
 }
