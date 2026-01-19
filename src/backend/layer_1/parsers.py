@@ -74,7 +74,6 @@ def obtener_typ(clase):
 def parser_materia(input_text):
     patron = r"(?:AULA|LAB|LEF|R|PAB|LABORATORIO|VIRTUAL)\b[\s.:]*[A-Z]?\s*\d*|SALA [A-Z]+|LEF\d?|LABORATORIO [A-Z]+ [A-Z]+ [A-Z]+|OAC|AULA  [A-Z]+|VAY"
     encontrados = re.findall(patron, input_text, re.IGNORECASE)
-    #print(f"patrones encontrados: {encontrados}")
     return [res.strip().upper() for res in encontrados if res.strip()]
 
 def comparser(inputcom, starthour, endhour, dtype, inpday, summary):
