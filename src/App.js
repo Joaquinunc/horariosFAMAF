@@ -69,7 +69,9 @@ function App() {
           {result && comision && (
             <div className='resultados-container'>
               {timeRet(confirmCom)}
-              {location_mapper(confirmCom)}
+              <div className="map-wrapper">
+                {location_mapper(confirmCom)}
+              </div>
             </div>
           )}
       </form>       

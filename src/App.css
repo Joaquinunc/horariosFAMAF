@@ -61,7 +61,14 @@
   border: none;
   border-radius: 3px;
   padding-left: 10px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
 
 .button:hover{
   transition:400ms;
@@ -154,4 +161,48 @@
   animation: slideUpFade 0.6s ease-out forwards;
   margin-top: 10px; /* Reducimos un poco para que no empuje tanto */
   width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+/*
+Disenio responsivo para celulares
+*/
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.map-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.tabla-horarios {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tabla-horarios th,
+.tabla-horarios td {
+  word-wrap: break-word;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .App {
+    margin: 20px auto;
+    padding: 16px;
+    max-width: 95vw;
+  }
+  .Title { font-size: 1.4rem; }
+  .selector { font-size: 0.95rem; }
+  .button { width: 100%; }
 }
