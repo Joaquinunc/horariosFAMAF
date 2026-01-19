@@ -1,70 +1,69 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Proyecto: Buscador de horarios de FAMAFyC
 
-## Available Scripts
+Bienvenidos, en este repositorio se encuentra el proyecto que pretende mostrar los horarios de cursado de todas las carreras y anios que se dictan en la
 
-In the project directory, you can run:
+Facultad de Matemática, Astronomía, Física y Computación, a fin de facilitar al alumnado el conocimiento de donde
 
-### `npm start`
+debe dirigirse para cursar. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**DISCLAIMER:** Si bien este  proyecto está basado en datos oficiales, su desarrollo es de caracter particular, y no esta exento a posibles fallos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionamiento
 
-### `npm test`
+Este proyecto fue creado con base de [Aplicación de React](https://github.com/facebook/create-react-app) para el frontend, y con [Python](https://www.python.org/) para el backend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
 
-### `npm run build`
+Se leen datos de un archivo en formato .json y se muestran en pantalla, primero como campos de selección, luego como respuesta
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+a los campos seleccionados, con estilos visuales y animaciones.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Comandos importantes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm install:` Esencial, instala las dependencias necesarias para el funcionamiento local.
 
-### `npm run eject`
+`npm start:` Corre la aplicación en modo desarrollador. Se puede ver abriendo el navegador y buscando
+[http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Los cambios que se realizan se guardan automáticamente, y los mensajes de error son inmediatos.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm test`: Corre los test realizados en modo interactivo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Mas información en [correr test](https://facebook.github.io/create-react-app/docs/running-tests).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`npm run build:`
+Monta la aplicacion para producción en la carpeta `build`. Empaqueta correctamente React en modo de producción y optimiza el build para
+mejor desempeño.
 
-## Learn More
+El montaje está minimizado y los nombres de los archivos incluyen los hashes. En este punto la app está lista para desplegarse.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm run deploy`:
+Despliegue de la app para que sea visible en github pages.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+conoce mas en [deployment](https://facebook.github.io/create-react-app/docs/deployment).
 
-### Code Splitting
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+La base de datos se obtuvo mediante scrapping de los calendarios que se encuentran en el
+sitio oficial de [Horarios de cursado](https://www.famaf.unc.edu.ar/la-facultad/institucional/secretar%C3%ADas/secretaria-academica/horarios-de-cursado/) de la Facultad de Matemática, Astronomía, Física y Computación. Para ello se
+recomienda tener instalado python en su ultima versión: `sudo apt install python3.`
 
-### Analyzing the Bundle Size
+#### Comandos importantes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+`sudo apt install python3-icalendar`: Paquete para poder procesar calendarios de google.
 
-### Making a Progressive Web App
+`python3 src/backend/main.py`: Ejecucion de scripts del backend para obtener la información, que se guardara en un archivo en formato .json.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Mas información
 
-### Advanced Configuration
+Se puede obtener mas información en la [Documentación de
+React](https://facebook.github.io/create-react-app/docs/getting-started), y el sitio oficial de [Python](https://www.python.org/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Contribuciones
 
-### Deployment
+Cualquier colaboracion es bienvenida mediante una **pull request.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+##### Propuestas
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Nuevas ideas para el proyecto son aceptadas mediante **issues.**
