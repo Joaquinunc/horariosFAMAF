@@ -18,7 +18,8 @@ function location_setter(Comm){
   const aulas = Comm.Detalle.flatMap(d => d.Ubicacion);
   console.log(aulas);
   //patrones contemplados
-  const aulaRegex = /(?<c1>(AULA)\s*(?<l>[A-Z])\d+)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d?|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)/i;
+  const aulaRegex = 
+  /(?<c1>(AULA)\s*(?<l>[A-Z])\d+)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d?|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)|(?<c9>IPT)|(?<c10>VAY)|(?<c11>[CP]V\-?\d+)/i;
   // filtrado y definicion de claves de busqueda
 
   const blksmap = aulas.map(m => {
@@ -27,13 +28,15 @@ function location_setter(Comm){
     const{groups} = check;
     console.log(groups);
     if (groups.c1) return groups.l.toUpperCase(); // Retorna 'A', 'B', etc.
-    if (groups.c2) return 'FAM';               // Retorna 'AULA' para AULA 22
+    if (groups.c2 || groups.c11) return 'FAM';               // Retorna 'AULA' para AULA 22
     if (groups.c3) return 'LAB';
     if (groups.c4) return 'LEF';
     if (groups.c5) return 'OAC';
     if (groups.c6) return 'HIDR';
     if (groups.c7) return 'VIRT';
     if (groups.c8) return 'MOSC';
+    if (groups.c9) return 'IPT';
+    if (groups.c9) return 'VAY';
     
     return null;
     }   
@@ -176,7 +179,7 @@ export function location_mapper(Comisiones){
   
   //obtenemos las aulas a partir del objeto comision
   const {texto, mapa} = location_finder(Comisiones);
-
+  if (mapa === null) return null;
   console.log(texto);
      return (
       <>

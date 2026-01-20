@@ -4567,7 +4567,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA 10"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "T/P",
@@ -6356,7 +6356,7 @@
         },
         "5° año": {
             "Primer Cuatrimestre": {
-                "Modelos de Programación LAB 17": [
+                "Modelos de Programación": [
                     {
                         "Numero_c": "Única",
                         "Detalle": [
@@ -6365,11 +6365,10 @@
                                     "LAB 17"
                                 ],
                                 "Horario": "09:00 - 11:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Teórico",
                                 "dias": [
                                     "Martes",
-                                    "Jueves",
-                                    "Viernes"
+                                    "Jueves"
                                 ]
                             },
                             {
@@ -6377,10 +6376,8 @@
                                     "LAB 17"
                                 ],
                                 "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
-                                    "Martes",
-                                    "Jueves",
                                     "Viernes"
                                 ]
                             }
@@ -6889,8 +6886,7 @@
                                 "Tipo": "T/P",
                                 "dias": [
                                     "Lunes",
-                                    "Miércoles",
-                                    "Viernes"
+                                    "Miércoles"
                                 ]
                             },
                             {
@@ -6916,8 +6912,7 @@
                                 "Tipo": "T/P",
                                 "dias": [
                                     "Lunes",
-                                    "Miércoles",
-                                    "Viernes"
+                                    "Miércoles"
                                 ]
                             },
                             {
@@ -7083,7 +7078,7 @@
                         ]
                     }
                 ],
-                "Física GeneralII": [
+                "Física General II": [
                     {
                         "Numero_c": "1",
                         "Detalle": [
@@ -7180,7 +7175,6 @@
                                 "Horario": "11:00 - 13:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Martes",
                                     "Miércoles",
                                     "Viernes"
                                 ]
@@ -7207,7 +7201,6 @@
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
                                 "dias": [
-                                    "Martes",
                                     "Miércoles",
                                     "Viernes"
                                 ]
@@ -7219,7 +7212,6 @@
                                 "Horario": "11:00 - 13:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Martes",
                                     "Miércoles",
                                     "Viernes"
                                 ]
