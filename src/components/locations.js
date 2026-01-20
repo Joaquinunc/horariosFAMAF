@@ -11,29 +11,39 @@ para proporcionar la ubicacion real.
 in: Objeto comision
 out: clave con ubicacion parcial
 */
+
 function location_setter(Comm){
   if (!Comm || !Comm.Detalle) return [];
   
   const aulas = Comm.Detalle.flatMap(d => d.Ubicacion);
+  
   //patrones contemplados
-  const aulaRegex = /(AULA)\s*([A-Z])?\d+|(LAB)\s*\d+|(LEF)\s*\d*|(OAC)|(HIDRAULICA)|(VIRTUAL)/i;
+  const aulaRegex = /(?<c1>(AULA)\s*(?<l>[A-Z])\d+)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d+|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)/i;
   // filtrado y definicion de claves de busqueda
-  const bloquesmatch = aulas.map(a => a.match(aulaRegex));
-  const blkfilter = bloquesmatch.filter(Boolean);
-  const blksmap = blkfilter.map(m => {
-        if (m[2]) return m[2];       // AULA A, B, C, D, R...
-        if (m[3]) return 'LAB';
-        if (m[4]) return 'LEF';
-        if (m[5]) return 'OAC';
-        if (m[6]) return 'HIDR';
-        if (m[7]) return "VIRT";
-        return null;
+
+  const blksmap = aulas.map(m => {
+        
+    const check = m.match(aulaRegex);
+    const{groups} = check;
+    
+    if (groups.c1) return groups.l.toUpperCase(); // Retorna 'A', 'B', etc.
+    if (groups.c2) return 'FAM';               // Retorna 'AULA' para AULA 22
+    if (groups.c3) return 'LAB';
+    if (groups.c4) return 'LEF';
+    if (groups.c5) return 'OAC';
+    if (groups.c6) return 'HIDR';
+    if (groups.c7) return 'VIRT';
+    if (groups.c8) return 'MOSC';
+    
+    return null;
     }   
   );
   //ordenamiento de claves
+  console.log(blksmap)
   const blksortes = [...new Set(blksmap)].sort();
   return blksortes
 }
+
 /*
 Locatrion finder: Funcion que se encarga de definir la clave final de las aulas de una comision
 que se utilizara para luego proporcionar la ubicacion en google maps
@@ -112,6 +122,11 @@ function location_finder(Comm) {
         texto: 'Tiene en LABs y Aulas A',
         mapa: 'BLAB'
       };
+    case 'DLAB':
+      return {
+        texto: 'Tiene en LABs y Aulas D',
+        mapa: 'DLAB'
+      };
     case 'HIDR':
       return{
         texto: 'Tiene en LAB fcefyn',
@@ -127,7 +142,22 @@ function location_finder(Comm) {
         texto: 'Tiene Clases virtuales',
         mapa: null
       };
-    default:
+    case 'AFAM':
+      return{
+        texto: 'Tiene en Aulas A y Famaf',
+        mapa: 'ALAB'
+      }
+    case 'FAMR':
+      return{
+        texto: 'Tiene en Aulas R y Famaf',
+        mapa: 'LABR'
+      }
+    case 'MOSC':
+      return{
+        texto: 'Tiene en clases en Auditorio Mirtha Mosconi - OAC',
+        mapa: 'MOSC'
+      }
+      default:
       return {
         texto: `Tiene en aulas ${bloques.join(' - ')}`,
         mapa: 'FAMAF'
