@@ -8801,6 +8801,16 @@
                     {
                         "Numero_c": "2",
                         "Detalle": [
+                                {
+                                    "Ubicacion": [
+                                    "AULA A9"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Martes","Jueves"
+                                ]
+                            },
                             {
                                 "Ubicacion": [
                                     "AULA 22"
@@ -9046,6 +9056,16 @@
                     {
                         "Numero_c": "2",
                         "Detalle": [
+                            {    
+                                "Ubicacion": [
+                                    "AULA A9"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Martes","Jueves"
+                                ]
+                            },
                             {
                                 "Ubicacion": [
                                     "AULA 22"
@@ -9213,6 +9233,15 @@
                     {
                         "Numero_c": "2",
                         "Detalle": [
+                            {    "Ubicacion": [
+                                    "AULA A9"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Martes","Jueves"
+                                ]
+                            },
                             {
                                 "Ubicacion": [
                                     "AULA 22"
@@ -9466,6 +9495,15 @@
                     {
                         "Numero_c": "2",
                         "Detalle": [
+                            {    "Ubicacion": [
+                                    "AULA A9"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Martes","Jueves"
+                                ]
+                            },
                             {
                                 "Ubicacion": [
                                     "AULA 22"
@@ -9711,6 +9749,15 @@
                     {
                         "Numero_c": "2",
                         "Detalle": [
+                            {    "Ubicacion": [
+                                    "AULA A9"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Martes","Jueves"
+                                ]
+                            },
                             {
                                 "Ubicacion": [
                                     "AULA 22"
@@ -9922,6 +9969,15 @@
                     {
                         "Numero_c": "2",
                         "Detalle": [
+                            {    "Ubicacion": [
+                                    "AULA A9"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Martes","Jueves"
+                                ]
+                            },
                             {
                                 "Ubicacion": [
                                     "AULA 22"
@@ -10173,6 +10229,15 @@
                     {
                         "Numero_c": "2",
                         "Detalle": [
+                            {    "Ubicacion": [
+                                    "AULA A9"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Martes","Jueves"
+                                ]
+                            },
                             {
                                 "Ubicacion": [
                                     "AULA 22"
