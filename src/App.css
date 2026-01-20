@@ -178,6 +178,12 @@ Disenio responsivo para celulares
   border-radius: 6px;
 }
 
+.map-wrapper:empty {
+  padding-top: 0; /* Colapsa el contenedor si no hay iframe */
+  height: 0;
+  border: 0;
+}
+
 .map-wrapper iframe {
   position: absolute;
   top: 0; left: 0;

@@ -183,9 +183,16 @@ export function location_mapper(Comisiones){
   console.log(texto);
      return (
       <>
-        {mapa && 
-          (<iframe src={urls[mapa]} width="580" height="450" style={{border:0, borderRadius:"5px"}} loading="lazy"></iframe>)
-        }
+        {mapa && (
+          <iframe
+            src={urls[mapa]}
+            title={`Mapa ${mapa}`}
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+            style={{ border: 0, borderRadius: "5px", width: "100%", height: "100%" }}
+          ></iframe>
+        )}
       </>
   )
 }
