@@ -13,9 +13,10 @@ data_c = {
     "Licenciatura en Matemática Aplicada": {}, 
     "Licenciatura en Hidrometeorología": {}, 
     "Profesorado en Matemática": {},
-    "Profesorado en Física": {}
+    "Profesorado en Física": {},
+    "Recursado":{}
 }
-
+"""
 # Enlaces a calendarios de google de todas las carreras con toda la informacion
 urls =[
     "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics", # Fisica 
@@ -53,10 +54,37 @@ urls =[
     "https://calendar.google.com/calendar/ical/i5bmod71braqvg4t7gmo6vcpro%40group.calendar.google.com/public/basic.ics",
     "https://calendar.google.com/calendar/ical/77ej01t343tkkk3m0juppb4vkc%40group.calendar.google.com/public/basic.ics",
     "https://calendar.google.com/calendar/ical/s7usfgaqk2phi8l6rvf004fcbg%40group.calendar.google.com/public/basic.ics",
+    "https://calendar.google.com/calendar/ical/4crpfrcgn8l5bkngmb2q0sig3s%40group.calendar.google.com/public/basic.ics", # 1ro compu R
+    "https://calendar.google.com/calendar/ical/a69opfbgom0c2c15ol67fn544s%40group.calendar.google.com/public/basic.ics", # 1ro Astro R
+    "https://calendar.google.com/calendar/ical/tlin02fb9a3fdj1cpl0fcp7428%40group.calendar.google.com/public/basic.ics", # 2do Astro R
+    "https://calendar.google.com/calendar/ical/c_3otr6v4tgnphee4vc45lusd2n0%40group.calendar.google.com/public/basic.ics", # 1ro Mate aplicada R
+    "https://calendar.google.com/calendar/ical/c_bb9e768e40fecf5c65dc193f05ac49e4742935da04eb62fa0cb9f114ac127df8%40group.calendar.google.com/public/basic.ics", # 1ro Hidro R
+    "https://calendar.google.com/calendar/ical/gnq59qtg95q3qp86lqu4vbt0c0%40group.calendar.google.com/public/basic.ics", # 1ro Fisica R
+    "https://calendar.google.com/calendar/ical/bue1vsnn4butof64hs9h98u7i4%40group.calendar.google.com/public/basic.ics", # 2do Fisica R
+    "https://calendar.google.com/calendar/ical/i2svrlq4hkqeodjrqh3j5iti98%40group.calendar.google.com/public/basic.ics", # 1ro Mate R
+    "https://calendar.google.com/calendar/ical/8bki2ov2ecodeqdcodieriebl0%40group.calendar.google.com/public/basic.ics", # 1ro Prof Fisica R
+    "https://calendar.google.com/calendar/ical/5t7291vej6f0itcbg865mp6m2k%40group.calendar.google.com/public/basic.ics", # 1ro Prof Mate R
+    "https://calendar.google.com/calendar/ical/k36d7e05svc3113j33mott0slo%40group.calendar.google.com/public/basic.ics", # 2do Mate R
 ] 
+"""
+urls =[
+    "https://calendar.google.com/calendar/ical/4crpfrcgn8l5bkngmb2q0sig3s%40group.calendar.google.com/public/basic.ics", # 1ro compu R
+    "https://calendar.google.com/calendar/ical/a69opfbgom0c2c15ol67fn544s%40group.calendar.google.com/public/basic.ics", # 1ro Astro R
+    "https://calendar.google.com/calendar/ical/tlin02fb9a3fdj1cpl0fcp7428%40group.calendar.google.com/public/basic.ics", # 2do Astro R
+    "https://calendar.google.com/calendar/ical/c_3otr6v4tgnphee4vc45lusd2n0%40group.calendar.google.com/public/basic.ics", # 1ro Mate aplicada R
+    "https://calendar.google.com/calendar/ical/c_bb9e768e40fecf5c65dc193f05ac49e4742935da04eb62fa0cb9f114ac127df8%40group.calendar.google.com/public/basic.ics", # 1ro Hidro R
+    "https://calendar.google.com/calendar/ical/gnq59qtg95q3qp86lqu4vbt0c0%40group.calendar.google.com/public/basic.ics", # 1ro Fisica R
+    "https://calendar.google.com/calendar/ical/bue1vsnn4butof64hs9h98u7i4%40group.calendar.google.com/public/basic.ics", # 2do Fisica R
+    "https://calendar.google.com/calendar/ical/i2svrlq4hkqeodjrqh3j5iti98%40group.calendar.google.com/public/basic.ics", # 1ro Mate R
+    "https://calendar.google.com/calendar/ical/8bki2ov2ecodeqdcodieriebl0%40group.calendar.google.com/public/basic.ics", # 1ro Prof Fisica R
+    "https://calendar.google.com/calendar/ical/5t7291vej6f0itcbg865mp6m2k%40group.calendar.google.com/public/basic.ics", # 1ro Prof Mate R
+    "https://calendar.google.com/calendar/ical/k36d7e05svc3113j33mott0slo%40group.calendar.google.com/public/basic.ics", # 2do Mate R
 
+]
+# compu recursado
 # EN algunos enlaces de "urls", no se encuentra el campo con el nombre de la carrera
 # Tales enlaces son los que se encuentran en este diccionario que define los nombres
+
 dict_url = {
     "https://calendar.google.com/calendar/ical/c_efaa9d6520092e37e395ed64ce45a8d4c8703086dcd2711d8504138451882f90%40group.calendar.google.com/public/basic.ics" : "Primer año de Licenciatura en Hidrometeorología",
     "https://calendar.google.com/calendar/ical/c_e84762490ff47889ffcadee6da5159a2dbfd33be72790742e30b78e7d4e10c53%40group.calendar.google.com/public/basic.ics" : "Segundo año Licenciatura en Hidrometeorología",
@@ -69,7 +97,12 @@ dict_url = {
     "https://calendar.google.com/calendar/ical/4u056joebb5p07f336re5s1vug%40group.calendar.google.com/public/basic.ics" : "Segundo Año de Profesorado en Matemática",
     "https://calendar.google.com/calendar/ical/ghsr7vbci3rhc04q6r2sd82grc%40group.calendar.google.com/public/basic.ics" : "Tercer Año de Profesorado en Física",
     "https://calendar.google.com/calendar/ical/ddlin0p5hh4qg9vokhonpahpmo%40group.calendar.google.com/public/basic.ics" : "Primer Año de Licenciatura en Ciencias de la Computación",
-    "https://calendar.google.com/calendar/ical/mbnequ9kql1f64mm2ef20gu6lc%40group.calendar.google.com/public/basic.ics" : "Segundo Año de Licenciatura en Ciencias de la Computación"
+    "https://calendar.google.com/calendar/ical/mbnequ9kql1f64mm2ef20gu6lc%40group.calendar.google.com/public/basic.ics" : "Segundo Año de Licenciatura en Ciencias de la Computación",
+    "https://calendar.google.com/calendar/ical/tlin02fb9a3fdj1cpl0fcp7428%40group.calendar.google.com/public/basic.ics" : "Segundo Año - Licenciatura en Astronomía (Recursado)",
+    "https://calendar.google.com/calendar/ical/c_3otr6v4tgnphee4vc45lusd2n0%40group.calendar.google.com/public/basic.ics" : "Primer Año - Licenciatura en Matemática Aplicada (Recursado)",
+    "https://calendar.google.com/calendar/ical/c_bb9e768e40fecf5c65dc193f05ac49e4742935da04eb62fa0cb9f114ac127df8%40group.calendar.google.com/public/basic.ics" : "Primer Año - Licenciatura en Hidrometeorología (Recursado)",
+    "https://calendar.google.com/calendar/ical/bue1vsnn4butof64hs9h98u7i4%40group.calendar.google.com/public/basic.ics" : "Segundo Año - Licenciatura en Física (Recursado)",
+    "https://calendar.google.com/calendar/ical/k36d7e05svc3113j33mott0slo%40group.calendar.google.com/public/basic.ics" : "Segundo Año - Licenciatura en Matemática (Recursado)"
 }
 
 # Diccionario con nombres completos para aquellas que estan escritas diferente
@@ -79,11 +112,13 @@ dict_m = {
     "física gral": "Física General",
     "an mat": "Análisis Matemático",
     "análisis matemático": "Análisis Matemático",
+    "Análisis Mat.I" : "Análisis Matemático I",
     "An Numér ": "Análisis Numérico ",
     "An.Numér. ": "Análisis Numérico ",
     "Mat. Disc. I":"Matemática Discreta I",
     "Mat.Discr.I":"Matemática Discreta I",
-    "Psic.del Aprend":"Psicología del Aprendizaje"
+    "Psic.del Aprend":"Psicología del Aprendizaje",
+    "Algor y Estr Datos I" : "Algoritmos y Estructuras de Datos I"
 
 }
 # Identificador de clases teoricas y practicas

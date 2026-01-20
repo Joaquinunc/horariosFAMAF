@@ -41,10 +41,27 @@ def obtener_carrerayanio(enlace, gcalendar):
     carrera = None
     anio = ""
     
-    for carr in data_c.keys():
-        # Para cada carrera del diccionario principal, si su nombre esta incluido en el
-        # obtenido al parsear carrera_raw, lo asignamos  como salida
+    print(f"carrera_raw: {carrera_raw}")
+    
+    # Primero verificamos si es un recursado (case-insensitive)
+    if re.search(r"recursado", carrera_raw, re.IGNORECASE):
+        carrera = "Recursado"
+        carrera2 = re.search(r"(Primer|Segundo|Tercer|Cuarto|Quinto)\s+año", carrera_raw, re.IGNORECASE)
+        ord_anio = carrera2.group(1)
+        num_anio = dict_n.get(ord_anio, ord_anio)
+        anio = carrera_raw.replace(ord_anio, num_anio)# Guardamos el texto completo como el "año"
         
+        print(f"Detectado recursado - Carrera: {carrera}, Año: {anio}")
+        return anio, carrera
+    
+    # Si no es recursado, procesamos normalmente
+    for carr in data_c.keys():
+        # Saltamos "Recursado" en el procesamiento normal
+        if carr == "Recursado":
+            continue
+        
+        # Para cada carrera del diccionario principal, si su nombre está incluido en el
+        # obtenido al parsear carrera_raw, lo asignamos como salida
         if carr in carrera_raw:
             carrera = carr
             # Parseamos el anio de cursada y cambiamos a orden numerico con dict_n
@@ -52,7 +69,9 @@ def obtener_carrerayanio(enlace, gcalendar):
             ord_anio = carrera2.group(1)
             num_anio = dict_n.get(ord_anio, ord_anio)
             anio = f"{num_anio} año"
+        
         #print(f"carrera: {carrera}")
+    print(f"Carrera normal - Carrera: {carrera}, Año: {anio}")
     return anio, carrera
 
 """
