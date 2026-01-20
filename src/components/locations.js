@@ -18,7 +18,7 @@ function location_setter(Comm){
   const aulas = Comm.Detalle.flatMap(d => d.Ubicacion);
   
   //patrones contemplados
-  const aulaRegex = /(?<c1>(AULA)\s*(?<l>[A-Z])\d+)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d+|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)/i;
+  const aulaRegex = /(?<c1>(AULA)\s*(?<l>[A-Z])\d+)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d?|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)/i;
   // filtrado y definicion de claves de busqueda
 
   const blksmap = aulas.map(m => {
