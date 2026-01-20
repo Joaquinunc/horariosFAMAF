@@ -30,12 +30,10 @@ function App() {
     setconfirmCom(null);
   }, [materia]);
 
-  // Cada vez que el hook diga que no hay materias, activamos el pop-up
+  // Cada vez que el cuatrimestre cambia o sinmateriasbul cambia, actualizamos el warning
   useEffect(() => {
-    if (sinmateriasbul) {
-      setShowWarning(true);
-    }
-  }, [sinmateriasbul]);
+    setShowWarning(sinmateriasbul);
+  }, [Cuatrimestre, sinmateriasbul]);
   
 
   return (
@@ -53,13 +51,13 @@ function App() {
       <form className='elements' onSubmit={handleSearch}>          
       
             <article> 
-              <FieldRet label="Seleccione una Carrera:" atribute={carrera} setter={setCarrera} elems={Carreras}/>
-              <FieldRet label="Seleccione un año de cursada:" atribute={Anio} setter={setAnio} elems={Anios} />
-              <FieldRet label="Seleccione un cuatrimestre:" atribute={Cuatrimestre} setter={setCuatrimestre} elems={Cuatrimestres}/>
+              <FieldRet label="Selecciona una carrera:" atribute={carrera} setter={setCarrera} elems={Carreras}/>
+              <FieldRet label="Selecciona un año de cursada:" atribute={Anio} setter={setAnio} elems={Anios} />
+              <FieldRet label="Selecciona un cuatrimestre:" atribute={Cuatrimestre} setter={setCuatrimestre} elems={Cuatrimestres}/>
               {!sinmateriasbul && (
 
-                <div>  <FieldRet label="Seleccione una materia:" atribute={materia} setter={setMateria} elems={Materias} />
-                <FieldRet label="Seleccione una comisión:" atribute={comision} setter={setComision} elems={Comisiones_nums}/></div>
+                <div>  <FieldRet label="Selecciona una materia:" atribute={materia} setter={setMateria} elems={Materias} />
+                <FieldRet label="Selecciona una comisión:" atribute={comision} setter={setComision} elems={Comisiones_nums}/></div>
             )
             }
             </article>  
