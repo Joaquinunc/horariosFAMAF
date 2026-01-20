@@ -33,7 +33,7 @@ timeRet: Funcion que se encarga de devolver la informacion solicitada por el usu
 in: Objeto Comision seleccionado
 out: tabla con horarios, dias y ubicacion textual en formato de tablas
 */
-export function timeRet(comisionData) {
+export function timeRet(comisionData, materia) {
   // Si no hay datos, evitamos errores
   if (!comisionData) return <p>No hay horarios disponibles para la comisión seleccionada</p>;
 
@@ -42,7 +42,8 @@ export function timeRet(comisionData) {
     // Formato de respuesta general (comisiones.json)
     return (
      <div className="result">
-      <h3>Comisión: {comisionData.Numero_c}</h3>
+      <h3>Materia: {materia}</h3>
+      <h4>Comisión: {comisionData.Numero_c}</h4>
       
       <table className="tabla-horarios">
         <thead>

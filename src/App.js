@@ -66,7 +66,7 @@ function App() {
           {!sinmateriasbul && (<button className='button' type='submit' disabled={!comision}>Consultar horarios de la materia</button>)}
           {result && comision && (
             <div className='resultados-container'>
-              {timeRet(confirmCom)}
+              {timeRet(confirmCom, materia)}
               <div className="map-wrapper">
                 {location_mapper(confirmCom)}
               </div>

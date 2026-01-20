@@ -655,7 +655,7 @@
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
                                 "dias": [
-                                    "Martes"
+                                    "Martes","Jueves"
                                 ]
                             },
                             {
@@ -666,7 +666,7 @@
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Martes"
+                                    "Martes","Jueves"
                                 ]
                             }
                         ]
@@ -1138,7 +1138,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "LAB. D"
+                                    "LEF"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "T/P",
@@ -1149,7 +1149,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "LAB. D"
+                                    "LEF"
                                 ],
                                 "Horario": "14:00 - 18:00",
                                 "Tipo": "T/P",
@@ -1293,8 +1293,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "OAC",
-                                    "LAB.I"
+                                    "OAC"
                                 ],
                                 "Horario": "15:00 - 19:00",
                                 "Tipo": "T/P",
@@ -1375,8 +1374,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA 2",
-                                    "OAC"
+                                    "OAC - AULA 2"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "T/P",
@@ -1405,8 +1403,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "SALA DE COMPUTOS",
-                                    "OAC"
+                                    "OAC - SALA DE COMPUTOS"
                                 ],
                                 "Horario": "16:30 - 18:30",
                                 "Tipo": "Práctico",
@@ -1490,8 +1487,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "OAC",
-                                    "LAB. Informatica"
+                                    "OAC - LAB. Informatica"
                                 ],
                                 "Horario": "11:00 - 14:00",
                                 "Tipo": "T/P",

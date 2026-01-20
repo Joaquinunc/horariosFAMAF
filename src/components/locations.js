@@ -16,7 +16,7 @@ function location_setter(Comm){
   if (!Comm || !Comm.Detalle) return [];
   
   const aulas = Comm.Detalle.flatMap(d => d.Ubicacion);
-  
+  console.log(aulas);
   //patrones contemplados
   const aulaRegex = /(?<c1>(AULA)\s*(?<l>[A-Z])\d+)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d?|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)/i;
   // filtrado y definicion de claves de busqueda
@@ -25,7 +25,7 @@ function location_setter(Comm){
         
     const check = m.match(aulaRegex);
     const{groups} = check;
-    
+    console.log(groups);
     if (groups.c1) return groups.l.toUpperCase(); // Retorna 'A', 'B', etc.
     if (groups.c2) return 'FAM';               // Retorna 'AULA' para AULA 22
     if (groups.c3) return 'LAB';
