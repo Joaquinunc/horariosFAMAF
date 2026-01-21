@@ -150,6 +150,11 @@ function location_finder(Comm) {
         texto: 'Tiene en Aulas A y Famaf',
         mapa: 'ALAB'
       }
+    case 'DFAM':
+      return{
+        texto: 'Tiene en Aulas A y Famaf',
+        mapa: 'DLAB'
+      }
     case 'FAMR':
       return{
         texto: 'Tiene en Aulas R y Famaf',
