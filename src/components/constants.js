@@ -19,7 +19,9 @@ Baterias A - FAMAF
 FAMAF (default)
 Baterias B - FAMAF
 Baterias D - FAMAF
-
+Auditorio M.Mosconi
+Baterias D + R
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1MSLLNy4NY-KQa3clKTqhH2KYger56Bc&ehbc=2E312F" width="640" height="480"></iframe>
 */
 export const urls = {
     A: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.182284093421!2d-64.18960452550283!3d-31.43664829722908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2f304344497%3A0x36358f37fd8013b5!2zQXVsYXMgZGUgdXNvIGNvbcO6biAiQSIgKEJhdGVyw61hICJBIikgfCBVLk4uQy4!5e0!3m2!1ses!2sar!4v1768700635022!5m2!1ses!2sar",
@@ -38,5 +40,6 @@ export const urls = {
     FAMAF:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.1202646650886!2d-64.19518052550266!3d-31.438355897311702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2f50c080985%3A0xec1e4c66fe09e826!2sFacultad%20de%20Matem%C3%A1tica%2C%20Astronom%C3%ADa%2C%20F%C3%ADsica%20y%20Computaci%C3%B3n%20-%20FaMAF!5e0!3m2!1ses!2sar!4v1768702871414!5m2!1ses!2sar",
     HIDR: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.0293692872247!2d-64.19412232550255!3d-31.44085839743278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3b5aae0a57f%3A0xa190890f706762e0!2sUNC%20-%20FCEFyN%20-%20Laboratorio%20de%20Hidr%C3%A1ulica!5e0!3m2!1ses!2sar!4v1768755870291!5m2!1ses!2sar",
     DLAB:"https://www.google.com/maps/d/u/0/embed?mid=1CtBe9y1Vnk2uaVuS-lLsoYFcRqxYxqQ&ehbc=2E312F&noprof=1",
-    MOSC: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.7939882051633!2d-64.20097052550372!3d-31.419801596414395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a27e895ee3d5%3A0xf8ac0c6403f0067c!2sAuditorio%20Mirta%20Mosconi!5e0!3m2!1ses!2sar!4v1768934498111!5m2!1ses!2sar"
+    MOSC: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.7939882051633!2d-64.20097052550372!3d-31.419801596414395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a27e895ee3d5%3A0xf8ac0c6403f0067c!2sAuditorio%20Mirta%20Mosconi!5e0!3m2!1ses!2sar!4v1768934498111!5m2!1ses!2sar",
+    DR: "https://www.google.com/maps/d/u/0/embed?mid=1MSLLNy4NY-KQa3clKTqhH2KYger56Bc&ehbc=2E312F&noprof=1"
 };
