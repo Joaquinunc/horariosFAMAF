@@ -19,7 +19,7 @@ function location_setter(Comm){
   console.log(aulas);
   //patrones contemplados
   const aulaRegex = 
-  /(?<c1>(AULA)\s*(?<l>[A-Z])\d+)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d?|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)|(?<c9>IPT)|(?<c10>VAY)|(?<c11>[CP]V\-?\d+)/i;
+  /(?<c1>(AULA)\s*(?<l>[A-Z])\d+)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d?|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)|(?<c9>IPT)|(?<c10>VAY)|(?<c11>PV\-?\d+)|(?<c12>CV\-?\d+)/i;
   // filtrado y definicion de claves de busqueda
 
   const blksmap = aulas.map(m => {
@@ -28,7 +28,7 @@ function location_setter(Comm){
     const{groups} = check;
     console.log(groups);
     if (groups.c1) return groups.l.toUpperCase(); // Retorna 'A', 'B', etc.
-    if (groups.c2 || groups.c11) return 'FAM';               // Retorna 'AULA' para AULA 22
+    if (groups.c2) return 'FAM';               // Retorna 'AULA' para AULA 22
     if (groups.c3) return 'LAB';
     if (groups.c4) return 'LEF';
     if (groups.c5) return 'OAC';
@@ -36,8 +36,9 @@ function location_setter(Comm){
     if (groups.c7) return 'VIRT';
     if (groups.c8) return 'MOSC';
     if (groups.c9) return 'IPT';
-    if (groups.c9) return 'VAY';
-    
+    if (groups.c10) return 'VAY';
+    if (groups.c11) return 'PV';    
+    if (groups.c12) return 'CV';
     return null;
     }   
   );
@@ -165,6 +166,16 @@ function location_finder(Comm) {
         texto: 'Tiene en clases en Auditorio Mirtha Mosconi - OAC',
         mapa: 'MOSC'
       }
+    case 'PV':
+      return{
+        texto: 'Tiene en clases en pabellon venezuela',
+        mapa: 'PV'
+      }
+     case 'CVPV':
+      return{
+        texto: 'Tiene clases en pabellon venezuela y Casa verde',
+        mapa: 'CVPV'
+      } 
       default:
       return {
         texto: `Tiene en aulas ${bloques.join(' - ')}`,

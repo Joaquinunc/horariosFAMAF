@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className='App'>
-      <h1 className='Title'>FAMAFyC - Buscador de horarios</h1>
+      <h1 className='Title'>FAMAF - Buscador de horarios</h1>
      {/* Mostramos el Pop-up si ambas condiciones son ciertas */}
       {sinmateriasbul && showWarning && (
         <div className='warning'>
