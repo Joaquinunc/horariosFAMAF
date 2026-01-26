@@ -21,7 +21,9 @@ Baterias B - FAMAF
 Baterias D - FAMAF
 Auditorio M.Mosconi
 Baterias D + R
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1MSLLNy4NY-KQa3clKTqhH2KYger56Bc&ehbc=2E312F" width="640" height="480"></iframe>
+Pabellon venezuela
+Casa verde
+Pabellon venezuela + Casa verde
 */
 export const urls = {
     A: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.182284093421!2d-64.18960452550283!3d-31.43664829722908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2f304344497%3A0x36358f37fd8013b5!2zQXVsYXMgZGUgdXNvIGNvbcO6biAiQSIgKEJhdGVyw61hICJBIikgfCBVLk4uQy4!5e0!3m2!1ses!2sar!4v1768700635022!5m2!1ses!2sar",
@@ -41,5 +43,7 @@ export const urls = {
     HIDR: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.0293692872247!2d-64.19412232550255!3d-31.44085839743278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3b5aae0a57f%3A0xa190890f706762e0!2sUNC%20-%20FCEFyN%20-%20Laboratorio%20de%20Hidr%C3%A1ulica!5e0!3m2!1ses!2sar!4v1768755870291!5m2!1ses!2sar",
     DLAB:"https://www.google.com/maps/d/u/0/embed?mid=1CtBe9y1Vnk2uaVuS-lLsoYFcRqxYxqQ&ehbc=2E312F&noprof=1",
     MOSC: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.7939882051633!2d-64.20097052550372!3d-31.419801596414395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a27e895ee3d5%3A0xf8ac0c6403f0067c!2sAuditorio%20Mirta%20Mosconi!5e0!3m2!1ses!2sar!4v1768934498111!5m2!1ses!2sar",
-    DR: "https://www.google.com/maps/d/u/0/embed?mid=1MSLLNy4NY-KQa3clKTqhH2KYger56Bc&ehbc=2E312F&noprof=1"
+    DR: "https://www.google.com/maps/d/u/0/embed?mid=1MSLLNy4NY-KQa3clKTqhH2KYger56Bc&ehbc=2E312F&noprof=1",
+    PV: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.2094720274317!2d-64.1909546255028!3d-31.435899697192898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2f342912c77%3A0xb1a066de9c6131b!2sPabell%C3%B3n%20Rep%C3%BAblica%20Bolivariana%20de%20Venezuela%20(ex%20La%20Casa%20Roja)%20%7C%20U.N.C.!5e0!3m2!1ses!2sar!4v1769436084330!5m2!1ses!2sar",
+    CVPV: "https://www.google.com/maps/d/u/0/embed?mid=1z04HcUWsoR2d9sWFQ4DQKKSEAxFEFus&ehbc=2E312F&noprof=1"
 };
