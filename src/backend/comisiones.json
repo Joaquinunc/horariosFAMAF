@@ -1028,7 +1028,7 @@
                                     "LEF 102"
                                 ],
                                 "Horario": "14:00 - 19:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Martes"
                                 ]
@@ -1191,7 +1191,7 @@
                                     "LEF"
                                 ],
                                 "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes",
                                     "Jueves"
@@ -1202,7 +1202,7 @@
                                     "LEF"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes",
                                     "Jueves"
@@ -2926,7 +2926,7 @@
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "T/P",
                                 "dias": [
-                                    "Miércoles"
+                                    "Miércoles", "Viernes"
                                 ]
                             }
                         ]
@@ -3576,7 +3576,7 @@
                                     "LEF 102"
                                 ],
                                 "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes"
                                 ]
@@ -3591,7 +3591,7 @@
                                     "LEF 102"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes"
                                 ]
@@ -3606,7 +3606,7 @@
                                     "LEF 102"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Martes"
                                 ]
@@ -3621,7 +3621,7 @@
                                     "LEF 102"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Jueves"
                                 ]
@@ -3753,7 +3753,7 @@
                                     "LEF"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes"
                                 ]
@@ -3768,7 +3768,7 @@
                                     "LEF"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Martes"
                                 ]
@@ -3783,7 +3783,7 @@
                                     "LEF"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Miércoles"
                                 ]
@@ -3906,7 +3906,7 @@
                                     "LEF 103"
                                 ],
                                 "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes"
                                 ]
@@ -3921,7 +3921,7 @@
                                     "LEF 103"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Miércoles"
                                 ]
@@ -3936,7 +3936,7 @@
                                     "LEF 103"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Viernes"
                                 ]
@@ -4067,7 +4067,7 @@
                                     "LEF"
                                 ],
                                 "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes"
                                 ]
@@ -4092,7 +4092,7 @@
                                     "LEF"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Martes"
                                 ]
@@ -4117,7 +4117,7 @@
                                     "LEF"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Jueves",
                                     "Miércoles"
@@ -4157,7 +4157,7 @@
                                     "LEF1"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Martes",
                                     "Jueves"
@@ -6944,7 +6944,7 @@
                                     "LEF"
                                 ],
                                 "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Viernes"
                                 ]
@@ -6970,7 +6970,7 @@
                                     "LEF"
                                 ],
                                 "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Viernes"
                                 ]
@@ -7120,7 +7120,7 @@
                                     "LEF 102"
                                 ],
                                 "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes"
                                 ]
@@ -7374,7 +7374,7 @@
                                     "LEF 103"
                                 ],
                                 "Horario": "12:00 - 16:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes"
                                 ]
