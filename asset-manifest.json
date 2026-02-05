@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/horariosFAMAF/static/css/main.2513887d.css",
-    "main.js": "/horariosFAMAF/static/js/main.efaa209c.js",
+    "main.js": "/horariosFAMAF/static/js/main.b8603fe5.js",
     "static/js/453.5ba3e8d7.chunk.js": "/horariosFAMAF/static/js/453.5ba3e8d7.chunk.js",
     "static/media/fground.jpg": "/horariosFAMAF/static/media/fground.ca24c70b2e8cbcbb5e5b.jpg",
     "index.html": "/horariosFAMAF/index.html",
     "main.2513887d.css.map": "/horariosFAMAF/static/css/main.2513887d.css.map",
-    "main.efaa209c.js.map": "/horariosFAMAF/static/js/main.efaa209c.js.map",
+    "main.b8603fe5.js.map": "/horariosFAMAF/static/js/main.b8603fe5.js.map",
     "453.5ba3e8d7.chunk.js.map": "/horariosFAMAF/static/js/453.5ba3e8d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2513887d.css",
-    "static/js/main.efaa209c.js"
+    "static/js/main.b8603fe5.js"
   ]
 }
