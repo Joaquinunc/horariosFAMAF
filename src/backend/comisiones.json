@@ -1973,7 +1973,7 @@
                                     "LAB 17"
                                 ],
                                 "Horario": "09:00 - 13:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes"
                                 ]
@@ -1996,7 +1996,6 @@
                                 "Horario": "11:00 - 13:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Lunes",
                                     "Martes",
                                     "Jueves"
                                 ]
@@ -2011,7 +2010,7 @@
                                     "LAB 28"
                                 ],
                                 "Horario": "09:00 - 13:00",
-                                "Tipo": "Práctico",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes"
                                 ]
@@ -2048,7 +2047,7 @@
                                     "LAB 17"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes"
                                 ]
@@ -2085,7 +2084,7 @@
                                     "LAB 28"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Lunes"
                                 ]
@@ -2385,7 +2384,7 @@
                                     "LAB 17"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Jueves"
                                 ]
@@ -2437,7 +2436,7 @@
                                     "LAB 17"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Viernes"
                                 ]
@@ -2463,7 +2462,7 @@
                                     "LAB 28"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Viernes"
                                 ]
@@ -2615,7 +2614,7 @@
                                     "LAB 28"
                                 ],
                                 "Horario": "16:00 - 18:00",
-                                "Tipo": "Práctico",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Martes",
                                     "Jueves"
@@ -2682,8 +2681,19 @@
                                 "Ubicacion": [
                                     "LAB 30"
                                 ],
-                                "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Martes",
+                                    "Jueves"
+                                ]
+                            },
+                             {
+                                "Ubicacion": [
+                                    "LAB 30"
+                                ],
+                                "Horario": "16:00 - 18:00",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Martes",
                                     "Jueves"
@@ -2702,8 +2712,19 @@
                                 "Ubicacion": [
                                     "LAB 28"
                                 ],
-                                "Horario": "09:00 - 13:00",
+                                "Horario": "09:00 - 11:00",
                                 "Tipo": "T/P",
+                                "dias": [
+                                    "Miércoles",
+                                    "Viernes"
+                                ]
+                            },
+                             {
+                                "Ubicacion": [
+                                    "LAB 28"
+                                ],
+                                "Horario": "11:00 - 13:00",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Miércoles",
                                     "Viernes"
@@ -5998,7 +6019,7 @@
                                     "LAB 17"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Martes",
                                     "Jueves"
@@ -6103,7 +6124,7 @@
                                     "LAB 17"
                                 ],
                                 "Horario": "11:00 - 13:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Miércoles",
                                     "Viernes"

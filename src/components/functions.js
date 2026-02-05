@@ -17,7 +17,7 @@ out: Pieza de html en la que el usuario puede seleccionar entre sus opciones la 
 */
 export function FieldRet({label, atribute, setter, elems}){
   const nodata = elems.length === 0;
-  console.log(nodata);
+  //console.log(nodata);
   return( 
      <div className='campos'>
                 <label className='etiqueta'>{label}</label>
