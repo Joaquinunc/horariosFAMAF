@@ -16,7 +16,7 @@ function location_setter(Comm){
   if (!Comm || !Comm.Detalle) return [];
   
   const aulas = Comm.Detalle.flatMap(d => d.Ubicacion);
-  console.log(aulas);
+  //console.log(aulas);
   //patrones contemplados
   const aulaRegex = 
   /(?<c1>(AULA)\s*(?<l>[A-Z])\d+)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d?|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)|(?<c9>IPT)|(?<c10>VAY)|(?<c11>PV\-?\d+)|(?<c12>CV\-?\d+)/i;
@@ -26,7 +26,7 @@ function location_setter(Comm){
         
     const check = m.match(aulaRegex);
     const{groups} = check;
-    console.log(groups);
+    //console.log(groups);
     if (groups.c1) return groups.l.toUpperCase(); // Retorna 'A', 'B', etc.
     if (groups.c2) return 'FAM';               // Retorna 'AULA' para AULA 22
     if (groups.c3) return 'LAB';
@@ -43,7 +43,7 @@ function location_setter(Comm){
     }   
   );
   //ordenamiento de claves
-  console.log(blksmap)
+  //console.log(blksmap)
   const blksortes = [...new Set(blksmap)].sort();
   return blksortes
 }
@@ -196,7 +196,7 @@ export function location_mapper(Comisiones){
   //obtenemos las aulas a partir del objeto comision
   const {texto, mapa} = location_finder(Comisiones);
   if (mapa === null) return null;
-  console.log(texto);
+  //console.log(texto);
      return (
       <>
         {mapa && (
