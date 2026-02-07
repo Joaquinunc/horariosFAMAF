@@ -233,7 +233,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA D4"
+                                    "AULA 31"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
@@ -258,7 +258,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA D4"
+                                    "AULA 31"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
@@ -283,7 +283,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA D4"
+                                    "AULA 31"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
@@ -308,7 +308,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA D4"
+                                    "AULA 31"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
@@ -333,7 +333,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA D4"
+                                    "AULA 31"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
@@ -358,7 +358,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA D4"
+                                    "AULA 31"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
@@ -2068,7 +2068,7 @@
                                     "AULA A11"
                                 ],
                                 "Horario": "11:00 - 13:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Práctico",
                                 "dias": [
                                     "Martes",
                                     "Jueves"
@@ -5321,7 +5321,7 @@
                                     "LAB 17"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Martes"
                                 ]
@@ -6057,7 +6057,7 @@
                                     "LAB 17"
                                 ],
                                 "Horario": "14:00 - 18:00",
-                                "Tipo": "T/P",
+                                "Tipo": "Laboratorio",
                                 "dias": [
                                     "Martes",
                                     "Jueves"
