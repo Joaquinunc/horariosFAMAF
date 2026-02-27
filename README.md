@@ -5,7 +5,8 @@ Se puede acceder al sitio mediante el siguiente código QR:
 <p align="center">
     <img src="public/qr.png">
 </p>
-**DISCLAIMER:** Si bien este  proyecto está basado en datos oficiales, su desarrollo es de caracter particular, y no esta exento a posibles fallos.
+
+**DISCLAIMER**: Si bien este  proyecto está basado en datos oficiales, su desarrollo es de caracter particular, y no esta exento a posibles fallos.
 
 ## Funcionamiento
 
