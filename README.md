@@ -1,8 +1,12 @@
 # Proyecto: Buscador de horarios de FAMAF
 
-Bienvenidos, en este repositorio se encuentra el proyecto que pretende mostrar los horarios de cursado de todas las carreras y años que se dictan en la Facultad de Matemática, Astronomía, Física y Computación para un ciclo lectivo determinado (actualmente se pueden consultar datos del 2025 para las carreras de grado y los redictados, y los horarios del 2026 para el Ingreso en modalidad intensiva). Todo esto a fin de facilitar al alumnado el conocimiento de adónde debe dirigirse para cursar.
+Bienvenidos, en este repositorio se encuentra el proyecto que pretende mostrar los horarios de cursado de todas las carreras y años que se dictan en la Facultad de Matemática, Astronomía, Física y Computación para un ciclo lectivo determinado (actualmente se pueden consultar datos del 2025 para las carreras de grado y los redictados, y los horarios del 2026 para el Ingreso en modalidad intensiva). Todo esto a fin de facilitar al alumnado el conocimiento de adónde debe dirigirse para cursar. 
+Se puede acceder al sitio mediante el siguiente código QR:
+<p align="center">
+    <img src="public/qr.png">
+</p>
 
-**DISCLAIMER:** Si bien este  proyecto está basado en datos oficiales, su desarrollo es de caracter particular, y no esta exento a posibles fallos.
+**DISCLAIMER**: Si bien este  proyecto está basado en datos oficiales, su desarrollo es de caracter particular, y no esta exento a posibles fallos.
 
 ## Funcionamiento
 
