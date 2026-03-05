@@ -16,7 +16,7 @@ data_c = {
     "Profesorado en Física": {},
     "Recursado":{}
 }
-"""
+
 # Enlaces a calendarios de google de todas las carreras con toda la informacion
 urls =[
     "https://calendar.google.com/calendar/ical/qikesifu31eutm83pj8ieg55rc@group.calendar.google.com/public/basic.ics", # Fisica 
@@ -66,21 +66,8 @@ urls =[
     "https://calendar.google.com/calendar/ical/5t7291vej6f0itcbg865mp6m2k%40group.calendar.google.com/public/basic.ics", # 1ro Prof Mate R
     "https://calendar.google.com/calendar/ical/k36d7e05svc3113j33mott0slo%40group.calendar.google.com/public/basic.ics", # 2do Mate R
 ] 
-"""
-urls =[
-    "https://calendar.google.com/calendar/ical/4crpfrcgn8l5bkngmb2q0sig3s%40group.calendar.google.com/public/basic.ics", # 1ro compu R
-    "https://calendar.google.com/calendar/ical/a69opfbgom0c2c15ol67fn544s%40group.calendar.google.com/public/basic.ics", # 1ro Astro R
-    "https://calendar.google.com/calendar/ical/tlin02fb9a3fdj1cpl0fcp7428%40group.calendar.google.com/public/basic.ics", # 2do Astro R
-    "https://calendar.google.com/calendar/ical/c_3otr6v4tgnphee4vc45lusd2n0%40group.calendar.google.com/public/basic.ics", # 1ro Mate aplicada R
-    "https://calendar.google.com/calendar/ical/c_bb9e768e40fecf5c65dc193f05ac49e4742935da04eb62fa0cb9f114ac127df8%40group.calendar.google.com/public/basic.ics", # 1ro Hidro R
-    "https://calendar.google.com/calendar/ical/gnq59qtg95q3qp86lqu4vbt0c0%40group.calendar.google.com/public/basic.ics", # 1ro Fisica R
-    "https://calendar.google.com/calendar/ical/bue1vsnn4butof64hs9h98u7i4%40group.calendar.google.com/public/basic.ics", # 2do Fisica R
-    "https://calendar.google.com/calendar/ical/i2svrlq4hkqeodjrqh3j5iti98%40group.calendar.google.com/public/basic.ics", # 1ro Mate R
-    "https://calendar.google.com/calendar/ical/8bki2ov2ecodeqdcodieriebl0%40group.calendar.google.com/public/basic.ics", # 1ro Prof Fisica R
-    "https://calendar.google.com/calendar/ical/5t7291vej6f0itcbg865mp6m2k%40group.calendar.google.com/public/basic.ics", # 1ro Prof Mate R
-    "https://calendar.google.com/calendar/ical/k36d7e05svc3113j33mott0slo%40group.calendar.google.com/public/basic.ics", # 2do Mate R
 
-]
+
 # compu recursado
 # EN algunos enlaces de "urls", no se encuentra el campo con el nombre de la carrera
 # Tales enlaces son los que se encuentran en este diccionario que define los nombres
