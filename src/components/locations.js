@@ -25,6 +25,8 @@ function location_setter(Comm){
   const blksmap = aulas.map(m => {
         
     const check = m.match(aulaRegex);
+    // caso en el que no exista coincidencia (deberia quitarse en un futuro)
+    if (check === null) return m;
     const{groups} = check;
     console.log(groups);
     if (groups.c1) return groups.l.toUpperCase(); // Retorna 'A', 'B', etc.

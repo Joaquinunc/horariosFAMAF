@@ -4572,20 +4572,10 @@
                                 "Ubicacion": [
                                     "No especificada"
                                 ],
-                                "Horario": "14:00 - 16:00",
-                                "Tipo": "Práctico",
-                                "dias": [
-                                    "Jueves"
-                                ]
-                            },
-                            {
-                                "Ubicacion": [
-                                    "No especificada"
-                                ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Teórico",
                                 "dias": [
-                                    "Martes"
+                                    "Martes","Jueves"
                                 ]
                             },
                             {
@@ -4606,6 +4596,16 @@
                                 "Tipo": "Práctico",
                                 "dias": [
                                     "Martes"
+                                ]
+                            },
+                             {
+                                "Ubicacion": [
+                                    "No especificada"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Práctico",
+                                "dias": [
+                                    "Jueves"
                                 ]
                             }
                         ]
@@ -5095,10 +5095,20 @@
                         ]
                     }
                 ],
-                "Psicología del Aprendizaje": [
+                 "Psicología del Aprendizaje": [
                     {
                         "Numero_c": "Única",
                         "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "No especificada"
+                                ],
+                                "Horario": "16:00 - 18:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Martes","Jueves"
+                                ]
+                            },
                             {
                                 "Ubicacion": [
                                     "No especificada"
@@ -5113,20 +5123,20 @@
                                 "Ubicacion": [
                                     "No especificada"
                                 ],
-                                "Horario": "16:00 - 18:00",
-                                "Tipo": "Teórico",
-                                "dias": [
-                                    "Martes"
-                                ]
-                            },
-                            {
-                                "Ubicacion": [
-                                    "No especificada"
-                                ],
                                 "Horario": "18:00 - 20:00",
                                 "Tipo": "Práctico",
                                 "dias": [
                                     "Martes"
+                                ]
+                            },
+                             {
+                                "Ubicacion": [
+                                    "No especificada"
+                                ],
+                                "Horario": "14:00 - 16:00",
+                                "Tipo": "Práctico",
+                                "dias": [
+                                    "Jueves"
                                 ]
                             }
                         ]
