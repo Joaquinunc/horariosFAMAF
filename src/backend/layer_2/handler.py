@@ -6,7 +6,7 @@ import re
 import requests
 import json
 # contante que utilizaremos para filtrar las actividades de un ciclo lectivo determinado
-YEAR = 2025
+YEAR = 2026
 
 """
 obtener_data()
@@ -17,7 +17,7 @@ analizar sus elementos, organizarlos y finalmente guardarlos en un archivo en fo
 def obtener_data():
     #abrimos los datos y lo cargamos en info
     try:
-        with open("./src/backend/comisiones2.json", 'r', encoding='utf-8') as f:
+        with open("./src/backend/comisiones26.json", 'r', encoding='utf-8') as f:
             info = json.load(f)
             print(f"Archivo existente cargado con {len(info)} carreras.")
     except (FileNotFoundError, json.JSONDecodeError):
@@ -100,12 +100,12 @@ def obtener_data():
     # Guardar los datos obtenidos en formato json
     print("\nGuardando resultados finales...")
     try:
-        with open("./src/backend/comisiones2.json", 'w', encoding='utf-8') as f:
+        with open("./src/backend/comisiones26.json", 'w', encoding='utf-8') as f:
             json.dump(info_ordenada, f, ensure_ascii=False, indent=4)
             print(f"Archivo 'comisiones.json' generado con {len(info_ordenada)} carreras.")
     except FileNotFoundError:
         # Por si la carpeta no existe
-        with open("comisiones.json", 'w', encoding='utf-8') as f:
+        with open("comisiones26.json", 'w', encoding='utf-8') as f:
             json.dump(info_ordenada, f, ensure_ascii=False, indent=4)
             print("Carpeta './src/backend/' no encontrada. Guardado en directorio actual como 'comisiones.json'.")
 

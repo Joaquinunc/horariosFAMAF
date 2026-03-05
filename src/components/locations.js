@@ -19,12 +19,15 @@ function location_setter(Comm){
   //console.log(aulas);
   //patrones contemplados
   const aulaRegex = 
-  /(?<c1>(AULA)\s*(?<l>[A-Z])\d+)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d?|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)|(?<c9>IPT)|(?<c10>VAY)|(?<c11>PV\-?\d+)|(?<c12>CV\-?\d+)/i;
+  /(?<c1>(AULA)\s*(?<l>[A-Z])\d*)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d?|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)|(?<c9>IPT)|(?<c10>VAY)|(?<c11>PV\-?\d+)|(?<c12>CV\-?\d+)|(?<c13>CENTRO)|(?<c14>FCEFYN)/i;
   // filtrado y definicion de claves de busqueda
 
   const blksmap = aulas.map(m => {
         
     const check = m.match(aulaRegex);
+    // caso en el que no exista coincidencia (deberia quitarse en un futuro)
+    //console.log(check, m)
+    if (check === null) return m;
     const{groups} = check;
     //console.log(groups);
     if (groups.c1) return groups.l.toUpperCase(); // Retorna 'A', 'B', etc.
@@ -39,17 +42,19 @@ function location_setter(Comm){
     if (groups.c10) return 'VAY';
     if (groups.c11) return 'PV';    
     if (groups.c12) return 'CV';
+    if (groups.c13) return 'CENTRO';
+    if (groups.c14) return 'FCEFYN';
     return null;
     }   
   );
   //ordenamiento de claves
-  //console.log(blksmap)
+  console.log(blksmap)
   const blksortes = [...new Set(blksmap)].sort();
   return blksortes
 }
 
 /*
-Locatrion finder: Funcion que se encarga de definir la clave final de las aulas de una comision
+Location finder: Funcion que se encarga de definir la clave final de las aulas de una comision
 que se utilizara para luego proporcionar la ubicacion en google maps
 in: Objeto comision
 out: Clave de busqueda para obtener la ubicacion final
@@ -136,6 +141,16 @@ function location_finder(Comm) {
         texto: 'Tiene en LAB fcefyn',
         mapa: 'HIDR'
       }
+    case 'FCEFYN':
+      return{
+        texto: 'Tiene en FCEFYN',
+        mapa:  'FCEFYN'
+      }
+    case 'CENTROFCEFYN':
+      return{
+        texto: 'Tiene en ambas sedes de FCEFYN',
+        mapa: 'FCENTRO'
+      }
     case 'ALEF':
       return {
         texto: 'Tiene en LEFs Aulas A',
@@ -178,7 +193,7 @@ function location_finder(Comm) {
       } 
       default:
       return {
-        texto: `Tiene en aulas ${bloques.join(' - ')}`,
+        texto: `Tiene en las aulas ${bloques.join(' - ')}`,
         mapa: 'FAMAF'
       };
   }
@@ -196,7 +211,7 @@ export function location_mapper(Comisiones){
   //obtenemos las aulas a partir del objeto comision
   const {texto, mapa} = location_finder(Comisiones);
   if (mapa === null) return null;
-  //console.log(texto);
+  console.log(texto);
      return (
       <>
         {mapa && (
