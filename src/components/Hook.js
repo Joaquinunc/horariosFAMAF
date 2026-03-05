@@ -1,4 +1,4 @@
-import info2 from '../comisiones26.json';
+import info2 from '../backend/comisiones26.json';
 import { useState, useEffect } from "react";
 
 /*
