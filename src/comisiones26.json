@@ -515,25 +515,15 @@
                 "Introducción a la Física": [
                     {
                         "Numero_c": "1",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "No especificada"
-                                ],
-                                "Horario": "09:00 - 11:00",
-                                "Tipo": "Teórico",
-                                "dias": [
-                                    "Lunes"
-                                ]
-                            },
+                        "Detalle": [                            
                             {
                                 "Ubicacion": [
                                     "AULA D1"
                                 ],
-                                "Horario": "11:00 - 13:00",
-                                "Tipo": "Práctico",
+                                "Horario": "09:00 - 13:00",
+                                "Tipo": "Teó./Prá.",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes","Miércoles"
                                 ]
                             }
                         ]
@@ -543,12 +533,12 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA D1"
+                                    "AULA R5"
                                 ],
-                                "Horario": "11:00 - 13:00",
-                                "Tipo": "Práctico",
+                                "Horario": "14:00 - 18:00",
+                                "Tipo": "Teó./Prá.",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes","Miércoles"
                                 ]
                             }
                         ]
@@ -563,34 +553,17 @@
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
                                 "dias": [
-                                    "Lunes"
+                                    "Lunes","Miércoles"
                                 ]
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA R5",
                                     "AULA R7"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Lunes"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "Numero_c": "4",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "AULA R5",
-                                    "AULA R7"
-                                ],
-                                "Horario": "16:00 - 18:00",
-                                "Tipo": "Práctico",
-                                "dias": [
-                                    "Lunes"
+                                    "Lunes","Miércoles"
                                 ]
                             }
                         ]
@@ -619,7 +592,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
@@ -644,7 +617,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
@@ -679,7 +652,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA  A10"
+                                    "AULA A10"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
@@ -863,7 +836,7 @@
                                     "AULA 16"
                                 ],
                                 "Horario": "09:00 - 11:00",
-                                "Tipo": "Teó./Prá.",
+                                "Tipo": "Teórico",
                                 "dias": [
                                     "Martes","Jueves"
                                 ]
@@ -905,7 +878,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "OAC - AUDITORIO M. MOSCONI"
+                                    "AUDITORIO M. MOSCONI - OAC"
                                 ],
                                 "Horario": "14:00 - 15:00",
                                 "Tipo": "Teó./Prá.",
@@ -1223,7 +1196,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA  A10"
+                                    "AULA A10"
                                 ],
                                 "Horario": "11:00 - 13:00",
                                 "Tipo": "Práctico",
@@ -1288,7 +1261,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
@@ -1303,7 +1276,7 @@
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Martes"
+                                    "Martes","Jueves"
                                 ]
                             }
                         ]
@@ -1313,7 +1286,7 @@
                         "Detalle": [
                              {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
@@ -1667,7 +1640,7 @@
                         ]
                     }
                 ],
-                "Introducción a la Didáctica de Computación e Inteligencia Artificial- SALA IPT": [
+                "Introducción a la Didáctica de Computación e Inteligencia Artificial": [
                     {
                         "Numero_c": "Única",
                         "Detalle": [
@@ -1856,21 +1829,6 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA D1"
-                                ],
-                                "Horario": "09:00 - 13:00",
-                                "Tipo": "Teó./Prá.",
-                                "dias": [
-                                    "Lunes","Miércoles"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "Numero_c": "3",
-                        "Detalle": [
-                            {
-                                "Ubicacion": [
                                     "AULA R5"
                                 ],
                                 "Horario": "14:00 - 18:00",
@@ -1882,7 +1840,7 @@
                         ]
                     },
                     {
-                        "Numero_c": "4",
+                        "Numero_c": "3",
                         "Detalle": [
                              {
                                 "Ubicacion": [
@@ -1913,7 +1871,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
@@ -1938,7 +1896,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
@@ -1973,7 +1931,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA  A10"
+                                    "AULA A10"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
@@ -3296,7 +3254,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
@@ -3321,7 +3279,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
@@ -3356,7 +3314,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA  A10"
+                                    "AULA A10"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
@@ -3413,8 +3371,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA A10",
-                                    "AULA A11"
+                                    "AULA A10"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
@@ -3772,7 +3729,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA  A10"
+                                    "AULA A10"
                                 ],
                                 "Horario": "11:00 - 13:00",
                                 "Tipo": "Práctico",
@@ -3837,7 +3794,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
@@ -3852,7 +3809,7 @@
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
                                 "dias": [
-                                    "Martes"
+                                    "Martes","Jueves"
                                 ]
                             }
                         ]
@@ -3862,7 +3819,7 @@
                         "Detalle": [
                              {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Teórico",
@@ -4387,7 +4344,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
@@ -4412,7 +4369,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
@@ -4447,7 +4404,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA  A10"
+                                    "AULA A10"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
@@ -4925,7 +4882,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
@@ -4950,7 +4907,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA: A2"
+                                    "AULA A2"
                                 ],
                                 "Horario": "09:00 - 11:00",
                                 "Tipo": "Teórico",
@@ -4985,7 +4942,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "AULA  A10"
+                                    "AULA A10"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
@@ -5214,7 +5171,7 @@
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
-                                    "Miércoles","Miércoles"
+                                    "Miércoles","Viernes"
                                 ]
                             }
                         ]
@@ -5408,7 +5365,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA B"
+                                    "AULA D4"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Teó./Prá.",
@@ -5541,7 +5498,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA B"
+                                    "AULA D4"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Teó./Prá.",
@@ -5657,7 +5614,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA"
+                                    "AULA D1"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Teó./Prá.",
@@ -5773,7 +5730,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA B"
+                                    "AULA D4"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Teó./Prá.",
@@ -5906,7 +5863,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA B"
+                                    "AULA D4"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Teó./Prá.",
@@ -5933,7 +5890,7 @@
                                 "Horario": "14:00 - 18:00",
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
-                                    "Miércoles"
+                                    "Miércoles","Viernes"
                                 ]
                             }
                         ]
@@ -6022,7 +5979,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA B"
+                                    "AULA D4"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Teó./Prá.",
@@ -6155,7 +6112,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA B"
+                                    "AULA D4"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Teó./Prá.",
@@ -6288,7 +6245,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA B"
+                                    "AULA D4"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Teó./Prá.",

@@ -48,32 +48,32 @@ export default function GralHook(){
 
     // Obtenemos la lista de carreras
     const Carreras = Object.keys(info2);
-    console.log(Carreras);
+    //console.log(Carreras);
     // Obtenemos la lista de anios de cursada de una carrera
     const Anios = carrera && info2[carrera]? Object.keys(info2[carrera]): [];
-    console.log(Anios);
+    //console.log(Anios);
     // Lista de cuatrimestres de un anio de cursada
     const Cuatrimestres = carrera && Anio && info2[carrera] && info2[carrera]?.[Anio] ?  Object.keys(info2[carrera][Anio]) : [];
     // Lista de materias de un cuatrimestre
-    console.log(Cuatrimestres);
+    //console.log(Cuatrimestres);
     const Materias = carrera && Anio && Cuatrimestre && info2[carrera] && info2[carrera]?.[Anio] && info2[carrera]?.[Anio]?.[Cuatrimestre] ? Object.keys(info2[carrera][Anio][Cuatrimestre]) : [];
-    console.log(Materias);
+    //console.log(Materias);
     // Lista de comisiones para una materia
     const Comisiones = carrera && Anio && Cuatrimestre && materia && info2[carrera] 
     && info2[carrera]?.[Anio] && info2[carrera]?.[Anio]?.[Cuatrimestre] &&
     info2[carrera]?.[Anio]?.[Cuatrimestre]?.[materia] 
     ? info2[carrera][Anio][Cuatrimestre][materia]
     : [];
-    console.log(Comisiones);
+    //console.log(Comisiones);
     // Numeros de comisiones
     const Comisiones_nums = Comisiones && Array.isArray(Comisiones) ? Comisiones.map(c => c.Numero_c) : [];
-    console.log(Comisiones_nums);
+    //console.log(Comisiones_nums);
     
     const ComisionSeleccionada = Comisiones && Array.isArray(Comisiones) ? Comisiones.find(c => c.Numero_c === comision) : null; 
-    console.log(ComisionSeleccionada);
+    //console.log(ComisionSeleccionada);
     const sinmateriasbul = Cuatrimestre && Materias.length === 0;
     const sinmaterias = !Cuatrimestre? '' : Materias.length === 0 ? 'No hay materias disponibles aún para este cuatrimestre' : '';
-    console.log(sinmaterias, sinmateriasbul);
+    //console.log(sinmaterias, sinmateriasbul);
    return { 
         carrera, setCarrera, 
         Anio, setAnio, 
