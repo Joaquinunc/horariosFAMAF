@@ -2620,86 +2620,471 @@
                         ]
                     },
                     {
-                        "Numero_c": "2",
+                        "Numero_c": "2 A",
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA A4"
+                                    "FCEFYN"
                                 ],
-                                "Horario": "09:00 - 13:00",
+                                "Horario": "12:30 - 16:30",
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
-                                    "Miércoles","Viernes"
+                                    "Lunes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "SEDE CENTRO - FCEFYN"
+                                ],
+                                "Horario": "09:00 - 12:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Martes"
                                 ]
                             }
                         ]
                     },
                     {
-                        "Numero_c": "3",
+                        "Numero_c": "3 A",
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA A5"
+                                    "FCEFYN"
                                 ],
-                                "Horario": "09:00 - 13:00",
+                                "Horario": "16:45 - 20:45",
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
-                                    "Miércoles","Viernes"
+                                    "Lunes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "14:00 - 17:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Martes"
                                 ]
                             }
                         ]
                     },
                     {
-                        "Numero_c": "4",
+                        "Numero_c": "4 A",
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA A4"
+                                    "FCEFYN"
                                 ],
-                                "Horario": "14:00 - 18:00",
+                                "Horario": "10:00 - 13:00",
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
-                                    "Miércoles","Viernes"
+                                    "Lunes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "08:00 - 12:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Miércoles"
                                 ]
                             }
                         ]
                     },
                     {
-                        "Numero_c": "5",
+                        "Numero_c": "5 A",
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA A5"
+                                    "FCEFYN"
                                 ],
-                                "Horario": "14:00 - 18:00",
+                                "Horario": "14:00 - 17:00",
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
-                                    "Miércoles","Viernes"
+                                    "Martes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "12:15 - 16:15",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Miércoles"
                                 ]
                             }
                         ]
                     },
                     {
-                        "Numero_c": "6",
+                        "Numero_c": "6 A",
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA A7"
+                                    "FCEFYN"
                                 ],
-                                "Horario": "14:00 - 18:00",
+                                "Horario": "14:00 - 17:00",
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
-                                    "Miércoles","Viernes"
+                                    "Martes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "16:30 - 20:30",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Miércoles"
                                 ]
                             }
                         ]
-                    }
+                    },
+                    {
+                        "Numero_c": "7 A",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "10:00 - 13:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Lunes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "08:30 - 12:30",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Viernes"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "8 A",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "10:00 - 13:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Lunes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "13:00 - 17:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Viernes"
+                                ]
+                            }
+                        ]
+                    }                
                 ]
             },
             "Segundo Cuatrimestre": {}
         },
         "2° año": {
-            "Primer Cuatrimestre": {},
+            "Primer Cuatrimestre": {
+                "Hidrometeorología I":[
+                    {
+                        "Numero_c": "LHM",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "14:00 - 15:30",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Martes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "14:00 - 17:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Jueves"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Probabilidad y estadística":[
+                     {
+                        "Numero_c": "Común-1.1",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "08:00 - 09:30",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Lunes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "08:00 - 11:15",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Jueves"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "Común-1.2",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "08:00 - 13:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Lunes"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "Común-1.3",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "08:00 - 09:30",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Viernes"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "Común-1.5",
+                         "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "08:00 - 09:30",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Martes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "08:00 - 11:15",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Miércoles"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "Común-2.1",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "11:30 - 13:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Lunes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "11:30 - 14:45",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Miércoles"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "Común-2.2",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "13:15 - 14:45",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Lunes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "11:30 - 14:45",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Jueves"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "Común-3.1",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "15:00 - 16:30",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Lunes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "15:00 - 18:30",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Martes"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "Común-3.2",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "16:45 - 18:15",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Lunes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "15:00 - 18:15",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Jueves"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "Común-3.3",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "15:00 - 18:15",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Miércoles"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "15:00 - 16:30",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Viernes"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "Común-4.1",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "18:30 - 21:45",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Lunes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "16:45 - 18:30",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Viernes"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "Común-4.2",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "18:30 - 21:45",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Martes"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FCEFYN"
+                                ],
+                                "Horario": "18:45 - 20:15",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Viernes"
+                                ]
+                            }
+                        ]
+                    }                           
+                ]
+            },
             "Segundo Cuatrimestre": {}
         }
     },
