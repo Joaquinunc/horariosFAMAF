@@ -1613,6 +1613,23 @@
         },
         "5° año": {
             "Primer Cuatrimestre": {
+            	"Computación y Sociedad": [
+                    {
+                        "Numero_c": "Única",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA 32"
+                                ],
+                                "Horario": "14:00 - 18:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Lunes"
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "Ingeniería del Software II": [
                     {
                         "Numero_c": "Única",
