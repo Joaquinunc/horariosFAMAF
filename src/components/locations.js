@@ -16,20 +16,20 @@ function location_setter(Comm){
   if (!Comm || !Comm.Detalle) return [];
   
   const aulas = Comm.Detalle.flatMap(d => d.Ubicacion);
-  //console.log(aulas);
+  console.log(aulas);
   //patrones contemplados
   const aulaRegex = 
-  /(?<c1>(AULA)\s*(?<l>[A-Z])\d*)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d?|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)|(?<c9>IPT)|(?<c10>VAY)|(?<c11>PV\-?\d+)|(?<c12>CV\-?\d+)|(?<c13>CENTRO)|(?<c14>FCEFYN)/i;
+  /(?<c1>(AULA)\s*(?<l>[A-DR])\b\d*)|(?<c2>AULA\s*\d+)|(?<c3>LAB)\s*\d+|(?<c4>LEF)\s*\d?|(?<c5>OAC)|(?<c6>HIDRAULICA)|(?<c7>VIRTUAL)|(?<c8>MOSCONI)|(?<c9>IPT)|(?<c10>VAY)|(?<c11>PV\-?\d+)|(?<c12>CV\-?\d+)|(?<c13>CENTRO)|(?<c14>FCEFYN)/i;
   // filtrado y definicion de claves de busqueda
 
   const blksmap = aulas.map(m => {
         
     const check = m.match(aulaRegex);
     // caso en el que no exista coincidencia (deberia quitarse en un futuro)
-    //console.log(check, m)
+    console.log(check, m)
     if (check === null) return m;
     const{groups} = check;
-    //console.log(groups);
+    console.log(groups);
     if (groups.c1) return groups.l.toUpperCase(); // Retorna 'A', 'B', etc.
     if (groups.c2) return 'FAM';               // Retorna 'AULA' para AULA 22
     if (groups.c3) return 'LAB';

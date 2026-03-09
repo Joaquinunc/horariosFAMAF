@@ -4544,7 +4544,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-13"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Teórico",
@@ -4554,7 +4554,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-3"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
@@ -4564,7 +4564,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-13"
                                 ],
                                 "Horario": "18:00 - 20:00",
                                 "Tipo": "Práctico",
@@ -4574,7 +4574,7 @@
                             },
                              {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-13"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Práctico",
@@ -5075,7 +5075,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-13"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Teórico",
@@ -5085,7 +5085,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-3"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
@@ -5095,7 +5095,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-13"
                                 ],
                                 "Horario": "18:00 - 20:00",
                                 "Tipo": "Práctico",
@@ -5105,7 +5105,7 @@
                             },
                              {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA CV-13"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Práctico",
