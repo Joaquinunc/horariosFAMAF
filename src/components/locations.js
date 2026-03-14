@@ -16,12 +16,36 @@ function location_setter(Comm){
   if (!Comm || !Comm.Detalle) return [];
   
   const aulas = Comm.Detalle.flatMap(d => d.Ubicacion);
+<<<<<<< HEAD
+  //console.log(aulas);
+  //patrones contemplados
+  // busqueda con prioridad: Patrones especificos > patrones generales
+  const aulaRegex = new RegExp([
+    `(?:AULA\\s+)?(?:`,           // "AULA" opcional
+    `(?<c11>PV\\-?\\d+)|`,        // Pabellón Venezuela
+    `(?<c12>CV\\-?\\d+)|`,        // Casa Verde
+    `(?<c8>MOSCONI)|`,            // Auditorio Mosconi
+    `(?<c6>HIDRAULICA)|`,         // Lab Hidráulica
+    `(?<c5>OAC)|`,                // Observatorio
+    `(?<c9>IPT)|`,                // IPT
+    `(?<c10>VAY)|`,               // VAY
+    `(?<c13>CENTRO)|`,            // Fcefyn-Centro
+    `(?<c14>FCEFYN)|`,            // FCEFYN
+    `(?<c7>VIRTUAL)|`,            // Virtual
+    `(?<c3>LAB\\s*\\d+)|`,        // Laboratorios
+    `(?<c4>LEF\\s*\\d?)`,         // LEF
+    `)|`,
+    `(?<c2>AULA\\s*\\d+)|`,       // AULA numerada (31,13,...)
+    `(?<c1>AULA\\s*(?<l>[A-DR])(?!\\-)\\s*\\d*)` // aulas de uso comun (A9,R1,...)
+  ].join(''), 'i');
+=======
   console.log(aulas);
   //patrones contemplados - ordenados de más específico a menos específico
   const aulaRegex = 
   /(?:AULA\s+)?(?:(?<c11>PV\-?\d+)|(?<c12>CV\-?\d+)|(?<c8>MOSCONI)|(?<c6>HIDRAULICA)|(?<c5>OAC)|(?<c9>IPT)|(?<c10>VAY)|(?<c13>CENTRO)|(?<c14>FCEFYN)|(?<c7>VIRTUAL)|(?<c3>LAB\s*\d+)|(?<c4>LEF\s*\d?))|(?<c2>AULA\s*\d+)|(?<c1>AULA\s*(?<l>[A-DR])(?!\-)\s*\d*)/i;
   // filtrado y definicion de claves de busqueda
 
+>>>>>>> 23f15c100c9d37cdf836874dd18fc4ed19a004bf
   const blksmap = aulas.map(m => {
         
     const check = m.match(aulaRegex);
