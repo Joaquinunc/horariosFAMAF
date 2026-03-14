@@ -16,6 +16,7 @@ function location_setter(Comm){
   if (!Comm || !Comm.Detalle) return [];
   
   const aulas = Comm.Detalle.flatMap(d => d.Ubicacion);
+<<<<<<< HEAD
   //console.log(aulas);
   //patrones contemplados
   // busqueda con prioridad: Patrones especificos > patrones generales
@@ -37,14 +38,22 @@ function location_setter(Comm){
     `(?<c2>AULA\\s*\\d+)|`,       // AULA numerada (31,13,...)
     `(?<c1>AULA\\s*(?<l>[A-DR])(?!\\-)\\s*\\d*)` // aulas de uso comun (A9,R1,...)
   ].join(''), 'i');
+=======
+  console.log(aulas);
+  //patrones contemplados - ordenados de más específico a menos específico
+  const aulaRegex = 
+  /(?:AULA\s+)?(?:(?<c11>PV\-?\d+)|(?<c12>CV\-?\d+)|(?<c8>MOSCONI)|(?<c6>HIDRAULICA)|(?<c5>OAC)|(?<c9>IPT)|(?<c10>VAY)|(?<c13>CENTRO)|(?<c14>FCEFYN)|(?<c7>VIRTUAL)|(?<c3>LAB\s*\d+)|(?<c4>LEF\s*\d?))|(?<c2>AULA\s*\d+)|(?<c1>AULA\s*(?<l>[A-DR])(?!\-)\s*\d*)/i;
+  // filtrado y definicion de claves de busqueda
+
+>>>>>>> 23f15c100c9d37cdf836874dd18fc4ed19a004bf
   const blksmap = aulas.map(m => {
         
     const check = m.match(aulaRegex);
     // caso en el que no exista coincidencia (deberia quitarse en un futuro)
-    //console.log(check, m)
+    console.log(check, m)
     if (check === null) return m;
     const{groups} = check;
-    //console.log(groups);
+    console.log(groups);
     if (groups.c1) return groups.l.toUpperCase(); // Retorna 'A', 'B', etc.
     if (groups.c2) return 'FAM';               // Retorna 'AULA' para AULA 22
     if (groups.c3) return 'LAB';
