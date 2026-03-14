@@ -286,17 +286,7 @@
                                     "AULA 31"
                                 ],
                                 "Horario": "14:00 - 16:00",
-                                "Tipo": "Teórico",
-                                "dias": [
-                                    "Lunes a Viernes"
-                                ]
-                            },
-                            {
-                                "Ubicacion": [
-                                    "AULA 31"
-                                ],
-                                "Horario": "16:00 - 18:00",
-                                "Tipo": "Práctico",
+                                "Tipo": "Teó./Prá.",
                                 "dias": [
                                     "Lunes a Viernes"
                                 ]
@@ -1590,7 +1580,7 @@
                                     "LAB 28"
                                 ],
                                 "Horario": "09:00 - 11:00",
-                                "Tipo": "Laboratorio",
+                                "Tipo": "Práctico",
                                 "dias": [
                                     "Martes","Jueves"
                                 ]
@@ -1600,7 +1590,7 @@
                                     "AULA 31"
                                 ],
                                 "Horario": "11:00 - 13:00",
-                                "Tipo": "Teó./Prá.",
+                                "Tipo": "Teórico",
                                 "dias": [
                                     "Martes","Jueves"
                                 ]
@@ -1625,6 +1615,23 @@
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
                                     "Lunes"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Ciencia de Datos": [
+                    {
+                        "Numero_c": "Única",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "LAB IPT"
+                                ],
+                                "Horario": "14:00 - 18:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Martes","Jueves"
                                 ]
                             }
                         ]
@@ -1674,6 +1681,23 @@
                         ]
                     }
                 ],
+                "Investigación de Operaciones": [
+                    {
+                        "Numero_c": "Única",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA 12"
+                                ],
+                                "Horario": "09:00 - 13:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Martes","Jueves"
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "Lenguajes y Compiladores": [
                     {
                         "Numero_c": "Única",
@@ -1686,6 +1710,33 @@
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
                                     "Miércoles","Viernes"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "Sistemas de Tiempo Real":[
+                    {
+                        "Numero_c": "Única",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "LAB IPT"
+                                ],
+                                "Horario": "14:00 - 18:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Miércoles"
+                                ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "AULA 25"
+                                ],
+                                "Horario": "14:00 - 18:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Viernes"
                                 ]
                             }
                         ]
@@ -2104,12 +2155,32 @@
                                 "dias": [
                                     "Martes"
                                 ]
+                            },
+                            {
+                                "Ubicacion": [
+                                    "FAMAF"
+                                ],
+                                "Horario": "14:00 - 15:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Lunes"
+                                ]
                             }
                         ]
                     },
                     {
                         "Numero_c": "4",
                         "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "FAMAF"
+                                ],
+                                "Horario": "14:00 - 15:00",
+                                "Tipo": "Teórico",
+                                "dias": [
+                                    "Lunes"
+                                ]
+                            },
                             {
                                 "Ubicacion": [
                                     "LEF 102"
@@ -2120,6 +2191,7 @@
                                     "Jueves"
                                 ]
                             }
+                            
                         ]
                     }
                 ],
@@ -3973,20 +4045,10 @@
         },
         "3° año": {
             "Primer Cuatrimestre": {
-                "Algoritmos y Estructura de Datos": [
+                "Algoritmos y Estructuras de Datos": [
                     {
                         "Numero_c": "Única",
                         "Detalle": [
-                            {
-                                "Ubicacion": [
-                                    "LAB 17"
-                                ],
-                                "Horario": "14:00 - 18:00",
-                                "Tipo": "Laboratorio",
-                                "dias": [
-                                    "Viernes"
-                                ]
-                            },
                             {
                                 "Ubicacion": [
                                     "AULA A2"
@@ -3995,6 +4057,16 @@
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
                                     "Lunes","Miércoles"
+                                ]
+                            },
+                             {
+                                "Ubicacion": [
+                                    "LAB 17"
+                                ],
+                                "Horario": "14:00 - 18:00",
+                                "Tipo": "Laboratorio",
+                                "dias": [
+                                    "Viernes"
                                 ]
                             }
                         ]
@@ -4544,7 +4616,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-13"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Teórico",
@@ -4554,7 +4626,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-3"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
@@ -4564,7 +4636,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-13"
                                 ],
                                 "Horario": "18:00 - 20:00",
                                 "Tipo": "Práctico",
@@ -4574,7 +4646,7 @@
                             },
                              {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-13"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Práctico",
@@ -4615,20 +4687,20 @@
                                 "Ubicacion": [
                                     "AULA 20"
                                 ],
-                                "Horario": "09:00 - 13:00",
+                                "Horario": "14:00 - 18:00",
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
-                                    "Jueves"
+                                    "Lunes"
                                 ]
                             },
                             {
                                 "Ubicacion": [
                                     "AULA 20"
                                 ],
-                                "Horario": "14:00 - 18:00",
+                                "Horario": "09:00 - 13:00",
                                 "Tipo": "Teó./Prá.",
                                 "dias": [
-                                    "Lunes"
+                                    "Jueves"
                                 ]
                             }
                         ]
@@ -5075,7 +5147,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-13"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Teórico",
@@ -5085,7 +5157,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-3"
                                 ],
                                 "Horario": "16:00 - 18:00",
                                 "Tipo": "Práctico",
@@ -5095,7 +5167,7 @@
                             },
                             {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-13"
                                 ],
                                 "Horario": "18:00 - 20:00",
                                 "Tipo": "Práctico",
@@ -5105,7 +5177,7 @@
                             },
                              {
                                 "Ubicacion": [
-                                    "No especificada"
+                                    "AULA PV-13"
                                 ],
                                 "Horario": "14:00 - 16:00",
                                 "Tipo": "Práctico",
@@ -5631,7 +5703,7 @@
                         "Detalle": [
                             {
                                 "Ubicacion": [
-                                    "AULA D1"
+                                    "AULA D4"
                                 ],
                                 "Horario": "09:00 - 13:00",
                                 "Tipo": "Teó./Prá.",
