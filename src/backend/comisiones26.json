@@ -2,7 +2,7 @@
      "Ingreso": {
         "Ciclo Básico Introductorio": {
             "Enero - Febrero": {
-                "Curso de Nivelación": [
+                "Modalidad no Intensiva - 2026": [
                     {
                         "Numero_c": "M1",
                         "Detalle": [
@@ -369,6 +369,101 @@
                         ]
                     }
                 ]
+            },
+            "Julio - Noviembre":{
+                "Modalidad Intensiva - 2027":[
+                    {
+                        "Numero_c": "V1",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA 20"
+                                ],
+                                "Horario": "16:00 - 20:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Viernes"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "V2",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA 23"
+                                ],
+                                "Horario": "16:00 - 20:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Viernes"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "V3 R",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA 31"
+                                ],
+                                "Horario": "16:00 - 20:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Viernes"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "S1",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA 20"
+                                ],
+                                "Horario": "09:00 - 13:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Sábado"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "S2",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA 23"
+                                ],
+                                "Horario": "09:00 - 13:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Sábado"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Numero_c": "S3",
+                        "Detalle": [
+                            {
+                                "Ubicacion": [
+                                    "AULA 31"
+                                ],
+                                "Horario": "09:00 - 13:00",
+                                "Tipo": "Teó./Prá.",
+                                "dias": [
+                                    "Sábado"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+
             }
         }
     },
